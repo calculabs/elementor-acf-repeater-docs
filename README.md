@@ -1,6 +1,6 @@
 ---
 icon: home
-order: 700
+order: 1000
 ---
 
 # Dynamic Elementor ACF Repeater
