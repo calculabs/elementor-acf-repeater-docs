@@ -1,3 +1,5 @@
+![](/images/home/banner-1544x500.png)
+
 ---
 icon: home
 order: 1000
