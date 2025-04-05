@@ -9,23 +9,29 @@ This page outlines all the field types supported by Dynamic Elementor ACF Repeat
 
 ## Free Version Field Types
 
-### Text Fields
+### Text & Content Fields
 - Single line text
 - Text area
 - WYSIWYG editor
-- Number
-- Email
-- URL
+- Password
+- oEmbed
 
-### Media Fields
-- Image
-- Basic media
+### Number & Date Fields
+- Number
+- Date Picker
+- Time Picker
+- Date Time Picker
 
 ### Choice Fields
 - Select
 - Radio Button
 - Checkbox
 - True/False
+
+### Special Fields
+- Email
+- Color Picker
+- Google Map
 
 ## Pro Version Field Types
 

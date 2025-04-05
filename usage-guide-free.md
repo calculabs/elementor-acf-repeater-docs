@@ -44,9 +44,33 @@ Before adding dynamic content, you must select the ACF Repeater field in the Ele
    - In the Dynamic Tags menu, look for the "ACF Repeater" section
    - Choose the appropriate tag (e.g., ACF Repeater Text, ACF Repeater Image)
    - Select the specific sub-field you want to display
-7. For text or image content:
+
+### Using Dynamic Tags
+
+#### Text and Content Fields
+When working with text-based content:
+1. Edit any text widget in your template
+2. Click the Dynamic Tags icon
+3. Look for the "ACF Repeater" section
+4. Choose "ACF Repeater Text" and select your field
 ![Select Dynamic Tag for Text](/images/usage/select-dynamic-repeater-field-tag-text.jpg)
-9. For background image on container:
+
+#### Original Post Title
+To display the title of the post containing the repeater field:
+1. Edit any text widget in your template
+2. Click the Dynamic Tags icon
+3. Look for "ACF Repeater Original Post Title" under the ACF section
+4. Select it to display the original post's title
+
+This is particularly useful for:
+- Creating breadcrumb navigation
+- Showing parent post context
+- Building hierarchical displays
+
+#### Images and Backgrounds
+For image content or background images:
+1. For regular images, use the Image widget with ACF Repeater Image tag
+2. For background images on sections or containers:
 ![Select Dynamic Tag for Background](/images/usage/select-dynamic-repeater-field-background-image.jpg)
 
 ## Step 4: Set Up the Loop Grid Widget
