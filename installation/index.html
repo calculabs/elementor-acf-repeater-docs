@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.797191230103">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.797191488635">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.6.0">
@@ -11,7 +11,7 @@
     <!-- Primary Meta Tags -->
     <title>Installation | Dynamic Elementor ACF Repeater Docs</title>
     <meta name="title" content="Installation | Dynamic Elementor ACF Repeater Docs">
-    <meta name="description" content="Follow these steps to install and set up the Dynamic Elementor ACF Repeater plugin.">
+    <meta name="description" content="This guide covers detailed installation steps and technical requirements for the Dynamic Elementor ACF Repeater plugin.">
 
     <!-- Canonical -->
     <link rel="canonical" href="/installation/">
@@ -20,22 +20,22 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="/installation/">
     <meta property="og:title" content="Installation | Dynamic Elementor ACF Repeater Docs">
-    <meta property="og:description" content="Follow these steps to install and set up the Dynamic Elementor ACF Repeater plugin.">
+    <meta property="og:description" content="This guide covers detailed installation steps and technical requirements for the Dynamic Elementor ACF Repeater plugin.">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="/installation/">
     <meta property="twitter:title" content="Installation | Dynamic Elementor ACF Repeater Docs">
-    <meta property="twitter:description" content="Follow these steps to install and set up the Dynamic Elementor ACF Repeater plugin.">
+    <meta property="twitter:description" content="This guide covers detailed installation steps and technical requirements for the Dynamic Elementor ACF Repeater plugin.">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../resources/css/retype.css?v=3.6.0.797191230103" rel="stylesheet">
+    <link href="../resources/css/retype.css?v=3.6.0.797191488635" rel="stylesheet">
 
-    <script data-cfasync="false" src="../resources/js/config.js?v=3.6.0.797191230103" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/config.js?v=3.6.0.797191488635" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../resources/js/retype.js?v=3.6.0" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../resources/js/search.js?v=3.6.0.797191230103" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.6.0.797191230103" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/search.js?v=3.6.0.797191488635" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.6.0.797191488635" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -218,30 +218,51 @@
         <span>Installation</span>
     </h1>
 </doc-anchor-target>
-<p>Follow these steps to install and set up the Dynamic Elementor ACF Repeater plugin.</p>
-<doc-anchor-target id="prerequisites">
+<p>This guide covers detailed installation steps and technical requirements for the Dynamic Elementor ACF Repeater plugin.</p>
+<doc-anchor-target id="system-requirements">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#prerequisites">#</doc-anchor-trigger>
-        <span>Prerequisites</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#system-requirements">#</doc-anchor-trigger>
+        <span>System Requirements</span>
     </h2>
 </doc-anchor-target>
-<p>Before installation, ensure you have:</p>
-<ul>
-<li>WordPress 5.8 or higher</li>
-<li>PHP 7.4 or higher</li>
-<li>Elementor Pro (latest version recommended)</li>
-<li>Advanced Custom Fields Pro (ACF Pro)</li>
-</ul>
-<doc-anchor-target id="installation-steps">
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Requirement</th>
+<th>Minimum Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>WordPress</td>
+<td>5.8 or higher</td>
+</tr>
+<tr>
+<td>PHP</td>
+<td>7.4 or higher</td>
+</tr>
+<tr>
+<td>Elementor Pro</td>
+<td>Latest version recommended</td>
+</tr>
+<tr>
+<td>ACF Pro</td>
+<td>Latest version recommended</td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="installation-methods">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#installation-steps">#</doc-anchor-trigger>
-        <span>Installation Steps</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#installation-methods">#</doc-anchor-trigger>
+        <span>Installation Methods</span>
     </h2>
 </doc-anchor-target>
-<doc-anchor-target id="method-1-wordpress-admin-panel">
+<doc-anchor-target id="wordpress-plugin-directory-recommended">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#method-1-wordpress-admin-panel">#</doc-anchor-trigger>
-        <span>Method 1: WordPress Admin Panel</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#wordpress-plugin-directory-recommended">#</doc-anchor-trigger>
+        <span>WordPress Plugin Directory (Recommended)</span>
     </h3>
 </doc-anchor-target>
 <ol>
@@ -249,12 +270,12 @@
 <li>Navigate to Plugins &gt; Add New</li>
 <li>Search for &quot;Dynamic Elementor ACF Repeater&quot;</li>
 <li>Click &quot;Install Now&quot;</li>
-<li>After installation, click &quot;Activate&quot;</li>
+<li>After installation completes, click &quot;Activate&quot;</li>
 </ol>
-<doc-anchor-target id="method-2-manual-installation">
+<doc-anchor-target id="manual-installation">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#method-2-manual-installation">#</doc-anchor-trigger>
-        <span>Method 2: Manual Installation</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#manual-installation">#</doc-anchor-trigger>
+        <span>Manual Installation</span>
     </h3>
 </doc-anchor-target>
 <ol>
@@ -264,7 +285,107 @@
 <li>Click &quot;Upload Plugin&quot;</li>
 <li>Choose the downloaded ZIP file</li>
 <li>Click &quot;Install Now&quot;</li>
-<li>After installation, click &quot;Activate&quot;</li>
+<li>After installation completes, click &quot;Activate&quot;</li>
+</ol>
+<doc-anchor-target id="installation-verification">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#installation-verification">#</doc-anchor-trigger>
+        <span>Installation Verification</span>
+    </h2>
+</doc-anchor-target>
+<p>After installation, verify the following:</p>
+<ol>
+<li><p><strong>Plugin Status</strong></p>
+<ul>
+<li>Check Plugins page</li>
+<li>Plugin should be listed as &quot;Active&quot;</li>
+<li>No error messages should be present</li>
+</ul>
+</li>
+<li><p><strong>Dependencies Check</strong></p>
+<ul>
+<li>Elementor Pro is active and working</li>
+<li>ACF Pro is active and working</li>
+<li>PHP version meets requirements</li>
+<li>WordPress version is compatible</li>
+</ul>
+</li>
+<li><p><strong>Functionality Check</strong></p>
+<ul>
+<li>Elementor editor loads correctly</li>
+<li>ACF Repeater fields can be created</li>
+<li>Dynamic Tags appear in Elementor</li>
+</ul>
+</li>
+</ol>
+<doc-anchor-target id="pro-version-setup">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#pro-version-setup">#</doc-anchor-trigger>
+        <span>Pro Version Setup</span>
+    </h2>
+</doc-anchor-target>
+<p>When installing the Pro version:</p>
+<ol>
+<li>Purchase a license or start your <a href="https://checkout.freemius.com/mode/dialog/plugin/16334/plan/27245/?trial=paid">free trial</a></li>
+<li>Download the Pro version plugin</li>
+<li>Follow either installation method above</li>
+<li>Navigate to plugin settings</li>
+<li>Enter and activate your license key</li>
+</ol>
+<doc-anchor-target id="troubleshooting-common-issues">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#troubleshooting-common-issues">#</doc-anchor-trigger>
+        <span>Troubleshooting Common Issues</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="plugin-wont-activate">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#plugin-wont-activate">#</doc-anchor-trigger>
+        <span>Plugin Won&#x27;t Activate</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li>Verify PHP version meets requirements</li>
+<li>Check WordPress version compatibility</li>
+<li>Ensure Elementor Pro is activated first</li>
+<li>Confirm ACF Pro is installed and activated</li>
+</ul>
+<doc-anchor-target id="dynamic-tags-not-showing">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#dynamic-tags-not-showing">#</doc-anchor-trigger>
+        <span>Dynamic Tags Not Showing</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li>Clear browser cache</li>
+<li>Clear WordPress cache</li>
+<li>Deactivate and reactivate plugin</li>
+<li>Check for conflicts with other plugins</li>
+</ul>
+<doc-anchor-target id="license-key-issues">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#license-key-issues">#</doc-anchor-trigger>
+        <span>License Key Issues</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li>Verify key is entered correctly</li>
+<li>Check license status in account</li>
+<li>Clear site cache after activation</li>
+<li>Contact support if problems persist</li>
+</ul>
+<doc-anchor-target id="getting-support">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#getting-support">#</doc-anchor-trigger>
+        <span>Getting Support</span>
+    </h2>
+</doc-anchor-target>
+<p>Need help with installation?</p>
+<ol>
+<li>Check our <a href="../getting-started/">documentation</a></li>
+<li>Visit the <a href="https://wordpress.org/support/plugin/dynamic-elementor-acf-repeater/">support forum</a></li>
+<li>Pro users: Access premium support through your account</li>
+<li>Contact us directly for urgent issues</li>
 </ol>
 <doc-anchor-target id="post-installation-setup">
     <h2>
@@ -292,19 +413,6 @@
 </ul>
 </li>
 </ol>
-<doc-anchor-target id="troubleshooting">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#troubleshooting">#</doc-anchor-trigger>
-        <span>Troubleshooting</span>
-    </h2>
-</doc-anchor-target>
-<p>If you encounter any issues during installation:</p>
-<ol>
-<li>Check system requirements are met</li>
-<li>Verify all dependencies are properly installed</li>
-<li>Ensure your WordPress version is compatible</li>
-<li>Check PHP version compatibility</li>
-</ol>
 <doc-anchor-target id="next-steps">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#next-steps">#</doc-anchor-trigger>
@@ -316,20 +424,6 @@
 <li><a href="/usage-guide#step-1-create-an-acf-repeater-field">Create your first ACF Repeater field</a></li>
 <li><a href="/usage-guide#step-3-create-a-loop-item-template">Set up a Loop Item template</a></li>
 <li><a href="/usage-guide#step-4-set-up-the-loop-grid-widget">Configure the Loop Grid widget</a></li>
-</ol>
-<doc-anchor-target id="pro-version-installation">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#pro-version-installation">#</doc-anchor-trigger>
-        <span>Pro Version Installation</span>
-    </h2>
-</doc-anchor-target>
-<p>If you&#x27;re installing the Pro version:</p>
-<ol>
-<li>Purchase a Pro license or start your <a href="https://checkout.freemius.com/mode/dialog/plugin/16334/plan/27245/?trial=paid">free trial</a></li>
-<li>Download the Pro version plugin</li>
-<li>Install using either method above</li>
-<li>Enter your license key in the plugin settings</li>
-<li>Activate your Pro license</li>
 </ol>
 <div class="flex mb-6">
     <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
