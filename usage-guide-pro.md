@@ -7,6 +7,8 @@ icon: book
 
 This guide covers the additional features available in the Pro version of Dynamic Elementor ACF Repeater.
 
+Start your 3-day free trial of the Pro version to unlock all features. [Start Your Free Trial](https://checkout.freemius.com/mode/dialog/plugin/16334/plan/27245/?trial=paid)
+
 ## Lightbox Configuration
 
 1. Find the "Lightbox" section in Loop Grid widget settings

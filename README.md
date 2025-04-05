@@ -9,6 +9,8 @@ order: 1000
 
 Welcome to the official documentation for Dynamic Elementor ACF Repeater. This plugin bridges the gap between Advanced Custom Fields (ACF) repeater fields and Elementor's dynamic content capabilities, allowing you to use ACF repeater field values directly in Elementor loop items and templates through custom Dynamic Tags.
 
+You can download the free version on the WordPress Plugin Directory: [Dynamic Elementor ACF Repeater](https://wordpress.org/plugins/dynamic-elementor-acf-repeater)
+
 ## Requirements
 
 Before getting started, ensure you have:

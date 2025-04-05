@@ -7,6 +7,8 @@ icon: star
 
 The Pro version of Dynamic Elementor ACF Repeater includes advanced features that enhance your ability to create dynamic, interactive content with ACF Repeater fields.
 
+Start your 3-day free trial of the Pro version to unlock all features. [Start Your Free Trial](https://checkout.freemius.com/mode/dialog/plugin/16334/plan/27245/?trial=paid)
+
 ## Additional Field Types
 
 Pro version supports more ACF field types within repeaters:
