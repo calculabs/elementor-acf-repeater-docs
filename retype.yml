@@ -1,0 +1,23 @@
+input: .
+output: .retype
+url: # Add your documentation site URL here
+branding:
+  title: Dynamic Elementor ACF Repeater
+  label: Docs
+links:
+  - text: Getting Started
+    link: /getting-started
+  - text: Installation
+    link: /installation
+  - text: Features
+    link: /features
+  - text: Usage Guide
+    link: /usage-guide
+  - text: Pro Features
+    link: /pro-features
+  - text: GitHub
+    link: https://github.com/calculabs/elementor-acf-repeater-docs
+footer:
+  copyright: "&copy; Copyright {{ year }}. All rights reserved."
+meta:
+  title: " | Dynamic Elementor ACF Repeater Docs" 
