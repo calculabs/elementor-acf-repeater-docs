@@ -1,6 +1,6 @@
 ---
-order: 100
-icon: history
+order: 800
+icon: clock
 ---
 
 # Changelog
