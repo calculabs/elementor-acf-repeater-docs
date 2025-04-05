@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.797188945053">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.797189394323">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.6.0">
@@ -32,11 +32,11 @@
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../resources/css/retype.css?v=3.6.0.797188945053" rel="stylesheet">
+    <link href="../resources/css/retype.css?v=3.6.0.797189394323" rel="stylesheet">
 
-    <script data-cfasync="false" src="../resources/js/config.js?v=3.6.0.797188945053" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/config.js?v=3.6.0.797189394323" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../resources/js/retype.js?v=3.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.6.0.797188945053" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.6.0.797189394323" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -316,19 +316,64 @@
 <li>Select the specific sub-field you want to display</li>
 </ul>
 </li>
-<li><p>For text or image content:
+</ol>
+<doc-anchor-target id="using-dynamic-tags">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#using-dynamic-tags">#</doc-anchor-trigger>
+        <span>Using Dynamic Tags</span>
+    </h3>
+</doc-anchor-target>
+<doc-anchor-target id="text-and-content-fields">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#text-and-content-fields">#</doc-anchor-trigger>
+        <span>Text and Content Fields</span>
+    </h4>
+</doc-anchor-target>
+<p>When working with text-based content:</p>
+<ol>
+<li>Edit any text widget in your template</li>
+<li>Click the Dynamic Tags icon</li>
+<li>Look for the &quot;ACF Repeater&quot; section</li>
+<li>Choose &quot;ACF Repeater Text&quot; and select your field
 <figure class="content-center">
     <img src="../images/usage/select-dynamic-repeater-field-tag-text.jpg" alt="Select Dynamic Tag for Text">
     <figcaption class="caption">Select Dynamic Tag for Text</figcaption>
 </figure>
-</p>
 </li>
-<li><p>For background image on container:
+</ol>
+<doc-anchor-target id="original-post-title">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#original-post-title">#</doc-anchor-trigger>
+        <span>Original Post Title</span>
+    </h4>
+</doc-anchor-target>
+<p>To display the title of the post containing the repeater field:</p>
+<ol>
+<li>Edit any text widget in your template</li>
+<li>Click the Dynamic Tags icon</li>
+<li>Look for &quot;ACF Repeater Original Post Title&quot; under the ACF section</li>
+<li>Select it to display the original post&#x27;s title</li>
+</ol>
+<p>This is particularly useful for:</p>
+<ul>
+<li>Creating breadcrumb navigation</li>
+<li>Showing parent post context</li>
+<li>Building hierarchical displays</li>
+</ul>
+<doc-anchor-target id="images-and-backgrounds">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#images-and-backgrounds">#</doc-anchor-trigger>
+        <span>Images and Backgrounds</span>
+    </h4>
+</doc-anchor-target>
+<p>For image content or background images:</p>
+<ol>
+<li>For regular images, use the Image widget with ACF Repeater Image tag</li>
+<li>For background images on sections or containers:
 <figure class="content-center">
     <img src="../images/usage/select-dynamic-repeater-field-background-image.jpg" alt="Select Dynamic Tag for Background">
     <figcaption class="caption">Select Dynamic Tag for Background</figcaption>
 </figure>
-</p>
 </li>
 </ol>
 <doc-anchor-target id="step-4-set-up-the-loop-grid-widget">
