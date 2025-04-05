@@ -1,5 +1,5 @@
 ---
-order: 300
+order: 700
 icon: book
 ---
 
