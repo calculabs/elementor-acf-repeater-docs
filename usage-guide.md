@@ -11,19 +11,18 @@ This guide will walk you through the complete process of setting up and using th
 
 1. Navigate to Custom Fields > Add New
 2. Create a new field group
-   ![Creating ACF Repeater Field Group](/images/usage/create-acf-repeater-fields-group.jpg)
+![Creating ACF Repeater Field Group](/images/usage/create-acf-repeater-fields-group.jpg)
 
 3. Add a Repeater field to the group
 4. Add sub-fields to the repeater (e.g., text, image, etc.)
 5. Set the location rules for where this field group should appear
-   ![Assign to Post Type](/images/usage/assign-to-post-type.jpg)
+![Assign to Post Type](/images/usage/assign-to-post-type.jpg)
 
 ## Step 2: Populate the Repeater Fields
 
 1. Edit a post or custom post type where your ACF Repeater field is available
-2. Locate the ACF Repeater field in the editor
-3. Add entries to the repeater, filling out the sub-fields as needed
-   ![Populate Repeater Fields](/images/usage/populate-repeater-fields-on-post.jpg)
+2. Locate the ACF Repeater field in the editor and add entries to the repeater, filling out the sub-fields as needed
+![Populate Repeater Fields](/images/usage/populate-repeater-fields-on-post.jpg)
 
 ## Step 3: Create a Loop Item Template
 
