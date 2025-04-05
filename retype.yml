@@ -9,16 +9,18 @@ links:
     link: /getting-started
   - text: Installation
     link: /installation
+  - text: Usage Guide
+    link: /usage-guide-free
+  - text: Pro Version Guide
+    link: /usage-guide-pro
   - text: Features
     link: /features
-  - text: Usage Guide Free
-    link: /usage-guide-free
-  - text: Usage Guide Pro
-    link: /usage-guide-pro
-  - text: Field Types
-    link: /field-types
   - text: Pro Features
     link: /pro-features
+  - text: Supported Field Types
+    link: /field-types
+  - text: Changelog
+    link: /changelog
   - text: GitHub
     link: https://github.com/calculabs/elementor-acf-repeater-docs
 footer:
