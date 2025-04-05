@@ -1,5 +1,5 @@
 ---
-order: 300
+order: 400
 icon: book
 ---
 
@@ -11,21 +11,24 @@ This guide will walk you through the complete process of setting up and using th
 
 1. Navigate to Custom Fields > Add New
 2. Create a new field group
+   ![Creating ACF Repeater Field Group](/images/usage/create-acf-repeater-fields-group.jpg)
+
 3. Add a Repeater field to the group
 4. Add sub-fields to the repeater (e.g., text, image, etc.)
 5. Set the location rules for where this field group should appear
+   ![Assign to Post Type](/images/usage/assign-to-post-type.jpg)
 
 ## Step 2: Populate the Repeater Fields
 
 1. Edit a post or custom post type where your ACF Repeater field is available
 2. Locate the ACF Repeater field in the editor
 3. Add entries to the repeater, filling out the sub-fields as needed
-4. Update or publish the post to save your changes
+   ![Populate Repeater Fields](/images/usage/populate-repeater-fields-on-post.jpg)
 
 ## Step 3: Create a Loop Item Template
 
-!!! Creating Loop Items
-Before adding dynamic content, you must select the ACF Repeater field in the Elementor Loop Item Page Settings
+!!! important Creating Loop Items
+    Before adding dynamic content, you must select the ACF Repeater field in the Elementor Loop Item Page Settings
 !!!
 
 1. In Elementor, go to Templates > Add New > Loop Item
@@ -33,21 +36,43 @@ Before adding dynamic content, you must select the ACF Repeater field in the Ele
 3. Look for the "ACF Repeater" section
 4. Select the ACF Repeater field you want to use
    - Note: You can only select one repeater field group per template
-5. Design your loop item template using Elementor widgets
-6. For dynamic content, use the ACF Repeater Dynamic Tags:
+   ![Select Repeater Field](/images/usage/select-repeater-field-for-loop.jpg)
+
+5. Configure the preview settings for the loop item
+   ![Configure Preview Settings](/images/usage/configure-preview-settings-for-loop-item.jpg)
+
+6. Design your loop item template using Elementor widgets
+7. For dynamic content, use the ACF Repeater Dynamic Tags:
    - Edit a widget's settings
    - In the Dynamic Tags menu, look for the "ACF Repeater" section
    - Choose the appropriate tag (e.g., ACF Repeater Text, ACF Repeater Image)
    - Select the specific sub-field you want to display
+   - For text content:
+     ![Select Dynamic Tag for Text](/images/usage/select-dynamic-repeater-field-tag-text.jpg)
+   - For background images:
+     ![Select Dynamic Tag for Background](/images/usage/select-dynamic-repeater-field-background-image.jpg)
 
 ## Step 4: Set Up the Loop Grid Widget
 
 1. In your Elementor template, add the Loop Grid widget
 2. In the Layout section, select your Loop Item template
-3. In the widget's Query settings:
+3. Set display conditions as needed
+   ![Set Display Conditions](/images/usage/set-display-conditions.jpg)
+
+4. Configure the grid preview settings
+   ![Set Grid Preview](/images/usage/set-grid-preview.jpg)
+
+5. In the widget's Query settings:
    - Toggle on "Use ACF Repeater"
    - Select your ACF Repeater field
    - Choose the post type containing your repeater fields
+   ![Use ACF Repeater Query](/images/usage/use-acf-repeater-query.jpg)
+
+## Final Result
+
+Once properly configured, your Loop Grid will display all your repeater items using your custom template:
+
+![Loop Grid with Repeaters](/images/usage/see-loop-grid-populated-with-repeaters.jpg)
 
 ## Preview and Publish
 
