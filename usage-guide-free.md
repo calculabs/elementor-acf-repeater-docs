@@ -3,7 +3,7 @@ order: 700
 icon: book
 ---
 
-# Usage Guide
+# Usage Guide Free
 
 This guide will walk you through the complete process of setting up and using the Dynamic Elementor ACF Repeater plugin.
 

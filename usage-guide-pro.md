@@ -3,7 +3,7 @@ order: 600
 icon: book
 ---
 
-# Pro Version Guide
+# Usage Guide Pro
 
 This guide covers the additional features available in the Pro version of Dynamic Elementor ACF Repeater.
 
