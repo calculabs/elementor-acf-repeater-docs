@@ -26,4 +26,9 @@ links:
 footer:
   copyright: "&copy; Copyright {{ year }}. All rights reserved."
 meta:
-  title: " | Dynamic Elementor ACF Repeater Docs" 
+  title: " | Dynamic Elementor ACF Repeater Docs"
+search:
+  mode: full
+  preload: true
+  min: 2
+  placeholder: Search docs... 
