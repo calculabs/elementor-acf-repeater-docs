@@ -38,7 +38,7 @@ Before adding dynamic content, you must select the ACF Repeater field in the Ele
 ![Select Repeater Field](/images/usage/select-repeater-field-for-loop.jpg){ width=500 }
 
 5. Configure the preview settings for the loop item
-![Configure Preview Settings](/images/usage/configure-preview-settings-for-loop-item.jpg)
+![Configure Preview Settings](/images/usage/configure-preview-settings-for-loop-item.jpg) { width=500 }
 
 6. Build and design your loop item template using Elementor widgets
 7. Use the ACF Repeater Dynamic Tags to assign your repeater fields:
@@ -47,9 +47,9 @@ Before adding dynamic content, you must select the ACF Repeater field in the Ele
    - Choose the appropriate tag (e.g., ACF Repeater Text, ACF Repeater Image)
    - Select the specific sub-field you want to display
 8. For text content:
-     ![Select Dynamic Tag for Text](/images/usage/select-dynamic-repeater-field-tag-text.jpg)
+![Select Dynamic Tag for Text](/images/usage/select-dynamic-repeater-field-tag-text.jpg)
 9. For background images:
-     ![Select Dynamic Tag for Background](/images/usage/select-dynamic-repeater-field-background-image.jpg)
+![Select Dynamic Tag for Background](/images/usage/select-dynamic-repeater-field-background-image.jpg)
 
 ## Step 4: Set Up the Loop Grid Widget
 
@@ -57,16 +57,16 @@ Before adding dynamic content, you must select the ACF Repeater field in the Ele
 2. In the Layout section, select your Loop Item template
 
 3. Configure the grid preview settings
-   ![Set Grid Preview](/images/usage/set-grid-preview.jpg)
+![Set Grid Preview](/images/usage/set-grid-preview.jpg) { width=500 }
 
 4. In the widget's Query settings:
    - Toggle on "Use ACF Repeater"
    - Select your ACF Repeater field
    - Choose the post type containing your repeater fields
-   ![Use ACF Repeater Query](/images/usage/use-acf-repeater-query.jpg)
+![Use ACF Repeater Query](/images/usage/use-acf-repeater-query.jpg) { width=500 }
 
 5. Set display conditions as needed
-   ![Set Display Conditions](/images/usage/set-display-conditions.jpg)
+![Set Display Conditions](/images/usage/set-display-conditions.jpg)
 
 ## Final Result
 
