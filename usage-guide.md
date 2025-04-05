@@ -66,19 +66,18 @@ To display the title of the post containing the repeater field:
 
 ## Step 4: Set Up the Loop Grid Widget
 
-1. In your Elementor template, add the Loop Grid widget
-2. In the Layout section, select your Loop Item template
+1. In your Elementor template, add the Loop Grid widget and select your Loop Item template in the layout section.
 
-3. Configure the grid preview settings
+2. Configure the grid preview settings
 ![Set Grid Preview](/images/usage/set-grid-preview.jpg){ width=400 }
 
-4. In the widget's Query settings:
+3. In the widget's Query settings:
    - Toggle on "Use ACF Repeater"
    - Select your ACF Repeater field
    - In source, select the post type containing your repeater fields
 ![Use ACF Repeater Query](/images/usage/use-acf-repeater-query.jpg){ width=400 }
 
-5. Set display conditions as needed
+4. Set display conditions as needed
 ![Set Display Conditions](/images/usage/set-display-conditions.jpg)
 
 ## Final Result
@@ -92,12 +91,3 @@ Once properly configured, your Loop Grid will display all your repeater items us
 1. Preview your template to check the ACF Repeater data display
 2. Make any necessary adjustments
 3. Publish your template when satisfied
-
-## Tips and Best Practices
-
-- Ensure ACF Repeater fields contain data before previewing
-- Multiple ACF Repeater Dynamic Tags can be used in a single template
-- Use ACF Repeater Image tag in Image widgets for best results
-- Update Loop Item templates when changing ACF Repeater structure
-- Test your templates with various screen sizes for responsive design
-- Keep your repeater field structure consistent across posts 
