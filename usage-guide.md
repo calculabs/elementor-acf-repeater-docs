@@ -27,8 +27,8 @@ This guide will walk you through the complete process of setting up and using th
 
 ## Step 3: Create a Loop Item Template
 
-!!! important Creating Loop Items
-    Before adding dynamic content, you must select the ACF Repeater field in the Elementor Loop Item Page Settings
+!!! Creating Loop Items
+Before adding dynamic content, you must select the ACF Repeater field in the Elementor Loop Item Page Settings
 !!!
 
 1. In Elementor, go to Templates > Add New > Loop Item
