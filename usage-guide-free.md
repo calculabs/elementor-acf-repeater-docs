@@ -78,54 +78,11 @@ Once properly configured, your Loop Grid will display all your repeater items us
 2. Make any necessary adjustments
 3. Publish your template when satisfied
 
-## Pro Features Setup
-
-### Lightbox Configuration
-Available in Pro version only:
-
-1. Find the "Lightbox" section in Loop Grid widget settings
-2. Enable the lightbox feature
-3. Customize lightbox settings as needed
-
-### Lightbox Visibility Control
-Pro feature for controlling element visibility:
-
-- Default: Visible in both loop and lightbox
-- Hide in Lightbox: Hidden when viewed in lightbox
-- Show Only in Lightbox: Hidden in loop, visible in lightbox
-
-### Swiper Integration
-Pro feature for slider functionality:
-
-1. Locate the "Slider" section in Loop Grid settings
-2. Enable the slider feature
-3. Adjust slider settings to your preferences
-
-### Filtering Setup
-Pro feature for content filtering:
-
-1. Find the "Filter" section in Loop Grid settings
-2. Enable filtering
-3. Choose the ACF field for filtering
-4. Customize filter appearance and behavior
-
 ## Tips and Best Practices
 
 - Ensure ACF Repeater fields contain data before previewing
 - Multiple ACF Repeater Dynamic Tags can be used in a single template
 - Use ACF Repeater Image tag in Image widgets for best results
 - Update Loop Item templates when changing ACF Repeater structure
-- Utilize Lightbox Visibility Control for dynamic layouts (Pro)
-
-## Supported Field Types
-
-### Free Version
-- Text
-- Textarea
-- Image
-
-### Pro Version
-- File
-- Gallery
-- Relationship
-- More field types coming soon 
+- Test your templates with various screen sizes for responsive design
+- Keep your repeater field structure consistent across posts 
