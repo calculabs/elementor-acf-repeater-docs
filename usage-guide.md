@@ -56,7 +56,7 @@ Before adding dynamic content, you must select the ACF Repeater field in the Ele
 2. In the Layout section, select your Loop Item template
 
 3. Configure the grid preview settings
-![Set Grid Preview](/images/usage/set-grid-preview.jpg) { width=500 }
+![Set Grid Preview](/images/usage/set-grid-preview.jpg){ width=500 }
 
 4. In the widget's Query settings:
    - Toggle on "Use ACF Repeater"
