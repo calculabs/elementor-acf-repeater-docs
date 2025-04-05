@@ -11,14 +11,6 @@ Welcome to the official documentation for Dynamic Elementor ACF Repeater. This p
 
 You can download the free version on the WordPress Plugin Directory: [Dynamic Elementor ACF Repeater](https://wordpress.org/plugins/dynamic-elementor-acf-repeater)
 
-## Requirements
-
-Before getting started, ensure you have:
-- WordPress 5.8 or higher
-- PHP 7.4 or higher
-- Elementor Pro
-- Advanced Custom Fields Pro (ACF Pro)
-
 ## Key Features
 
 ### Free Version

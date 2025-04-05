@@ -5,28 +5,28 @@ icon: download
 
 # Installation
 
-Follow these steps to install and set up the Dynamic Elementor ACF Repeater plugin.
+This guide covers detailed installation steps and technical requirements for the Dynamic Elementor ACF Repeater plugin.
 
-## Prerequisites
+## System Requirements
 
-Before installation, ensure you have:
+| Requirement | Minimum Version |
+|------------|-----------------|
+| WordPress  | 5.8 or higher   |
+| PHP        | 7.4 or higher   |
+| Elementor Pro | Latest version recommended |
+| ACF Pro    | Latest version recommended |
 
-- WordPress 5.8 or higher
-- PHP 7.4 or higher
-- Elementor Pro (latest version recommended)
-- Advanced Custom Fields Pro (ACF Pro)
+## Installation Methods
 
-## Installation Steps
-
-### Method 1: WordPress Admin Panel
+### WordPress Plugin Directory (Recommended)
 
 1. Log in to your WordPress admin panel
 2. Navigate to Plugins > Add New
 3. Search for "Dynamic Elementor ACF Repeater"
 4. Click "Install Now"
-5. After installation, click "Activate"
+5. After installation completes, click "Activate"
 
-### Method 2: Manual Installation
+### Manual Installation
 
 1. Download the plugin ZIP file
 2. Log in to your WordPress admin panel
@@ -34,7 +34,66 @@ Before installation, ensure you have:
 4. Click "Upload Plugin"
 5. Choose the downloaded ZIP file
 6. Click "Install Now"
-7. After installation, click "Activate"
+7. After installation completes, click "Activate"
+
+## Installation Verification
+
+After installation, verify the following:
+
+1. **Plugin Status**
+   - Check Plugins page
+   - Plugin should be listed as "Active"
+   - No error messages should be present
+
+2. **Dependencies Check**
+   - Elementor Pro is active and working
+   - ACF Pro is active and working
+   - PHP version meets requirements
+   - WordPress version is compatible
+
+3. **Functionality Check**
+   - Elementor editor loads correctly
+   - ACF Repeater fields can be created
+   - Dynamic Tags appear in Elementor
+
+## Pro Version Setup
+
+When installing the Pro version:
+
+1. Purchase a license or start your [free trial](https://checkout.freemius.com/mode/dialog/plugin/16334/plan/27245/?trial=paid)
+2. Download the Pro version plugin
+3. Follow either installation method above
+4. Navigate to plugin settings
+5. Enter and activate your license key
+
+## Troubleshooting Common Issues
+
+### Plugin Won't Activate
+- Verify PHP version meets requirements
+- Check WordPress version compatibility
+- Ensure Elementor Pro is activated first
+- Confirm ACF Pro is installed and activated
+
+### Dynamic Tags Not Showing
+- Clear browser cache
+- Clear WordPress cache
+- Deactivate and reactivate plugin
+- Check for conflicts with other plugins
+
+### License Key Issues
+- Verify key is entered correctly
+- Check license status in account
+- Clear site cache after activation
+- Contact support if problems persist
+
+## Getting Support
+
+Need help with installation?
+
+1. Check our [documentation](/getting-started)
+2. Visit the [support forum](https://wordpress.org/support/plugin/dynamic-elementor-acf-repeater/)
+3. Pro users: Access premium support through your account
+4. Contact us directly for urgent issues
 
 ## Post-Installation Setup
 
@@ -50,15 +109,6 @@ Before installation, ensure you have:
    - Confirm Elementor Pro is active
    - Verify ACF Pro is installed and activated
 
-## Troubleshooting
-
-If you encounter any issues during installation:
-
-1. Check system requirements are met
-2. Verify all dependencies are properly installed
-3. Ensure your WordPress version is compatible
-4. Check PHP version compatibility
-
 ## Next Steps
 
 After successful installation:
@@ -66,16 +116,6 @@ After successful installation:
 1. [Create your first ACF Repeater field](/usage-guide#step-1-create-an-acf-repeater-field)
 2. [Set up a Loop Item template](/usage-guide#step-3-create-a-loop-item-template)
 3. [Configure the Loop Grid widget](/usage-guide#step-4-set-up-the-loop-grid-widget)
-
-## Pro Version Installation
-
-If you're installing the Pro version:
-
-1. Purchase a Pro license or start your [free trial](https://checkout.freemius.com/mode/dialog/plugin/16334/plan/27245/?trial=paid)
-2. Download the Pro version plugin
-3. Install using either method above
-4. Enter your license key in the plugin settings
-5. Activate your Pro license
 
 !!! Pro Features
 After installing the Pro version, you'll have immediate access to all [Pro features](/pro-features)
