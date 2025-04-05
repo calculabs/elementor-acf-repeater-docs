@@ -11,7 +11,7 @@ This guide covers the additional features available in the Pro version of Dynami
 
 1. Find the "Lightbox" section in Loop Grid widget settings
 2. Enable the lightbox feature
-![Enable Lightbox](/images/usage/enable-lightbox.jpg){ width=500 }
+![Enable Lightbox](/images/usage/enable-lightbox.jpg){ width=400 }
 3. Customize lightbox settings:
    - Transition effects
    - Navigation controls
