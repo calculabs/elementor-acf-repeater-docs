@@ -31,23 +31,22 @@ Before adding dynamic content, you must select the ACF Repeater field in the Ele
 !!!
 
 1. In Elementor, go to Templates > Add New > Loop Item
-2. Open the Elementor Settings panel
-3. Look for the "ACF Repeater Loop Items" section
-4. Select the ACF Repeater field you want to use. You can only select one repeater field group per template.
+2. Open the Elementor Settings panel and look for the "ACF Repeater Loop Items" section
+3. Select the ACF Repeater field group you want to use.
 ![Select Repeater Field](/images/usage/select-repeater-field-for-loop.jpg){ width=500 }
 
-5. Configure the preview settings for the loop item
+4. Configure the preview settings for the loop item
 ![Configure Preview Settings](/images/usage/configure-preview-settings-for-loop-item.jpg){ width=500 }
 
-6. Build and design your loop item template using Elementor widgets
-7. Use the ACF Repeater Dynamic Tags to assign your repeater fields:
+5. Build and design your loop item template using Elementor widgets
+6. Use the ACF Repeater Dynamic Tags to assign your repeater fields:
    - Edit a widget's settings
    - In the Dynamic Tags menu, look for the "ACF Repeater" section
    - Choose the appropriate tag (e.g., ACF Repeater Text, ACF Repeater Image)
    - Select the specific sub-field you want to display
-8. For text content:
+7. For text or image content:
 ![Select Dynamic Tag for Text](/images/usage/select-dynamic-repeater-field-tag-text.jpg)
-9. For background images:
+9. For background image on container:
 ![Select Dynamic Tag for Background](/images/usage/select-dynamic-repeater-field-background-image.jpg)
 
 ## Step 4: Set Up the Loop Grid Widget
@@ -61,7 +60,7 @@ Before adding dynamic content, you must select the ACF Repeater field in the Ele
 4. In the widget's Query settings:
    - Toggle on "Use ACF Repeater"
    - Select your ACF Repeater field
-   - Choose the post type containing your repeater fields
+   - In source, select the post type containing your repeater fields
 ![Use ACF Repeater Query](/images/usage/use-acf-repeater-query.jpg){ width=500 }
 
 5. Set display conditions as needed
