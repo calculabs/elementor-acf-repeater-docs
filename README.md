@@ -1,9 +1,9 @@
-![](/images/home/banner-1544x500.png)
-
 ---
 icon: home
 order: 1000
 ---
+
+![](/images/home/banner-1544x500.png)
 
 # Dynamic Elementor ACF Repeater
 
