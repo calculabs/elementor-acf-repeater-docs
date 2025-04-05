@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.797186963366">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.797187233542">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.6.0">
@@ -32,11 +32,11 @@
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../resources/css/retype.css?v=3.6.0.797186963366" rel="stylesheet">
+    <link href="../resources/css/retype.css?v=3.6.0.797187233542" rel="stylesheet">
 
-    <script data-cfasync="false" src="../resources/js/config.js?v=3.6.0.797186963366" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/config.js?v=3.6.0.797187233542" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../resources/js/retype.js?v=3.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.6.0.797186963366" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.6.0.797187233542" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -272,11 +272,9 @@
 <ol>
 <li><p>In Elementor, go to Templates &gt; Add New &gt; Loop Item</p>
 </li>
-<li><p>Open the Elementor Settings panel</p>
+<li><p>Open the Elementor Settings panel and look for the &quot;ACF Repeater Loop Items&quot; section</p>
 </li>
-<li><p>Look for the &quot;ACF Repeater Loop Items&quot; section</p>
-</li>
-<li><p>Select the ACF Repeater field you want to use. You can only select one repeater field group per template.
+<li><p>Select the ACF Repeater field group you want to use.
 <figure class="content-center">
     <img src="../images/usage/select-repeater-field-for-loop.jpg" alt="Select Repeater Field" width="500">
     <figcaption class="caption">Select Repeater Field</figcaption>
@@ -300,14 +298,14 @@
 <li>Select the specific sub-field you want to display</li>
 </ul>
 </li>
-<li><p>For text content:
+<li><p>For text or image content:
 <figure class="content-center">
     <img src="../images/usage/select-dynamic-repeater-field-tag-text.jpg" alt="Select Dynamic Tag for Text">
     <figcaption class="caption">Select Dynamic Tag for Text</figcaption>
 </figure>
 </p>
 </li>
-<li><p>For background images:
+<li><p>For background image on container:
 <figure class="content-center">
     <img src="../images/usage/select-dynamic-repeater-field-background-image.jpg" alt="Select Dynamic Tag for Background">
     <figcaption class="caption">Select Dynamic Tag for Background</figcaption>
@@ -337,7 +335,7 @@
 <ul>
 <li>Toggle on &quot;Use ACF Repeater&quot;</li>
 <li>Select your ACF Repeater field</li>
-<li>Choose the post type containing your repeater fields
+<li>In source, select the post type containing your repeater fields
 <figure class="content-center">
     <img src="../images/usage/use-acf-repeater-query.jpg" alt="Use ACF Repeater Query" width="500">
     <figcaption class="caption">Use ACF Repeater Query</figcaption>
