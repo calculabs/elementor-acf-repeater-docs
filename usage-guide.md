@@ -35,10 +35,10 @@ Before adding dynamic content, you must select the ACF Repeater field in the Ele
 2. Open the Elementor Settings panel
 3. Look for the "ACF Repeater Loop Items" section
 4. Select the ACF Repeater field you want to use. You can only select one repeater field group per template.
-   ![Select Repeater Field](/images/usage/select-repeater-field-for-loop.jpg){ width=500 }
+![Select Repeater Field](/images/usage/select-repeater-field-for-loop.jpg){ width=500 }
 
 5. Configure the preview settings for the loop item
-   ![Configure Preview Settings](/images/usage/configure-preview-settings-for-loop-item.jpg)
+![Configure Preview Settings](/images/usage/configure-preview-settings-for-loop-item.jpg)
 
 6. Build and design your loop item template using Elementor widgets
 7. Use the ACF Repeater Dynamic Tags to assign your repeater fields:
