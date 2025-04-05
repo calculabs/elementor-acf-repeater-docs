@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.797130201027">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.797185322740">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.6.0">
@@ -21,20 +21,22 @@
     <meta property="og:url" content="/usage-guide/">
     <meta property="og:title" content="Usage Guide | Dynamic Elementor ACF Repeater Docs">
     <meta property="og:description" content="This guide will walk you through the complete process of setting up and using the Dynamic Elementor ACF Repeater plugin.">
+    <meta property="og:image" content="/images/usage/create-acf-repeater-fields-group.jpg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="/usage-guide/">
     <meta property="twitter:title" content="Usage Guide | Dynamic Elementor ACF Repeater Docs">
     <meta property="twitter:description" content="This guide will walk you through the complete process of setting up and using the Dynamic Elementor ACF Repeater plugin.">
+    <meta property="twitter:image" content="/images/usage/create-acf-repeater-fields-group.jpg">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../resources/css/retype.css?v=3.6.0.797130201027" rel="stylesheet">
+    <link href="../resources/css/retype.css?v=3.6.0.797185322740" rel="stylesheet">
 
-    <script data-cfasync="false" src="../resources/js/config.js?v=3.6.0.797130201027" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/config.js?v=3.6.0.797185322740" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../resources/js/retype.js?v=3.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.6.0.797130201027" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.6.0.797185322740" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -207,11 +209,18 @@
     </h2>
 </doc-anchor-target>
 <ol>
-<li>Navigate to Custom Fields &gt; Add New</li>
-<li>Create a new field group</li>
-<li>Add a Repeater field to the group</li>
-<li>Add sub-fields to the repeater (e.g., text, image, etc.)</li>
-<li>Set the location rules for where this field group should appear</li>
+<li><p>Navigate to Custom Fields &gt; Add New</p>
+</li>
+<li><p>Create a new field group
+<img src="../images/usage/create-acf-repeater-fields-group.jpg" alt="Creating ACF Repeater Field Group" /></p>
+</li>
+<li><p>Add a Repeater field to the group</p>
+</li>
+<li><p>Add sub-fields to the repeater (e.g., text, image, etc.)</p>
+</li>
+<li><p>Set the location rules for where this field group should appear
+<img src="../images/usage/assign-to-post-type.jpg" alt="Assign to Post Type" /></p>
+</li>
 </ol>
 <doc-anchor-target id="step-2-populate-the-repeater-fields">
     <h2>
@@ -222,8 +231,8 @@
 <ol>
 <li>Edit a post or custom post type where your ACF Repeater field is available</li>
 <li>Locate the ACF Repeater field in the editor</li>
-<li>Add entries to the repeater, filling out the sub-fields as needed</li>
-<li>Update or publish the post to save your changes</li>
+<li>Add entries to the repeater, filling out the sub-fields as needed
+<img src="../images/usage/populate-repeater-fields-on-post.jpg" alt="Populate Repeater Fields" /></li>
 </ol>
 <doc-anchor-target id="step-3-create-a-loop-item-template">
     <h2>
@@ -244,27 +253,41 @@
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-            <h5>Creating Loop Items</h5>
-<p>Before adding dynamic content, you must select the ACF Repeater field in the Elementor Loop Item Page Settings</p>
+            <h5>important Creating Loop Items</h5>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">Before adding dynamic content, you must select the ACF Repeater field in the Elementor Loop Item Page Settings</code></pre>
+</doc-codeblock></div>
         </div>
     </div>
 </div>
 <ol>
-<li>In Elementor, go to Templates &gt; Add New &gt; Loop Item</li>
-<li>Open the Elementor Page Settings panel</li>
-<li>Look for the &quot;ACF Repeater&quot; section</li>
-<li>Select the ACF Repeater field you want to use
+<li><p>In Elementor, go to Templates &gt; Add New &gt; Loop Item</p>
+</li>
+<li><p>Open the Elementor Page Settings panel</p>
+</li>
+<li><p>Look for the &quot;ACF Repeater&quot; section</p>
+</li>
+<li><p>Select the ACF Repeater field you want to use</p>
 <ul>
-<li>Note: You can only select one repeater field group per template</li>
+<li>Note: You can only select one repeater field group per template
+<img src="../images/usage/select-repeater-field-for-loop.jpg" alt="Select Repeater Field" /></li>
 </ul>
 </li>
-<li>Design your loop item template using Elementor widgets</li>
-<li>For dynamic content, use the ACF Repeater Dynamic Tags:
+<li><p>Configure the preview settings for the loop item
+<img src="../images/usage/configure-preview-settings-for-loop-item.jpg" alt="Configure Preview Settings" /></p>
+</li>
+<li><p>Design your loop item template using Elementor widgets</p>
+</li>
+<li><p>For dynamic content, use the ACF Repeater Dynamic Tags:</p>
 <ul>
 <li>Edit a widget&#x27;s settings</li>
 <li>In the Dynamic Tags menu, look for the &quot;ACF Repeater&quot; section</li>
 <li>Choose the appropriate tag (e.g., ACF Repeater Text, ACF Repeater Image)</li>
 <li>Select the specific sub-field you want to display</li>
+<li>For text content:
+<img src="../images/usage/select-dynamic-repeater-field-tag-text.jpg" alt="Select Dynamic Tag for Text" /></li>
+<li>For background images:
+<img src="../images/usage/select-dynamic-repeater-field-background-image.jpg" alt="Select Dynamic Tag for Background" /></li>
 </ul>
 </li>
 </ol>
@@ -275,16 +298,37 @@
     </h2>
 </doc-anchor-target>
 <ol>
-<li>In your Elementor template, add the Loop Grid widget</li>
-<li>In the Layout section, select your Loop Item template</li>
-<li>In the widget&#x27;s Query settings:
+<li><p>In your Elementor template, add the Loop Grid widget</p>
+</li>
+<li><p>In the Layout section, select your Loop Item template</p>
+</li>
+<li><p>Set display conditions as needed
+<img src="../images/usage/set-display-conditions.jpg" alt="Set Display Conditions" /></p>
+</li>
+<li><p>Configure the grid preview settings
+<img src="../images/usage/set-grid-preview.jpg" alt="Set Grid Preview" /></p>
+</li>
+<li><p>In the widget&#x27;s Query settings:</p>
 <ul>
 <li>Toggle on &quot;Use ACF Repeater&quot;</li>
 <li>Select your ACF Repeater field</li>
-<li>Choose the post type containing your repeater fields</li>
+<li>Choose the post type containing your repeater fields
+<img src="../images/usage/use-acf-repeater-query.jpg" alt="Use ACF Repeater Query" /></li>
 </ul>
 </li>
 </ol>
+<doc-anchor-target id="final-result">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#final-result">#</doc-anchor-trigger>
+        <span>Final Result</span>
+    </h2>
+</doc-anchor-target>
+<p>Once properly configured, your Loop Grid will display all your repeater items using your custom template:</p>
+<p><figure class="content-center">
+    <img src="../images/usage/see-loop-grid-populated-with-repeaters.jpg" alt="Loop Grid with Repeaters">
+    <figcaption class="caption">Loop Grid with Repeaters</figcaption>
+</figure>
+</p>
 <doc-anchor-target id="preview-and-publish">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#preview-and-publish">#</doc-anchor-trigger>
