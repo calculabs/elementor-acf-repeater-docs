@@ -75,6 +75,9 @@ To display the title of the post containing the repeater field:
    - Toggle on "Use ACF Repeater"
    - Select your ACF Repeater field
    - In source, select the post type containing your repeater fields
+   - Choose "Query Current Post Only" setting:
+     - **Enabled (default)**: Only shows repeater fields from the current post being viewed. Good for single post templates. 
+     - **Disabled**: Displays repeater fields from all posts of the selected source type, allowing you to create collections or galleries from multiple posts
 ![Use ACF Repeater Query](/images/usage/use-acf-repeater-query.jpg){ width=400 }
 
 4. Set display conditions as needed

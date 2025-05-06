@@ -44,6 +44,7 @@ Dynamic Elementor ACF Repeater provides powerful integration between Advanced Cu
 - **Responsive Design**: Fully responsive grid layouts
 - **Template Support**: Use custom templates for grid items
 - **Dynamic Content**: Display repeater content dynamically
+- **Cross-Post Aggregation**: Option to display repeater fields from all posts or only the current post
 
 ## Pro Features
 
