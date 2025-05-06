@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.797201664627">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.8.0.799867007398">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 3.6.0">
+    <meta name="generator" content="Retype 3.8.0">
 
     <!-- Primary Meta Tags -->
     <title>Usage Guide Pro | Dynamic Elementor ACF Repeater Docs</title>
@@ -21,21 +21,23 @@
     <meta property="og:url" content="/usage-guide-pro/">
     <meta property="og:title" content="Usage Guide Pro | Dynamic Elementor ACF Repeater Docs">
     <meta property="og:description" content="This guide covers the additional features available in the Pro version of Dynamic Elementor ACF Repeater.">
+    <meta property="og:image" content="/images/usage-pro/enable-lightbox.jpg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="/usage-guide-pro/">
     <meta property="twitter:title" content="Usage Guide Pro | Dynamic Elementor ACF Repeater Docs">
     <meta property="twitter:description" content="This guide covers the additional features available in the Pro version of Dynamic Elementor ACF Repeater.">
+    <meta property="twitter:image" content="/images/usage-pro/enable-lightbox.jpg">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../resources/css/retype.css?v=3.6.0.797201664627" rel="stylesheet">
+    <link href="../resources/css/retype.css?v=3.8.0.799867007398" rel="stylesheet">
 
-    <script data-cfasync="false" src="../resources/js/config.js?v=3.6.0.797201664627" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../resources/js/retype.js?v=3.6.0" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../resources/js/search.js?v=3.6.0.797201664627" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.6.0.797201664627" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/config.js?v=3.8.0.799867007398" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/retype.js?v=3.8.0" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/search.js?v=3.8.0.799867007398" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.8.0.799867007398" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -51,7 +53,7 @@
                 <div class="flex items-center justify-between h-full py-2 md:w-75">
                     <div class="flex items-center px-2 md:px-6">
                         <a id="docs-site-logo" href="../" class="flex items-center leading-snug text-xl">
-                            <span class="dark:text-white font-semibold line-clamp-1 md:line-clamp-2">Dynamic Elementor ACF Repeater</span>
+                            <span class="dark:text-white font-bold line-clamp-1 md:line-clamp-2">Dynamic Elementor ACF Repeater</span>
                         </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">Docs</span>
                     </div>
         
@@ -131,9 +133,8 @@
     
         <div class="container relative flex bg-white">
             <!-- Sidebar Skeleton -->
-            <div v-cloak class="fixed flex flex-col shrink-0 duration-300 ease-in-out bg-gray-100 border-gray-200 sidebar top-20 w-75 border-r h-screen md:sticky transition-transform skeleton dark:bg-dark-800 dark:border-dark-650">
+            <div v-cloak class="fixed flex flex-col shrink-0 duration-300 ease-in-out bg-white border-gray-200 sidebar top-20 w-75 border-r h-screen md:sticky transition-transform skeleton dark:bg-dark-800 dark:border-dark-650">
             
-                <!-- Render this div, if config.showSidebarFilter is `true` -->
                 <div class="flex items-center h-16 px-6">
                     <input class="w-full h-8 px-3 py-2 transition-colors duration-200 ease-linear bg-white border border-gray-200 rounded shadow-none text-sm focus:outline-none focus:border-gray-600 dark:bg-dark-600 dark:border-dark-600" type="text" placeholder="Filter">
                 </div>
@@ -220,29 +221,44 @@
 </doc-anchor-target>
 <p>This guide covers the additional features available in the Pro version of Dynamic Elementor ACF Repeater.</p>
 <p>Start your 3-day free trial of the Pro version to unlock all features. <a href="https://checkout.freemius.com/mode/dialog/plugin/16334/plan/27245/?trial=paid">Start Your Free Trial</a></p>
-<doc-anchor-target id="lightbox-configuration">
+<doc-anchor-target id="lightbox-and-swiper-configuration">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#lightbox-configuration">#</doc-anchor-trigger>
-        <span>Lightbox Configuration</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#lightbox-and-swiper-configuration">#</doc-anchor-trigger>
+        <span>Lightbox and Swiper Configuration</span>
     </h2>
 </doc-anchor-target>
 <ol>
 <li>Find the &quot;Lightbox&quot; section in Loop Grid widget settings</li>
-<li>Enable the lightbox feature
+<li>Enable the lightbox and swiper features
 <figure class="content-center">
-    <img src="/images/usage/enable-lightbox.jpg" alt="Enable Lightbox" width="400">
+    <img src="../images/usage-pro/enable-lightbox.jpg" alt="Enable Lightbox" width="400">
     <figcaption class="caption">Enable Lightbox</figcaption>
 </figure>
 </li>
-<li>Customize lightbox settings:
-<ul>
-<li>Transition effects</li>
-<li>Navigation controls</li>
-<li>Thumbnails display</li>
-<li>Autoplay options</li>
-</ul>
-</li>
+<li>Customize lightbox appearance:</li>
 </ol>
+<doc-anchor-target id="repeater-lightbox-style">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#repeater-lightbox-style">#</doc-anchor-trigger>
+        <span>Repeater Lightbox Style</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li><strong>Content Width</strong>: Adjust the width of lightbox content (default: 80%)</li>
+<li><strong>Content Height</strong>: Set the height of lightbox content (default: 80%)</li>
+<li><strong>Maximum Content Width</strong>: Define maximum width in pixels (default: 1920px)</li>
+<li><strong>Lightbox Background</strong>: Choose background color for the lightbox overlay</li>
+<li><strong>Content Padding</strong>: Set padding for top, right, bottom, and left</li>
+<li><strong>Swiper Navigation Color</strong>: Customize the color of navigation arrows</li>
+<li><strong>Swiper Navigation Size</strong>: Adjust the size of navigation arrows</li>
+<li><strong>Lightbox Close Icon Color</strong>: Set the color of the close button</li>
+<li><strong>Lightbox Close Icon Size</strong>: Adjust the size of the close button</li>
+</ul>
+<p><figure class="content-center">
+    <img src="../images/usage-pro/style-lightbox.jpg" alt="Style Lightbox">
+    <figcaption class="caption">Style Lightbox</figcaption>
+</figure>
+</p>
 <doc-anchor-target id="element-visibility-control">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#element-visibility-control">#</doc-anchor-trigger>
@@ -251,38 +267,40 @@
 </doc-anchor-target>
 <p>Control how elements appear in different contexts:</p>
 <ol>
-<li>Select any element in your Loop Item template</li>
-<li>Open the Advanced tab</li>
-<li>Find the &quot;Visibility Control&quot; section</li>
+<li>Select any dynamic repeater element in your Loop Item template</li>
+<li>Open the Content tab</li>
+<li>Find the &quot;Repeater Lightbox Visibility&quot; section</li>
 <li>Choose from:
 <ul>
 <li>Default: Visible everywhere</li>
-<li>Hide in Lightbox: Only visible in grid</li>
-<li>Show Only in Lightbox: Hidden in grid, visible in lightbox</li>
+<li>Hide in Lightbox: Only visible in loop grid</li>
+<li>Show Only in Lightbox: Hidden in loop grid, visible in lightbox</li>
 </ul>
 </li>
 </ol>
-<doc-anchor-target id="slider-integration">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#slider-integration">#</doc-anchor-trigger>
-        <span>Slider Integration</span>
-    </h2>
-</doc-anchor-target>
-<p>Transform your Loop Grid into a dynamic slider:</p>
-<ol>
-<li>In Loop Grid settings, locate the &quot;Slider&quot; section</li>
-<li>Enable slider functionality</li>
-<li>Configure slider options:
-<ul>
-<li>Slides per view</li>
-<li>Space between slides</li>
-<li>Navigation arrows</li>
-<li>Pagination</li>
-<li>Autoplay settings</li>
-<li>Responsive breakpoints</li>
-</ul>
-</li>
-</ol>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5>Element Visibility Control</h5>
+<p>Useful if you want to display elements in one place but not another, for example a button in the grid which you don&#x27;t want to show in the lightbox.</p>
+        </div>
+    </div>
+</div>
+<p><figure class="content-center">
+    <img src="../images/usage-pro/repeater-lightbox-visibility.jpg" alt="Style Lightbox">
+    <figcaption class="caption">Style Lightbox</figcaption>
+</figure>
+</p>
 <doc-anchor-target id="advanced-filtering">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#advanced-filtering">#</doc-anchor-trigger>
@@ -290,6 +308,12 @@
     </h2>
 </doc-anchor-target>
 <p>Set up dynamic filtering for your Loop Grid:</p>
+<doc-anchor-target id="basic-setup">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#basic-setup">#</doc-anchor-trigger>
+        <span>Basic Setup</span>
+    </h3>
+</doc-anchor-target>
 <ol>
 <li>In Loop Grid settings, find the &quot;Filter&quot; section</li>
 <li>Enable filtering</li>
@@ -300,14 +324,318 @@
 <li>Post meta</li>
 </ul>
 </li>
-<li>Customize filter appearance:
+</ol>
+<doc-anchor-target id="custom-taxonomy-filtering">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#custom-taxonomy-filtering">#</doc-anchor-trigger>
+        <span>Custom Taxonomy Filtering</span>
+    </h3>
+</doc-anchor-target>
+<p>The Custom Taxonomy Filter lets you filter your Loop Grid items using WordPress taxonomies (like categories, tags, or custom taxonomies).</p>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5>Choosing Between Filter Types</h5>
+<p><strong>Parent Post Taxonomy Filter (Default):</strong></p>
 <ul>
-<li>Layout style</li>
-<li>Animation effects</li>
-<li>Multiple filter support</li>
+<li>Works across multiple posts</li>
+<li>Shows all taxonomy terms used by posts containing your repeater field</li>
+<li>Filters entire groups of repeater items together (all items from same post)</li>
+<li>Perfect for portfolio sites where each project (post) has multiple gallery items</li>
+</ul>
+<p><strong>Repeater Field Taxonomy Filter (Optional):</strong></p>
+<ul>
+<li>Works with individual repeater items</li>
+<li>Can be used with a single post</li>
+<li>Each repeater item can have its own taxonomy terms</li>
+<li>Better for catalogs where each item needs individual categorization</li>
+</ul>
+        </div>
+    </div>
+</div>
+<doc-anchor-target id="how-it-works">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#how-it-works">#</doc-anchor-trigger>
+        <span>How It Works</span>
+    </h3>
+</doc-anchor-target>
+<doc-anchor-target id="default-parent-post-taxonomy">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#default-parent-post-taxonomy">#</doc-anchor-trigger>
+        <span>Default: Parent Post Taxonomy</span>
+    </h4>
+</doc-anchor-target>
+<p>By default, the filter uses taxonomy terms from the parent posts containing your repeater field.</p>
+<p><strong>Process:</strong></p>
+<ol>
+<li>The filter collects all taxonomy terms from posts that have your repeater field</li>
+<li>When users select a term, it shows repeater items from posts with that term</li>
+<li>All repeater items from the same post are filtered together</li>
+</ol>
+<doc-anchor-target id="optional-repeater-field-taxonomy">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#optional-repeater-field-taxonomy">#</doc-anchor-trigger>
+        <span>Optional: Repeater Field Taxonomy</span>
+    </h4>
+</doc-anchor-target>
+<p>Enable &quot;Use Repeater Taxonomy Field&quot; to filter using taxonomy terms stored in your repeater field instead.</p>
+<p><strong>Process:</strong></p>
+<ol>
+<li>Choose a taxonomy (e.g., categories, tags)</li>
+<li>Select which repeater field contains your taxonomy terms</li>
+<li>Filter shows terms from the selected repeater field</li>
+<li>Items are filtered based on their individual taxonomy values</li>
+</ol>
+<doc-anchor-target id="display-options">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#display-options">#</doc-anchor-trigger>
+        <span>Display Options</span>
+    </h3>
+</doc-anchor-target>
+<p>Choose how users will interact with your filters:</p>
+<ol>
+<li><p><strong>Dropdown Menu</strong></p>
+<ul>
+<li>Clean, compact select menu</li>
+<li>Good for lots of terms</li>
+<li>Mobile-friendly
+<img src="/images/usage-pro/filter-dropdown.jpg" alt="Dropdown Filter Example" /></li>
+</ul>
+</li>
+<li><p><strong>Checkbox List</strong></p>
+<ul>
+<li>Select multiple terms</li>
+<li>All options visible</li>
+<li>Great for multiple selections
+<img src="/images/usage-pro/filter-checkbox.jpg" alt="Checkbox Filter Example" /></li>
+</ul>
+</li>
+<li><p><strong>Navigation Buttons</strong></p>
+<ul>
+<li>Button-style interface</li>
+<li>Easy to click</li>
+<li>Best for few terms
+<img src="/images/usage-pro/filter-navigation.jpg" alt="Navigation Filter Example" /></li>
 </ul>
 </li>
 </ol>
+<doc-anchor-target id="setup-steps">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#setup-steps">#</doc-anchor-trigger>
+        <span>Setup Steps</span>
+    </h3>
+</doc-anchor-target>
+<ol>
+<li><p>Enable the Filter:</p>
+<ul>
+<li>Go to Loop Grid settings</li>
+<li>Find the &quot;Repeater Filter&quot; section</li>
+<li>Enable &quot;Custom Taxonomy Filter&quot;</li>
+</ul>
+</li>
+<li><p>Configure Filter:</p>
+<ul>
+<li>Select which taxonomy to filter by (this will use parent post terms by default)</li>
+<li>Choose your display style (dropdown/checkbox/navigation)</li>
+<li>To use repeater field terms instead: Enable &quot;Use Repeater Taxonomy Field&quot; and select your repeater&#x27;s taxonomy field</li>
+</ul>
+</li>
+<li><p>Customize Display:</p>
+<ul>
+<li>Show/hide &quot;All&quot; option</li>
+<li>Customize &quot;All&quot; text</li>
+<li>Set filter alignment</li>
+<li>Choose horizontal/vertical layout</li>
+<li>Adjust spacing and margins</li>
+</ul>
+</li>
+<li><p>Style Your Filter:</p>
+<ul>
+<li>Set colors and typography</li>
+<li>Customize padding and margins</li>
+<li>Style active/hover states</li>
+<li>Adjust border and radius</li>
+</ul>
+</li>
+</ol>
+<doc-anchor-target id="common-applications-and-examples">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#common-applications-and-examples">#</doc-anchor-trigger>
+        <span>Common Applications and Examples</span>
+    </h3>
+</doc-anchor-target>
+<doc-anchor-target id="using-default-parent-post-taxonomy">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#using-default-parent-post-taxonomy">#</doc-anchor-trigger>
+        <span>Using Default Parent Post Taxonomy</span>
+    </h4>
+</doc-anchor-target>
+<p>Perfect when you have multiple posts and want to filter groups of repeater items:</p>
+<ol>
+<li><p><strong>Portfolio Websites</strong></p>
+<ul>
+<li><strong>Example:</strong> A photography website with multiple project posts</li>
+<li>Each project post is tagged (Wedding, Corporate, Events)</li>
+<li>Each project contains multiple photos in a repeater</li>
+<li>Filtering by &quot;Wedding&quot; shows all photos from wedding projects</li>
+<li>All photos from the same project are filtered together</li>
+</ul>
+</li>
+<li><p><strong>Real Estate Listings</strong></p>
+<ul>
+<li><strong>Example:</strong> A property listing website</li>
+<li>Properties (posts) tagged by location and type</li>
+<li>Each property has multiple images in a repeater</li>
+<li>Filter entire property galleries by &quot;Beachfront&quot; or &quot;City Center&quot;</li>
+<li>All images from the same property show/hide together</li>
+</ul>
+</li>
+</ol>
+<doc-anchor-target id="using-repeater-field-taxonomy">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#using-repeater-field-taxonomy">#</doc-anchor-trigger>
+        <span>Using Repeater Field Taxonomy</span>
+    </h4>
+</doc-anchor-target>
+<p>Enable this when individual repeater items need their own taxonomy terms:</p>
+<ol>
+<li><p><strong>Product Catalogs</strong></p>
+<ul>
+<li><strong>Example:</strong> A fashion store catalog</li>
+<li>One post contains the entire season&#x27;s collection</li>
+<li>Each product in repeater has its own categories</li>
+<li>Filter individual items by &quot;Men&#x27;s&quot;, &quot;Women&#x27;s&quot;, &quot;Accessories&quot;</li>
+<li>Products can be filtered independently</li>
+</ul>
+</li>
+<li><p><strong>Document Libraries</strong></p>
+<ul>
+<li><strong>Example:</strong> A resource center</li>
+<li>One post holds all company documents</li>
+<li>Each document in repeater has topic tags</li>
+<li>Filter by department or document type</li>
+<li>Documents filter based on their own classifications</li>
+</ul>
+</li>
+</ol>
+<doc-anchor-target id="acf-relationship-query">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#acf-relationship-query">#</doc-anchor-trigger>
+        <span>ACF Relationship Query</span>
+    </h2>
+</doc-anchor-target>
+<p>The ACF Relationship Query feature allows you to display related content from across your site within your Loop Grid. This powerful feature helps you create dynamic content relationships and display them in your Elementor templates.</p>
+<doc-anchor-target id="prerequisites">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#prerequisites">#</doc-anchor-trigger>
+        <span>Prerequisites</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li>ACF Relationship field configured in your field group</li>
+<li>Pro version of Dynamic Elementor ACF Repeater</li>
+<li>Loop Grid widget with ACF Repeater enabled</li>
+</ul>
+<doc-anchor-target id="setting-up-relationship-queries">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#setting-up-relationship-queries">#</doc-anchor-trigger>
+        <span>Setting Up Relationship Queries</span>
+    </h3>
+</doc-anchor-target>
+<ol>
+<li>Open your Loop Grid widget settings</li>
+<li>Find the &quot;ACF Relationship&quot; section</li>
+<li>Enable &quot;Use ACF Relationship&quot;</li>
+<li>Select your relationship field from the dropdown</li>
+</ol>
+<p><figure class="content-center">
+    <img src="/images/usage-pro/relationship-query.jpg" alt="ACF Relationship Settings">
+    <figcaption class="caption">ACF Relationship Settings</figcaption>
+</figure>
+</p>
+<doc-anchor-target id="how-it-works-1">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#how-it-works-1">#</doc-anchor-trigger>
+        <span>How It Works</span>
+    </h3>
+</doc-anchor-target>
+<p>When you enable relationship queries:</p>
+<ul>
+<li>The Loop Grid automatically queries all related posts</li>
+<li>Displays content based on your relationship field selections</li>
+<li>Works with any post type (posts, pages, custom post types)</li>
+<li>Shows all related posts without pagination</li>
+<li>Maintains relationships configured in ACF</li>
+</ul>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5>Relationship Queries</h5>
+<p>Your Loop Grid will now display related posts instead of regular repeater items. This is perfect for showing associated content like related products, team members, or linked resources.</p>
+        </div>
+    </div>
+</div>
+<doc-anchor-target id="common-use-cases">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#common-use-cases">#</doc-anchor-trigger>
+        <span>Common Use Cases</span>
+    </h3>
+</doc-anchor-target>
+<ol>
+<li><p><strong>Related Content</strong></p>
+<ul>
+<li>Display related posts or articles</li>
+<li>Show associated products</li>
+<li>List team members by department</li>
+</ul>
+</li>
+<li><p><strong>Content Relationships</strong></p>
+<ul>
+<li>Link projects to team members</li>
+<li>Connect services to case studies</li>
+<li>Associate events with venues</li>
+</ul>
+</li>
+<li><p><strong>Dynamic Collections</strong></p>
+<ul>
+<li>Create featured content sections</li>
+<li>Build cross-referenced galleries</li>
+<li>Display linked resources</li>
+</ul>
+</li>
+</ol>
+<doc-anchor-target id="tips-for-relationship-queries">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#tips-for-relationship-queries">#</doc-anchor-trigger>
+        <span>Tips for Relationship Queries</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li>Use ACF&#x27;s interface to manage content relationships</li>
+<li>Combine with visibility controls for flexible displays</li>
+<li>Mix with filtering for advanced content organization</li>
+<li>Leverage dynamic tags to show related post data</li>
+</ul>
 <doc-anchor-target id="pro-field-types-support">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#pro-field-types-support">#</doc-anchor-trigger>
