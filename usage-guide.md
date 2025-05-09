@@ -83,6 +83,20 @@ To display the title of the post containing the repeater field:
 4. Set display conditions as needed
 ![Set Display Conditions](/images/usage/set-display-conditions.jpg)
 
+## Using Multiple Loop Item Templates
+
+As of version 1.0.2, the plugin now fully supports creating multiple Loop Item templates with different ACF Repeater fields. You can:
+
+1. Create multiple Loop Item templates, each accessing a different ACF Repeater field
+2. Configure each Loop Item template with its own unique repeater field in the Loop Item settings panel
+3. Use different styling and layouts for each Loop Item template
+
+This bug fix improves the overall experience when designing templates with ACF Repeater fields.
+
+!!! Pro Feature Note
+While the free version now properly supports creating multiple Loop Item templates, using multiple Loop Grid widgets with different ACF Repeater fields on the same post or page requires the Pro version.
+!!!
+
 ## Final Result
 
 Once properly configured, your Loop Grid will display all your repeater items using your custom template:

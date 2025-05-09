@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../elementor-acf-repeater"
+		},
+		{
+			"path": "../documentation-commands"
+		}
+	],
+	"settings": {}
+}

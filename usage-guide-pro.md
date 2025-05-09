@@ -9,6 +9,33 @@ This guide covers the additional features available in the Pro version of Dynami
 
 Start your 3-day free trial of the Pro version to unlock all features. [Start Your Free Trial](https://checkout.freemius.com/mode/dialog/plugin/16334/plan/27245/?trial=paid)
 
+## Multiple Loop Grids in a Single Post
+
+As of version 1.0.2, the Pro version exclusively supports using multiple Loop Grid widgets with ACF Repeater fields in the same post or template. This powerful feature is not available in the free version.
+
+
+### Features and Benefits
+- Create diverse layouts using different Loop Grid widgets on the same page
+- Display various repeater fields from the same post in different formats
+- Apply unique styling and filtering to each Loop Grid independently
+- Combine multiple ACF Repeater displays in a single template
+
+### Implementation Steps
+1. Create separate Loop Item templates for each repeater field you want to display
+2. Add multiple Loop Grid widgets to your template
+3. Configure each Loop Grid with:
+   - Its own Loop Item template
+   - Unique repeater field selection
+   - Independent filtering options
+   - Custom styling
+
+![Multiple Loop Grids Example](/images/usage-pro/multiple-loop-grids.jpg)
+
+### Use Cases
+- Display product gallery and product specifications in different grid layouts
+- Show team member photos in one grid and skills in another
+- Present project images and project details with different styling
+
 ## Lightbox and Swiper Configuration
 
 1. Find the "Lightbox" section in Loop Grid widget settings

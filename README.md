@@ -44,4 +44,4 @@ Start your 3-day free trial of the Pro version to unlock all features. [Start Yo
 
 ---
 
-Version: 1.0.0 | [View Changelog](/changelog) 
+Version: 1.0.2 | [View Changelog](/changelog) 
