@@ -7,7 +7,7 @@ icon: clock
 
 All notable changes to Dynamic Elementor ACF Repeater will be documented in this file.
 
-## [1.0.2] - Bug Fixes and Multiple Loop Grids - 07/20/2025
+## [1.0.2] - Bug Fixes and Multiple Loop Grids - 05/09/2025
 
 ### Free Version
 - Fixed bug that prevented multiple Loop Item templates from properly accessing their selected repeater field in the Loop Item settings
@@ -18,7 +18,7 @@ All notable changes to Dynamic Elementor ACF Repeater will be documented in this
 - Added exclusive support for multiple Loop Grid widgets with ACF Repeater fields in the same post
 - This Pro-only feature allows combining different repeater field displays on a single page
 
-## [1.0.1] - Filter Improvements - 06/15/2025
+## [1.0.1] - Filter Improvements - 05/03/2025
 
 ### Free Version
 - Added new "Query Current Post Only" control to restrict repeater items to the current post
