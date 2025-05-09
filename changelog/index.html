@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.8.0.799867007398">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.8.1.800140058053">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 3.8.0">
+    <meta name="generator" content="Retype 3.8.1">
 
     <!-- Primary Meta Tags -->
     <title>Changelog | Dynamic Elementor ACF Repeater Docs</title>
@@ -30,12 +30,12 @@
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../resources/css/retype.css?v=3.8.0.799867007398" rel="stylesheet">
+    <link href="../resources/css/retype.css?v=3.8.1.800140058053" rel="stylesheet">
 
-    <script data-cfasync="false" src="../resources/js/config.js?v=3.8.0.799867007398" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../resources/js/retype.js?v=3.8.0" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../resources/js/search.js?v=3.8.0.799867007398" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.8.0.799867007398" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/config.js?v=3.8.1.800140058053" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/retype.js?v=3.8.1" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/search.js?v=3.8.1.800140058053" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.8.1.800140058053" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -218,6 +218,67 @@
     </h1>
 </doc-anchor-target>
 <p>All notable changes to Dynamic Elementor ACF Repeater will be documented in this file.</p>
+<doc-anchor-target id="102---bug-fixes-and-multiple-loop-grids---07202025">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#102---bug-fixes-and-multiple-loop-grids---07202025">#</doc-anchor-trigger>
+        <span>[1.0.2] - Bug Fixes and Multiple Loop Grids - 07/20/2025</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="free-version">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#free-version">#</doc-anchor-trigger>
+        <span>Free Version</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li>Fixed bug that prevented multiple Loop Item templates from properly accessing their selected repeater field in the Loop Item settings</li>
+<li>Improved repeater value retrieval logic</li>
+<li>Note: Multiple Loop Item templates can now be created, but using multiple Loop Grids on the same post requires Pro</li>
+</ul>
+<doc-anchor-target id="pro-version">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#pro-version">#</doc-anchor-trigger>
+        <span>Pro Version</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li>Added exclusive support for multiple Loop Grid widgets with ACF Repeater fields in the same post</li>
+<li>This Pro-only feature allows combining different repeater field displays on a single page</li>
+</ul>
+<doc-anchor-target id="101---filter-improvements---06152025">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#101---filter-improvements---06152025">#</doc-anchor-trigger>
+        <span>[1.0.1] - Filter Improvements - 06/15/2025</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="free-version-1">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#free-version-1">#</doc-anchor-trigger>
+        <span>Free Version</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li>Added new &quot;Query Current Post Only&quot; control to restrict repeater items to the current post</li>
+<li>Improved handling of current post ID in Elementor previews</li>
+</ul>
+<doc-anchor-target id="pro-version-1">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#pro-version-1">#</doc-anchor-trigger>
+        <span>Pro Version</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li>Completely refactored taxonomy filtering system with new state-based architecture</li>
+<li>Added three distinct filter states to improve handling of different filtering scenarios:
+<ul>
+<li>Current Post Only Mode: For filtering a single post&#x27;s repeater items from chosen post type</li>
+<li>All Posts Repeater Mode: For filtering repeater content across multiple posts of chosen post type</li>
+<li>Standard Taxonomy Mode: For traditional WordPress taxonomy filtering of terms from chosen post type</li>
+</ul>
+</li>
+<li>Fixed issue with taxonomy filtering by ensuring repeater fields always use current post data</li>
+<li>Better code organization with dedicated classes for filter states and UI components</li>
+</ul>
 <doc-anchor-target id="100---initial-release---04042025">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#100---initial-release---04042025">#</doc-anchor-trigger>
