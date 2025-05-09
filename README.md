@@ -22,12 +22,12 @@ You can download the free version on the WordPress Plugin Directory: [Dynamic El
 
 ### Pro Version
 - Additional field type support (file, gallery, relationship)
-- Advanced dynamic tags
-- Lightbox functionality
-- Swiper integration
-- Advanced filtering capabilities
-- Lightbox visibility control
-- ACF Relationship field support
+- Advanced dynamic tags (ACF Repeater File, Gallery, Relationship)
+- Multiple Loop Grids with ACF Repeater fields in the same post
+- Lightbox functionality with Swiper integration
+- Advanced filtering capabilities with taxonomy support
+- Lightbox visibility control for individual elements
+- ACF Relationship field support for dynamic content associations
 
 ## Quick Navigation
 
