@@ -22,9 +22,8 @@ jobs:
       - name: Validate documentation links and assets
         run: ./scripts/check-docs.sh
 
-      - uses: actions/setup-dotnet@v4
-        with:
-          dotnet-version: 8.0.x
+      - name: Install pinned Retype runtime
+        run: npm install --global retypeapp-linux-x64@4.6.0
 
       - uses: retypeapp/action-build@latest
 
