@@ -9,6 +9,11 @@ This documentation tracks released plugin behavior. Versions are listed without 
 
 ## 2.0.0
 
+### Relationship queries **Pro**
+
+- Preserved Elementor posts-per-page and pagination when resolving Relationship or Post Object fields from the current SCF/ACF object.
+- Kept selected posts in field order without routing them through Repeater virtual-row pagination.
+
 ### Nested row sources **Pro**
 
 - Added stable field-key paths for Repeaters nested inside Repeaters, Flexible Content layouts, and Group fields.

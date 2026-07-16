@@ -11,6 +11,8 @@ Relationship Query changes an Elementor Loop Grid or Loop Carousel from virtual 
 
 Use it when the selected posts should render through a normal Elementor Loop Item with standard post data such as title, featured image, terms, and custom fields.
 
+![Relationship posts rendered in their saved field order](/images/usage-pro/relationship-frontend.jpg)
+
 ## Supported sources
 
 - A top-level Relationship field
@@ -20,22 +22,30 @@ Use it when the selected posts should render through a normal Elementor Loop Ite
 
 The nested Relationship workflow collects selections across the parent Repeater rows.
 
+The source field keeps the canonical selection order:
+
+![Selected posts in an SCF Relationship field](/images/usage-pro/relationship-field.jpg)
+
 ## Setup
 
 1. Populate the Relationship or Post Object field on the source object.
 2. Create a normal Elementor Loop Item for the related post type.
 3. Add a Loop Grid or Loop Carousel and select that Loop Item.
-4. In **Query**, enable the ACF Relationship query option.
-5. Select the Relationship or Post Object field.
-6. Choose the correct [Repeater Context](/contexts) for the object that owns the field.
+4. In **Query**, enable **Use ACF Rows**. The **ACF Row Source** may remain empty for a Relationship Query.
+5. Enable **Use ACF Relationship**.
+6. Select the **ACF Relationship Field**.
+7. Leave **Query Current Post Only** enabled when the current page or post owns the field. Disable it only when the widget should resolve fields from every post in Elementor's base query.
+8. If needed, choose another [Repeater Context](/contexts) for the object that owns the field.
 
 The query sets `post_type` to any, limits results to the selected IDs, and orders them by the field selection order.
+
+![Relationship Query controls in Elementor](/images/usage-pro/relationship-controls.jpg)
 
 ## Ordering and pagination
 
 The plugin preserves the order stored by SCF/ACF through Elementor's `post__in` query order.
 
-Elementor's own `posts_per_page` setting still applies. If the field contains twelve posts and the widget is limited to six, only six render on that page. Increase the widget limit or configure pagination when the complete selection should be reachable.
+Elementor's own `posts_per_page` and pagination settings still apply, including when **Query Current Post Only** is enabled. If the field contains twelve posts and the widget is limited to six, only six render on that page. Increase the widget limit or configure pagination when the complete selection should be reachable.
 
 ## Relationship Query versus URL tag
 
