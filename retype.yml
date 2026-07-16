@@ -1,5 +1,6 @@
 input: .
 output: .retype
+url: https://calculabs.github.io/elementor-acf-repeater-docs/
 branding:
   title: Dynamic Elementor ACF Repeater
   label: Docs
