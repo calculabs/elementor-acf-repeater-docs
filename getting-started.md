@@ -5,44 +5,67 @@ icon: rocket
 
 # Getting Started
 
-Welcome to Dynamic Elementor ACF Repeater! This guide will help you get up and running quickly with the plugin.
+This quick start creates one Elementor Loop Grid from a top-level SCF/ACF Repeater. It is the simplest way to verify that the plugin, field group, and Elementor template are connected correctly.
 
-## Quick Start Guide
+## Before you begin
 
-1. **Install Required Plugins**
-   - Download [Dynamic Elementor ACF Repeater](https://wordpress.org/plugins/dynamic-elementor-acf-repeater)
-   - Ensure you have Elementor Pro and ACF Pro installed
-   - Need detailed installation steps? Check our [Installation Guide](/installation)
+Install and activate:
 
-2. **Create Your First Repeater**
-   - Go to Custom Fields > Add New
-   - Create a repeater field
-   - Add your desired sub-fields (text, images, etc.)
-   - Assign to your chosen post type
+- Dynamic Elementor ACF Repeater Free or Pro
+- Elementor and Elementor Pro
+- Secure Custom Fields (SCF) or Advanced Custom Fields Pro (ACF Pro)
 
-3. **Build Your First Loop**
-   - Create a new Elementor template
-   - Add the Loop Grid widget
-   - Design your loop item
-   - Connect your repeater fields using Dynamic Tags
+Check the exact minimum versions in [Installation](/installation).
 
-## Common Use Cases
+## 1. Create and populate a Repeater
 
-- ✨ Product galleries with repeating images and text
-- 📋 Team member listings with photos and bios
-- 🎯 Feature lists with icons and descriptions
-- 📱 Service showcases with details and images
+In **SCF/ACF → Field Groups**:
 
-## Next Steps
+1. Add a field group and create a top-level Repeater field, such as `team_members`.
+2. Add a Text subfield named `name` and an Image subfield named `photo`.
+3. Assign the field group to a post type or page.
+4. Edit a matching post and add at least two rows.
 
-Ready to dive deeper?
+The Loop Item preview cannot show useful values until the selected source object contains rows.
 
-- [Usage Guide](/usage-guide) - Detailed instructions and examples
-- [Features Overview](/features) - Explore available features
-- [Pro Features](/pro-features) - Discover advanced capabilities
+## 2. Create the Loop Item
 
-## Need Help?
+In **Templates → Theme Builder**, add a **Loop Item** template.
 
-- Check our [troubleshooting guide](/installation#troubleshooting)
-- Visit our [support forum](https://wordpress.org/support/plugin/dynamic-elementor-acf-repeater/)
-- Consider upgrading to [Pro version](https://checkout.freemius.com/mode/dialog/plugin/16334/plan/27245/?trial=paid) for more powerful features.
+Open the Loop Item document settings and expand **ACF Repeater Loop Settings**:
+
+- Free: choose the field under **ACF Repeater Field for Loop**.
+- Pro: choose the row source under **ACF Row Schema for Loop**.
+
+Add Elementor widgets and connect them with dynamic tags:
+
+- Use **ACF Repeater Text** for `name`.
+- Use **ACF Repeater Image** for `photo`.
+- Use **ACF Repeater Original Post Title** when you need the title of the post that owns the row.
+
+Set Elementor's preview source to the populated post if the editor is blank.
+
+## 3. Add the Loop Grid
+
+Edit the page or template that should display the rows and add Elementor's **Loop Grid** widget.
+
+Select the Loop Item you created, then open **Query**:
+
+- Free: enable **Use ACF Repeater** and select **ACF Repeater Field**.
+- Pro: enable **Use ACF Rows** and select **ACF Row Source**.
+
+Leave **Query Current Post Only** enabled for a normal single-post display. Disable it only when you intentionally want to collect rows from the posts returned by the widget's source query.
+
+## 4. Preview the result
+
+Publish or preview the page. Each Repeater row should now render through the same Loop Item template.
+
+If the editor has data but the page does not—or the wrong post's rows appear—work through [Contexts](/contexts) and [Troubleshooting](/troubleshooting).
+
+## Where to go next
+
+- [Top-level Repeater Guide](/usage-guide)
+- [Supported Dynamic Tags and Field Types](/field-types)
+- [Nested Repeaters](/nested-repeaters) **Pro**
+- [Flexible Content](/flexible-content) **Pro**
+- [Relationship Queries](/relationship-queries) **Pro**

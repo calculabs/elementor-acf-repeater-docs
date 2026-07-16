@@ -3,108 +3,101 @@ order: 700
 icon: book
 ---
 
-# Usage Guide
+# Top-level Repeater Guide
 
-This guide will walk you through the complete process of setting up and using the Dynamic Elementor ACF Repeater plugin.
+This guide covers the stable, backwards-compatible workflow shared by Free and Pro: one top-level SCF/ACF Repeater rendered through an Elementor Loop Item.
 
-## Step 1: Create an ACF Repeater Field
+## 1. Create the field group
 
-1. Navigate to Custom Fields > Add New
-2. Create a new field group
-![Creating ACF Repeater Field Group](/images/usage/create-acf-repeater-fields-group.jpg)
+In **SCF/ACF → Field Groups**, create a field group and add a Repeater.
 
-3. Add a Repeater field to the group
-4. Add sub-fields to the repeater (e.g., text, image, etc.)
-5. Set the location rules for where this field group should appear
-![Assign to Post Type](/images/usage/assign-to-post-type.jpg)
+![Create a Repeater field group](/images/usage/create-acf-repeater-fields-group.jpg)
 
-## Step 2: Populate the Repeater Fields
+Add the subfields your template needs, then assign the group to the post type or page that will own the rows.
 
-1. Edit a post or custom post type where your ACF Repeater field is available
-2. Locate the ACF Repeater field in the editor and add entries to the repeater, filling out the sub-fields as needed
-![Populate Repeater Fields](/images/usage/populate-repeater-fields-on-post.jpg)
+![Assign the field group](/images/usage/assign-to-post-type.jpg)
 
-## Step 3: Create a Loop Item Template
+Edit at least one matching post and populate the Repeater.
 
-!!! Creating Loop Items
-Before adding dynamic content, you must select the ACF Repeater field in the Elementor Loop Item Page Settings
-!!!
+![Populate Repeater rows](/images/usage/populate-repeater-fields-on-post.jpg)
 
-1. In Elementor, go to Templates > Add New > Loop Item
-2. Open the Elementor Settings panel and look for the "ACF Repeater Loop Items" section
-3. Select the ACF Repeater field group you want to use.
-![Select Repeater Field](/images/usage/select-repeater-field-for-loop.jpg){ width=400 }
+## 2. Configure the Loop Item schema
 
-4. Configure the preview settings for the loop item
-![Configure Preview Settings](/images/usage/configure-preview-settings-for-loop-item.jpg){ width=400 }
+Create an Elementor **Loop Item** template. Before adding dynamic content, open the document settings and expand **ACF Repeater Loop Settings**.
 
-5. Build and design your loop item template using Elementor widgets
-6. Use the ACF Repeater Dynamic Tags to assign your repeater fields:
+- Free: choose **ACF Repeater Field for Loop**.
+- Pro: choose **ACF Row Schema for Loop**.
 
-### Using Dynamic Tags
+![Select the Repeater for the Loop Item](/images/usage/select-repeater-field-for-loop.jpg){ width=500 }
 
-#### Text and Content Fields
-When working with text-based content:
-1. Edit any text widget in your template
-2. Click the Dynamic Tags icon
-3. Look for the "ACF Repeater" section
-4. Choose "ACF Repeater Text" and select your field
-![Select Dynamic Tag for Text](/images/usage/select-dynamic-repeater-field-tag-text.jpg)
+This selection tells the editor which subfields belong to the current row. It powers the field selectors shown by the plugin's dynamic tags.
 
-#### Images and Backgrounds
-For image content or background images:
-1. For regular images, use the Image widget with ACF Repeater Image tag
-2. For background images on sections or containers:
-![Select Dynamic Tag for Background](/images/usage/select-dynamic-repeater-field-background-image.jpg)
+Set Elementor's preview source to a post that contains rows. The preview source affects the editor only; it does not lock the published template to that post.
 
-#### Original Post Title
-To display the title of the post containing the repeater field:
-1. Edit any text widget in your template
-2. Click the Dynamic Tags icon
-3. Look for "ACF Repeater Original Post Title" under the ACF section
-4. Select it to display the original post's title
+![Configure the Loop Item preview](/images/usage/configure-preview-settings-for-loop-item.jpg){ width=500 }
 
-## Step 4: Set Up the Loop Grid Widget
+## 3. Design with Repeater dynamic tags
 
-1. In your Elementor template, add the Loop Grid widget and select your Loop Item template in the layout section.
+Build the Loop Item with normal Elementor widgets and containers.
 
-2. Configure the grid preview settings
-![Set Grid Preview](/images/usage/set-grid-preview.jpg){ width=400 }
+For text:
 
-3. In the widget's Query settings:
-   - Toggle on "Use ACF Repeater"
-   - Select your ACF Repeater field
-   - In source, select the post type containing your repeater fields
-   - Choose "Query Current Post Only" setting:
-     - **Enabled (default)**: Only shows repeater fields from the current post being viewed. Good for single post templates. 
-     - **Disabled**: Displays repeater fields from all posts of the selected source type, allowing you to create collections or galleries from multiple posts
-![Use ACF Repeater Query](/images/usage/use-acf-repeater-query.jpg){ width=400 }
+1. Open a text-capable Elementor control.
+2. Select **Dynamic Tags**.
+3. Choose **ACF Repeater Text**.
+4. Open the tag settings and select the row subfield.
 
-4. Set display conditions as needed
-![Set Display Conditions](/images/usage/set-display-conditions.jpg)
+![Select a Repeater text tag](/images/usage/select-dynamic-repeater-field-tag-text.jpg)
 
-## Using Multiple Loop Item Templates
+For an image or container background, choose **ACF Repeater Image**.
 
-As of version 1.0.2, the plugin now fully supports creating multiple Loop Item templates with different ACF Repeater fields. You can:
+![Use a Repeater image as a background](/images/usage/select-dynamic-repeater-field-background-image.jpg)
 
-1. Create multiple Loop Item templates, each accessing a different ACF Repeater field
-2. Configure each Loop Item template with its own unique repeater field in the Loop Item settings panel
-3. Use different styling and layouts for each Loop Item template
+Use **ACF Repeater Original Post Title** to display the title of the post that owns the current row. The complete compatibility table is in [Dynamic Tags and Field Types](/field-types).
 
-This bug fix improves the overall experience when designing templates with ACF Repeater fields.
+## 4. Configure the Loop Grid
 
-!!! Pro Feature Note
-While the free version now properly supports creating multiple Loop Item templates, using multiple Loop Grid widgets with different ACF Repeater fields on the same post or page requires the Pro version.
-!!!
+Add Elementor's **Loop Grid** widget to a page or template and select the Loop Item.
 
-## Final Result
+Open **Query** and enable the plugin's row source:
 
-Once properly configured, your Loop Grid will display all your repeater items using your custom template:
+- Free: **Use ACF Repeater** → **ACF Repeater Field**.
+- Pro: **Use ACF Rows** → **ACF Row Source**.
 
-![Loop Grid with Repeaters](/images/usage/see-loop-grid-populated-with-repeaters.jpg)
+![Use an ACF Repeater query](/images/usage/use-acf-repeater-query.jpg){ width=500 }
 
-## Preview and Publish
+### Query Current Post Only
 
-1. Preview your template to check the ACF Repeater data display
-2. Make any necessary adjustments
-3. Publish your template when satisfied
+When enabled, the widget reads rows only from the resolved source object—normally the current post. This is the expected setting for a single post, page, or Theme Builder template.
+
+When disabled, Elementor's source query is allowed to return multiple posts and the plugin collects matching rows from those posts. This is useful for a combined directory or archive, but it can produce many more rows than a current-post display.
+
+The source object can also be controlled explicitly. See [Contexts](/contexts).
+
+## 5. Preview and publish
+
+Set Elementor's widget preview so the editor has a meaningful page context, then preview the frontend.
+
+![Set the Loop Grid preview](/images/usage/set-grid-preview.jpg){ width=500 }
+
+Each Repeater row should render as one instance of the selected Loop Item.
+
+![Populated Loop Grid](/images/usage/see-loop-grid-populated-with-repeaters.jpg)
+
+## Multiple templates and widgets
+
+Both editions can use different Repeater fields in different Loop Item templates.
+
+Free supports one repeater-powered Loop Grid on a rendered page. Pro supports multiple independent repeater-powered Loop Grids and Loop Carousels on the same page.
+
+## Options Page rows
+
+Choose **ACF Options** as the source context when the Repeater is stored on an SCF/ACF Options Page. Automatic context can also fall back to Options when the normal source contains no rows. The exact resolution behavior is documented in [Contexts](/contexts).
+
+## Continue with Pro
+
+- [Nested Repeaters](/nested-repeaters)
+- [Flexible Content](/flexible-content)
+- [Relationship Queries](/relationship-queries)
+- [Taxonomy Filters](/taxonomy-filters)
+- [Lightbox](/lightbox)

@@ -1,119 +1,78 @@
 ---
-order: 500
-icon: tools
+order: 800
+icon: checklist
 ---
 
-# Features
+# Free and Pro Features
 
-## Core Features
+This matrix describes the current 2.0 behavior. A check means the feature is implemented by the named edition—not merely that the underlying SCF/ACF field type exists.
 
-Dynamic Elementor ACF Repeater provides powerful integration between Advanced Custom Fields (ACF) Repeater fields and Elementor's dynamic content system.
+## Row sources and widgets
 
-### ACF Integration
+| Feature | Free | Pro |
+| --- | :---: | :---: |
+| Top-level Repeater as a Loop Grid row source | ✓ | ✓ |
+| Current post or queried-object rows | ✓ | ✓ |
+| ACF/SCF Options Page rows | ✓ | ✓ |
+| Aggregate rows from a Loop widget source query | ✓ | ✓ |
+| Multiple repeater-powered Loop widgets on one page |  | ✓ |
+| Loop Carousel |  | ✓ |
+| Nested Repeater paths |  | ✓ |
+| Repeater nested through Group or Flexible Content |  | ✓ |
+| Flexible Content layout-to-template mapping |  | ✓ |
+| Per-layout row schema and editor preview |  | ✓ |
+| Relationship/Post Object query source |  | ✓ |
 
-- **Full ACF Repeater Support**: Seamlessly integrate ACF Repeater fields with Elementor Loop Grid
-- **Dynamic Tags**: Use repeater field values in any Elementor widget
-- **Background Images**: Add repeater images as background images in loop items
-- **Multiple Field Types**: Support for various field types within repeaters
+Free supports multiple Loop Item templates, but only one repeater-powered Loop Grid on a rendered page. Pro removes that page-level limitation and keeps each widget's context independent.
 
-### Elementor Integration
+## Dynamic data
 
-- **Loop Grid Widget**: Display repeater content in a grid layout
-- **Loop Item Templates**: Create custom templates for repeater items
-- **Dynamic Content**: Use repeater values anywhere in Elementor
-- **Template System**: Full compatibility with Elementor's template system
+| Feature | Free | Pro |
+| --- | :---: | :---: |
+| Repeater Text tag for Text and Textarea subfields | ✓ | ✓ |
+| Repeater Image tag | ✓ | ✓ |
+| Original source-post title tag | ✓ | ✓ |
+| Extended text-compatible field types |  | ✓ |
+| File and Gallery tags |  | ✓ |
+| URL, Color, and Icon tags |  | ✓ |
+| Link Title and Link Target tags |  | ✓ |
 
-## Free Version Features
+The Pro URL tag can convert supported subfields—including Relationship, Post Object, Taxonomy, Link, Image, and File values—into a URL suitable for Elementor link controls. This is different from the [Relationship Query](/relationship-queries), and there is no separate “ACF Repeater Relationship” dynamic tag.
 
-### Field Type Support
+See [Dynamic Tags and Field Types](/field-types) for the exact compatibility matrix.
 
-- **Text Fields**: Display text content from repeater fields
-- **Textarea Fields**: Show longer text content
-- **Image Fields**: Display images from repeater fields
-- **Background Images**: Use repeater images as backgrounds
+## Presentation and interaction
 
-### Dynamic Tags
+| Feature | Free | Pro |
+| --- | :---: | :---: |
+| User-designed Elementor Loop Item markup | ✓ | ✓ |
+| Lightbox that clones the selected Loop Item |  | ✓ |
+| Optional previous/next lightbox navigation |  | ✓ |
+| Lightbox-only or grid-only element visibility |  | ✓ |
+| Lightbox width, height, overlay, padding, and control styles |  | ✓ |
+| Taxonomy filter: dropdown, checkbox, or navigation |  | ✓ |
+| Filter deep links and custom URL parameter |  | ✓ |
+| Repeater-aware Elementor display condition |  | ✓ |
+| Repeater values as Elementor Form choices |  | ✓ |
 
-- **ACF Repeater Text**: Display text content from repeater fields
-- **ACF Repeater Image**: Show images from repeater fields
-- **Multiple Tags**: Use multiple tags in a single template
+The plugin does not inject a visual card, badge, or open button into each Loop Item. Lightbox opening is attached to the rendered item, while normal interactive links and controls inside the item remain usable.
 
-### Loop Grid Integration
+## Context choices
 
-- **Custom Layouts**: Create custom grid layouts
-- **Responsive Design**: Fully responsive grid layouts
-- **Template Support**: Use custom templates for grid items
-- **Dynamic Content**: Display repeater content dynamically
-- **Cross-Post Aggregation**: Option to display repeater fields from all posts or only the current post
+| Context | Free | Pro |
+| --- | :---: | :---: |
+| Automatic | ✓ | ✓ |
+| Current Post | ✓ | ✓ |
+| Queried Object | ✓ | ✓ |
+| ACF Options | ✓ | ✓ |
+| Current User |  | ✓ |
+| Explicit ACF Object ID |  | ✓ |
 
-## Pro Features
+Explicit object IDs can target posts, users, taxonomies, or options using the syntax accepted by SCF/ACF. Learn how resolution works in [Contexts](/contexts).
 
-!!! Pro Version
-These features are available exclusively in the Pro version.
-!!!
+## Compatibility notes
 
-### Additional Field Types
-
-- **File Fields**: Display and manage file attachments
-- **Gallery Fields**: Show multiple images in galleries
-- **Relationship Fields**: Create content relationships
-- **More Coming**: Additional field types in development
-
-### Advanced Features
-
-#### Lightbox Integration
-- Built-in lightbox functionality
-- Custom lightbox settings
-- Element visibility control
-- Smooth transitions
-
-#### Swiper Integration
-- Professional slider functionality
-- Navigation controls
-- Custom animations
-- Responsive breakpoints
-
-#### Advanced Filtering
-- Filter by any ACF field
-- Multiple filter criteria
-- Dynamic updates
-- Custom filter appearance
-
-#### ACF Relationship Support
-- Cross-post relationships
-- Advanced queries
-- Custom sorting
-- Related content display
-
-## Feature Comparison
-
-| Feature Category | Free | Pro |
-|-----------------|------|-----|
-| **Field Types** |
-| Text | ✓ | ✓ |
-| Textarea | ✓ | ✓ |
-| Image | ✓ | ✓ |
-| File | ✗ | ✓ |
-| Gallery | ✗ | ✓ |
-| Relationship | ✗ | ✓ |
-| **Functionality** |
-| Loop Grid | ✓ | ✓ |
-| Dynamic Tags | ✓ | ✓ |
-| Background Images | ✓ | ✓ |
-| Lightbox | ✗ | ✓ |
-| Swiper | ✗ | ✓ |
-| Advanced Filtering | ✗ | ✓ |
-| **Visibility** |
-| Basic Control | ✓ | ✓ |
-| Lightbox Control | ✗ | ✓ |
-| Advanced Options | ✗ | ✓ |
-
-## Try Pro Features
-
-Experience all Pro features with our 3-day free trial:
-
-[Start Your Free Trial](https://checkout.freemius.com/mode/dialog/plugin/16334/plan/27245/?trial=paid)
-
-!!! Trial Period
-Cancel anytime during the trial period - no charges if canceled before trial ends.
-!!! 
+- Classic Elementor Loop Grid and Loop Carousel widgets are supported.
+- Elementor Atomic Elements are not currently supported.
+- Existing top-level Repeater configurations continue to work in 2.0.
+- Pro features require the paid build and an active license where Freemius requires one.

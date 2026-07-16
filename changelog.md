@@ -5,60 +5,137 @@ icon: clock
 
 # Changelog
 
-All notable changes to Dynamic Elementor ACF Repeater will be documented in this file.
+This documentation tracks released plugin behavior. Versions are listed without invented release dates.
 
-## [1.0.2] - Bug Fixes and Multiple Loop Grids - 05/09/2025
+## 2.0.0
 
-### Free Version
-- Fixed bug that prevented multiple Loop Item templates from properly accessing their selected repeater field in the Loop Item settings
-- Improved repeater value retrieval logic
-- Note: Multiple Loop Item templates can now be created, but using multiple Loop Grids on the same post requires Pro
+### Nested row sources **Pro**
 
-### Pro Version
-- Added exclusive support for multiple Loop Grid widgets with ACF Repeater fields in the same post
-- This Pro-only feature allows combining different repeater field displays on a single page
+- Added stable field-key paths for Repeaters nested inside Repeaters, Flexible Content layouts, and Group fields.
+- Flattened matching child rows in source order while preserving their complete row/index path and formatted SCF/ACF values.
+- Kept existing top-level Repeater widget settings and saved Loop Items backwards compatible.
 
-## [1.0.1] - Filter Improvements - 05/03/2025
+### Flexible Content templates **Pro**
 
-### Free Version
-- Added new "Query Current Post Only" control to restrict repeater items to the current post
-- Improved handling of current post ID in Elementor previews
+- Added the **ACF Flexible Content** skin to Loop Grid and Loop Carousel.
+- Added one opt-in Loop Item mapping control for each discovered Flexible Content layout.
+- Added explicit default-template fallback and skip-unmapped behavior without inserting frontend buttons, panels, or other visual markup.
+- Suspended Elementor's position-based Alternate Templates only while the data-driven skin renders, then restored the saved setting.
 
-### Pro Version
-- Completely refactored taxonomy filtering system with new state-based architecture
-- Added three distinct filter states to improve handling of different filtering scenarios:
-  + Current Post Only Mode: For filtering a single post's repeater items from chosen post type
-  + All Posts Repeater Mode: For filtering repeater content across multiple posts of chosen post type
-  + Standard Taxonomy Mode: For traditional WordPress taxonomy filtering of terms from chosen post type
-- Fixed issue with taxonomy filtering by ensuring repeater fields always use current post data
-- Better code organization with dedicated classes for filter states and UI components
+### Elementor editor
 
-## [1.0.0] - Initial Release - 04/04/2025
+- Added row-schema choices for nested Repeaters and individual Flexible Content layouts in Loop Item document settings.
+- Limited dynamic-tag field choices to the selected layout schema.
+- Added representative nested/layout values to Loop Item editor previews through the same resolver used on the frontend.
 
-### Added
-- Basic integration with Elementor Pro and ACF Pro
-- Support for image and text repeater fields in Elementor dynamic tags
-- ACF Repeater Text and ACF Repeater Image dynamic tags
-- Loop Grid widget integration
-- Support for adding repeater images to background image in loop items
+### Validation
 
-### Pro Features Added
-- Support for additional ACF field types within repeaters:
-  - File fields
-  - Gallery fields
-  - Relationship fields
-- Advanced dynamic tags:
-  - ACF Repeater File
-  - ACF Repeater Gallery
-  - ACF Repeater Relationship
-- Lightbox functionality on the loop grid widget
-- Swiper integration for lightbox
-- Advanced filtering capabilities for Loop Grid items
-- Lightbox visibility control for individual elements
-- ACF Relationship field support for dynamic content associations
+- Added PHPUnit coverage for source discovery, stable selectors, nested path flattening, layout schemas, and virtual-row values.
+- Added real WordPress browser coverage for per-layout output, nested rows, mapping controls, and Loop Item preview data.
 
-### Requirements
-- WordPress 5.8 or higher
-- PHP 7.4 or higher
-- Elementor Pro
-- Advanced Custom Fields Pro (ACF Pro) 
+## 1.2.1
+
+### Lightbox visual compatibility
+
+- Removed plugin-generated buttons from Loop Items and removed the editor diagnostic overlay.
+- Restored the lightbox to a dim overlay containing the cloned Loop Item, with no generated title, white panel, toolbar, or footer.
+- Kept nested links and form controls interactive while non-interactive item clicks open the lightbox.
+- Prevented site-wide button styles from adding backgrounds, borders, or rounded shapes to close and previous/next controls.
+
+### Elementor editor
+
+- Applied width, height, padding, overlay, navigation, and close-control changes to an already-open lightbox preview.
+- Restored Content Height sizing on the cloned Loop Item and its background-bearing Elementor root.
+- Preserved Loop Carousel item deduplication and editor document-handle access without adding template markup.
+
+### Packaging
+
+- Kept the Freemius source header neutral while identifying licensed premium installs as PRO without duplicating the suffix.
+
+## 1.2.0
+
+- Added Automatic, Current Post, Queried Object, and Options contexts to Free.
+- Added Current User and explicit post, user, taxonomy-term, or Options contexts to Pro.
+- Restored lightbox opening in AJAX-rendered Loop Grid and Loop Carousel editor previews.
+- Restored Pro lightbox Style controls for both loop widgets.
+- Preserved non-post SCF/ACF object IDs through virtual rows and signed filter requests.
+- Avoided enqueueing frontend dependencies during editor AJAX and REST render responses.
+- The visible editor diagnostics and per-item trigger buttons introduced here were removed in 1.2.1.
+
+## 1.1.0
+
+### Security
+
+- Replaced arbitrary public document rendering with signed, expiring render contexts bound to published content and an owned Loop Grid or Loop Carousel widget.
+- Blocked anonymous private, draft, password-protected, malformed, and cross-document render requests with controlled REST errors.
+- Changed editor REST permissions from generic `edit_posts` checks to `edit_post` checks for the requested document.
+
+### Correctness and Pro improvements
+
+- Removed a site-wide SQL rewrite that stripped `post__not_in` exclusions from unrelated queries.
+- Added request-local, collision-safe virtual row IDs and row-level pagination for current-object Repeaters.
+- Fixed empty Relationship queries, preserved Relationship field order, and corrected multi-term OR filtering.
+- Corrected media, URL, Relationship, Taxonomy, and multi-value dynamic-tag formatting.
+- Scoped multiple filters to their owning widget and prevented stale responses from replacing newer results.
+- Consolidated feature registration behind the active Freemius entitlement and updated Freemius SDK to 2.13.4.
+- Expanded automated Free/Pro package-boundary, PHPUnit, WordPress runtime, and Playwright coverage.
+
+## 1.0.91
+
+- Fixed a visual overflow regression in Free and Pro.
+
+## 1.0.9
+
+- Fixed Pro registration for the ACF Repeater Form options field.
+- Added general Free and Pro stability improvements.
+
+## 1.0.8
+
+- Added the Pro **ACF Repeater Select** Elementor Form field with dropdown, radio, and checkbox presentation.
+- Added Relationship and Post Object query support for fields directly inside a top-level Repeater.
+- Normalized nested Relationship results to post IDs.
+
+## 1.0.7
+
+- Added Pro support for ACF Link fields with URL, Link Title, and Link Target tags.
+- Added Pro Color and Icon tags.
+- Improved Gallery normalization for IDs, URLs, arrays, and objects.
+
+## 1.0.6
+
+- Added drag ordering for taxonomy filter terms, instant updates, and an optional deep-link URL.
+- Added the Pro **ACF Repeater Field** display condition.
+- Fixed default-filter active styles and custom filter parameter names.
+- Added Number support to the Pro Text tag.
+
+## 1.0.5
+
+- Fixed lightbox element-visibility flicker in Pro.
+
+## 1.0.4
+
+- Fixed taxonomy filters for Options Page Repeaters and array-based Taxonomy subfield values.
+- Added custom URL parameters, empty-term display, default terms, filter dividers, term descriptions, and expanded filter style controls.
+
+## 1.0.3
+
+- Fixed the Free Loop Grid limit that showed only the first ten Repeater rows.
+- Added the Options Page fallback when the current post has no rows.
+- Added Pro Loop Carousel support.
+
+## 1.0.2
+
+- Fixed multiple Loop Item templates so each could access its selected Repeater field.
+- Improved Repeater value retrieval.
+- Added Pro support for multiple repeater-powered Loop Grids on one page.
+
+## 1.0.1
+
+- Added **Query Current Post Only** and improved editor preview post handling.
+- Refactored Pro taxonomy filtering for current-post rows, aggregate Repeater rows, and parent-post taxonomy states.
+
+## 1.0.0
+
+- Initial Elementor Loop Grid integration for top-level SCF/ACF Repeater rows.
+- Added Free Text, Image, Original Post Title, and background-image workflows.
+- Added the first Pro media, Relationship-query, lightbox, taxonomy-filter, and visibility capabilities.

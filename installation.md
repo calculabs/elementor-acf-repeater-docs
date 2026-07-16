@@ -1,122 +1,56 @@
 ---
-order: 800
+order: 850
 icon: download
 ---
 
-# Installation
+# Installation and Requirements
 
-This guide covers detailed installation steps and technical requirements for the Dynamic Elementor ACF Repeater plugin.
+## Requirements
 
-## System Requirements
+| Component | Minimum | Tested with the 2.0 release |
+| --- | --- | --- |
+| WordPress | 6.0 | 7.0 |
+| PHP | 7.4 | Current supported PHP releases |
+| Elementor | 3.8 | 4.1.5 |
+| Elementor Pro | 3.8 | 4.1.3 |
+| Secure Custom Fields | Supported | 6.9.1 |
+| Advanced Custom Fields Pro | Supported alternative | 6.3.12 |
 
-| Requirement | Minimum Version |
-|------------|-----------------|
-| WordPress  | 5.8 or higher   |
-| PHP        | 7.4 or higher   |
-| Elementor Pro | Latest version recommended |
-| ACF Pro    | Latest version recommended |
+You need **either Secure Custom Fields (SCF) or Advanced Custom Fields Pro (ACF Pro)**. A Repeater-capable field plugin is required because WordPress core and the free edition of ACF do not provide the Repeater field used by this plugin.
 
-## Installation Methods
+Elementor Pro is required because the integration targets Elementor's Loop Grid and Loop Carousel widgets.
 
-### WordPress Plugin Directory (Recommended)
+## Install the Free version
 
-1. Log in to your WordPress admin panel
-2. Navigate to Plugins > Add New
-3. Search for "Dynamic Elementor ACF Repeater"
-4. Click "Install Now"
-5. After installation completes, click "Activate"
+1. In WordPress, open **Plugins → Add New Plugin**.
+2. Search for **Dynamic Elementor ACF Repeater**.
+3. Install and activate it.
+4. Confirm that Elementor Pro and SCF or ACF Pro are also active.
 
-### Manual Installation
+You can also download the release from the [WordPress Plugin Directory](https://wordpress.org/plugins/dynamic-elementor-acf-repeater/) and upload the ZIP through **Plugins → Add New Plugin → Upload Plugin**.
 
-1. Download the plugin ZIP file
-2. Log in to your WordPress admin panel
-3. Navigate to Plugins > Add New
-4. Click "Upload Plugin"
-5. Choose the downloaded ZIP file
-6. Click "Install Now"
-7. After installation completes, click "Activate"
+## Install the Pro version
 
-## Installation Verification
+1. Download the Pro ZIP supplied through Freemius.
+2. In WordPress, open **Plugins → Add New Plugin → Upload Plugin**.
+3. Upload the ZIP, install it, and activate it.
+4. Complete the Freemius license prompt or use **Change License** on the Plugins screen.
 
-After installation, verify the following:
+The Pro package replaces the Free package; do not keep two separately named copies active. On the Plugins screen, the paid build should identify itself as **Dynamic Elementor ACF Repeater PRO** and expose the Freemius license actions.
 
-1. **Plugin Status**
-   - Check Plugins page
-   - Plugin should be listed as "Active"
-   - No error messages should be present
+## Verify the installation
 
-2. **Dependencies Check**
-   - Elementor Pro is active and working
-   - ACF Pro is active and working
-   - PHP version meets requirements
-   - WordPress version is compatible
+Create or edit an Elementor Loop Item and open its document settings. You should see **ACF Repeater Loop Settings**.
 
-3. **Functionality Check**
-   - Elementor editor loads correctly
-   - ACF Repeater fields can be created
-   - Dynamic Tags appear in Elementor
+Then edit a Loop Grid and open **Query**:
 
-## Pro Version Setup
+- Free shows **Use ACF Repeater**.
+- Pro shows **Use ACF Rows**, plus the applicable Pro controls.
 
-When installing the Pro version:
+If those controls do not appear, confirm all required plugins are active and review [Troubleshooting](/troubleshooting).
 
-1. Purchase a license or start your [free trial](https://checkout.freemius.com/mode/dialog/plugin/16334/plan/27245/?trial=paid)
-2. Download the Pro version plugin
-3. Follow either installation method above
-4. Navigate to plugin settings
-5. Enter and activate your license key
+## Updating
 
-## Troubleshooting Common Issues
+Free updates come from WordPress.org. Licensed Pro sites receive updates through Freemius.
 
-### Plugin Won't Activate
-- Verify PHP version meets requirements
-- Check WordPress version compatibility
-- Ensure Elementor Pro is activated first
-- Confirm ACF Pro is installed and activated
-
-### Dynamic Tags Not Showing
-- Clear browser cache
-- Clear WordPress cache
-- Deactivate and reactivate plugin
-- Check for conflicts with other plugins
-
-### License Key Issues
-- Verify key is entered correctly
-- Check license status in account
-- Clear site cache after activation
-- Contact support if problems persist
-
-## Getting Support
-
-Need help with installation?
-
-1. Check our [documentation](/getting-started)
-2. Visit the [support forum](https://wordpress.org/support/plugin/dynamic-elementor-acf-repeater/)
-3. Pro users: Access premium support through your account
-4. Contact us directly for urgent issues
-
-## Post-Installation Setup
-
-1. Verify Plugin Activation
-   - Check Plugins page to ensure the plugin is active
-   - Look for the plugin settings in your WordPress admin menu
-
-2. Configure Plugin Settings
-   - No additional configuration needed
-   - Plugin is ready to use with Elementor
-
-3. Verify Dependencies
-   - Confirm Elementor Pro is active
-   - Verify ACF Pro is installed and activated
-
-## Next Steps
-
-After successful installation:
-
-1. [Create your first ACF Repeater field](/usage-guide#step-1-create-an-acf-repeater-field)
-2. [Set up a Loop Item template](/usage-guide#step-3-create-a-loop-item-template)
-3. [Configure the Loop Grid widget](/usage-guide#step-4-set-up-the-loop-grid-widget)
-
-!!! Pro Features
-After installing the Pro version, you'll have immediate access to all [Pro features](/pro-features)
-!!! 
+After an update, a stale Elementor editor can continue serving old JavaScript or generated CSS. If controls or previews behave like an older version, reload the editor without cache and use Elementor's **Clear Files & Data** tool. See [Troubleshooting](/troubleshooting#stale-editor-assets-or-styles).

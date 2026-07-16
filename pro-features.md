@@ -1,105 +1,64 @@
 ---
-order: 400
+order: 650
 icon: star
 ---
 
 # Pro Features
 
-The Pro version of Dynamic Elementor ACF Repeater includes advanced features that enhance your ability to create dynamic, interactive content with ACF Repeater fields.
+Pro extends the same Loop Item workflow instead of replacing it. Your Elementor template remains the source of the markup and design; Pro adds more row sources, contexts, tags, widgets, and interactions.
 
-Start your 3-day free trial of the Pro version to unlock all features. [Start Your Free Trial](https://checkout.freemius.com/mode/dialog/plugin/16334/plan/27245/?trial=paid)
+## Structured row sources
 
-## Additional Field Types
+### Nested Repeaters
 
-Pro version supports more ACF field types within repeaters:
-- File fields
-- Gallery fields
-- Relationship fields
-- More field types coming soon
+Select a Repeater reached through another Repeater, Flexible Content layout, or Group. Pro resolves the nested path and flattens the matching child rows into the Loop widget while retaining their source context.
 
-## Advanced Dynamic Tags
+[Read the Nested Repeater guide →](/nested-repeaters)
 
-Extended set of dynamic tags for Pro users:
-- ACF Repeater File
-- ACF Repeater Gallery
-- ACF Repeater Relationship
+### Flexible Content mapping
 
-## Lightbox Integration
+Use the **ACF Flexible Content** skin to map each layout to a different Loop Item. A hero layout can use one design, a quote layout another, and unmapped layouts can use the default template or be skipped.
 
-!!! Pro Feature Tip
-The lightbox feature is exclusive to Pro users and enables interactive content viewing.
-!!!
+[Read the Flexible Content guide →](/flexible-content)
 
-### Features
-- Built-in lightbox functionality for Loop Grid widget
-- Swiper integration for smooth navigation
-- Customizable lightbox settings
-- Individual element visibility control
+### Relationship queries
 
-### Lightbox Visibility Options
-Control how elements appear in different contexts:
-- Default View (visible everywhere)
-- Hide in Lightbox
-- Show Only in Lightbox
+Use a Relationship or Post Object field as the source of real WordPress posts. Pro preserves the field order and renders those posts through an ordinary Elementor Loop Item.
 
-## Advanced Filtering
+[Read the Relationship Query guide →](/relationship-queries)
 
-Create sophisticated filtering systems for your Loop Grid items:
-- Filter by any ACF field
-- Customizable filter appearance
-- Multiple filter criteria
-- Dynamic filter updates
+## Presentation and navigation
 
-## ACF Relationship Support
+### Multiple loop widgets and Loop Carousel
 
-Enhanced relationship field capabilities:
-- Dynamic content associations across posts
-- Advanced query controls
-- Related content display options
-- Custom sorting and filtering
+Run independent repeater-powered Loop Grids or Loop Carousels on the same page. Each widget keeps its own row source and rendering context.
 
-## Swiper Integration
+[Read the Loop Carousel guide →](/loop-carousel)
 
-Professional slider functionality:
-- Smooth slide transitions
-- Navigation controls
-- Pagination options
-- Responsive breakpoints
-- Custom animation effects
+### Repeater lightbox
 
-## Try Pro Features
+Open the selected Loop Item in an overlay, optionally with previous/next navigation. The lightbox clones the item you designed—it does not add a card surface or visible trigger button to the grid.
 
-Start your 3-day free trial to experience all Pro features:
-1. [Start Your Free Trial](https://checkout.freemius.com/mode/dialog/plugin/16334/plan/27245/?trial=paid)
-2. Complete the checkout process
-3. Install and activate Pro version
-4. Start using advanced features immediately
+[Read the Lightbox guide →](/lightbox)
 
-!!! Trial Period
-You can cancel anytime before the trial ends to avoid being charged.
-We'll send you an email reminder before the trial expires.
-!!!
+### Taxonomy filters
 
-## Pro vs Free Comparison
+Filter repeater rows by either the owning post's taxonomy or a Taxonomy subfield in the row. Choose dropdown, checkbox, or navigation UI and optionally synchronize the state to the URL.
 
-| Feature | Free | Pro |
-|---------|------|-----|
-| Basic ACF Integration | ✓ | ✓ |
-| Text Fields | ✓ | ✓ |
-| Image Fields | ✓ | ✓ |
-| Background Images | ✓ | ✓ |
-| File Fields | ✗ | ✓ |
-| Gallery Fields | ✗ | ✓ |
-| Relationship Fields | ✗ | ✓ |
-| Lightbox Support | ✗ | ✓ |
-| Swiper Integration | ✗ | ✓ |
-| Advanced Filtering | ✗ | ✓ |
-| Visibility Control | ✗ | ✓ |
+[Read the Taxonomy Filter guide →](/taxonomy-filters)
 
-## Upgrade Process
+## Extended dynamic data
 
-After the trial period, if you choose to continue:
-1. Your account will be automatically charged for the Pro license
-2. Manage your subscription from WordPress dashboard
-3. Access billing information and license details
-4. Receive automatic updates and support 
+Pro adds File, Gallery, URL, Color, Icon, Link Title, and Link Target tags, and expands the field types accepted by the Text tag.
+
+[See the exact field compatibility matrix →](/field-types)
+
+## Elementor integrations
+
+- [Repeater display conditions](/display-conditions) can show or hide an element based on the current row value.
+- [Form field options](/form-options) can populate an Elementor Select, Radio, or Checkbox field from Repeater values.
+- [Advanced contexts](/contexts) add Current User and explicit SCF/ACF object IDs.
+
+## What Pro does not do
+
+Pro does not create a standalone listing widget, visual card design, custom post type, or database table. It connects SCF/ACF row data to Elementor's classic loop system. Elementor Atomic Elements are not currently supported.
