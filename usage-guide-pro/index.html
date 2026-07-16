@@ -3,813 +3,319 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.8.1.800140436839">
+    <meta name="color-scheme" content="light dark">
+    <meta name="turbo-root" content="/elementor-acf-repeater-docs">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.837541422205">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 3.8.1">
+    <meta name="generator" content="Retype 4.6.0">
 
     <!-- Primary Meta Tags -->
-    <title>Usage Guide Pro | Dynamic Elementor ACF Repeater Docs</title>
-    <meta name="title" content="Usage Guide Pro | Dynamic Elementor ACF Repeater Docs">
-    <meta name="description" content="This guide covers the additional features available in the Pro version of Dynamic Elementor ACF Repeater.">
+    <title>Pro Workflow Guide | Dynamic Elementor ACF Repeater Docs</title>
+    <meta name="title" content="Pro Workflow Guide | Dynamic Elementor ACF Repeater Docs">
+    <meta name="description" content="Start with the Top-level Repeater Guide if you have not built a basic repeater-powered Loop Grid yet. Pro uses the same foundation and adds specialized workflows.">
 
     <!-- Canonical -->
-    <link rel="canonical" href="/usage-guide-pro/">
+    <link rel="canonical" href="https://calculabs.github.io/elementor-acf-repeater-docs/usage-guide-pro/">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="https://calculabs.github.io/elementor-acf-repeater-docs/sitemap.xml">
 
-    <!-- Open Graph / Facebook -->
+    <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="/usage-guide-pro/">
-    <meta property="og:title" content="Usage Guide Pro | Dynamic Elementor ACF Repeater Docs">
-    <meta property="og:description" content="This guide covers the additional features available in the Pro version of Dynamic Elementor ACF Repeater.">
-    <meta property="og:image" content="/images/usage-pro/enable-lightbox.jpg">
+    <meta property="og:url" content="https://calculabs.github.io/elementor-acf-repeater-docs/usage-guide-pro/">
+    <meta property="og:title" content="Pro Workflow Guide | Dynamic Elementor ACF Repeater Docs">
+    <meta property="og:description" content="Start with the Top-level Repeater Guide if you have not built a basic repeater-powered Loop Grid yet. Pro uses the same foundation and adds specialized workflows.">
+    <meta property="og:site_name" content="Dynamic Elementor ACF Repeater">
+    <meta property="og:locale" content="en_US">
 
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="/usage-guide-pro/">
-    <meta property="twitter:title" content="Usage Guide Pro | Dynamic Elementor ACF Repeater Docs">
-    <meta property="twitter:description" content="This guide covers the additional features available in the Pro version of Dynamic Elementor ACF Repeater.">
-    <meta property="twitter:image" content="/images/usage-pro/enable-lightbox.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://calculabs.github.io/elementor-acf-repeater-docs/usage-guide-pro/">
+    <meta name="twitter:title" content="Pro Workflow Guide | Dynamic Elementor ACF Repeater Docs">
+    <meta name="twitter:description" content="Start with the Top-level Repeater Guide if you have not built a basic repeater-powered Loop Grid yet. Pro uses the same foundation and adds specialized workflows.">
 
-    <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
+    <!-- Alternate Markdown -->
+    <link rel="alternate" type="text/markdown" href="https://calculabs.github.io/elementor-acf-repeater-docs/usage-guide-pro.md">
 
-    <link href="../resources/css/retype.css?v=3.8.1.800140436839" rel="stylesheet">
+    <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
-    <script data-cfasync="false" src="../resources/js/config.js?v=3.8.1.800140436839" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../resources/js/retype.js?v=3.8.1" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../resources/js/search.js?v=3.8.1.800140436839" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.8.1.800140436839" data-turbo-eval="false" defer></script>
+    <link href="../resources/css/retype.css?v=4.6.0.837541422205" rel="stylesheet">
+
+    <script data-cfasync="false" src="../resources/js/config.js?v=4.6.0.837541422205" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/search.js?v=4.6.0.837541422205" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=4.6.0.837541422205" data-turbo-eval="false" defer></script>
 </head>
 <body>
-    <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
-        <div class="absolute bottom-0 left-0 bg-gray-100 dark:bg-dark-800" style="top: 5rem; right: 50%"></div>
+    <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
+    <div class="absolute bottom-0 left-0" style="top: 5rem; right: 50%"></div>
+
+    <header id="retype-header" class="sticky top-0 z-30 flex w-full h-16 bg-header-bg border-b border-header-border md:h-20">
+        <div class="container relative flex items-center justify-between pr-6 grow md:justify-start">
+            <!-- Mobile menu button skeleton -->
+            <button v-cloak class="skeleton retype-mobile-menu-button flex items-center justify-center shrink-0 overflow-hidden dark:text-white focus:outline-hidden rounded-full w-10 h-10 ml-3.5 md:hidden"><svg xmlns="http://www.w3.org/2000/svg" class="mb-px shrink-0" width="24" height="24" viewBox="0 0 24 24" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor"><path d="M2 4h20v2H2zM2 11h20v2H2zM2 18h20v2H2z"></path></g></svg></button>
+            <div v-cloak id="retype-sidebar-left-toggle-button"></div>
     
-        <header id="docs-site-header" class="sticky top-0 z-30 flex w-full h-16 bg-white border-b border-gray-200 md:h-20 dark:bg-dark-850 dark:border-dark-650">
-            <div class="container relative flex items-center justify-between pr-6 grow md:justify-start">
-                <!-- Mobile menu button skeleton -->
-                <button v-cloak class="skeleton docs-mobile-menu-button flex items-center justify-center shrink-0 overflow-hidden dark:text-white focus:outline-none rounded-full w-10 h-10 ml-3.5 md:hidden"><svg xmlns="http://www.w3.org/2000/svg" class="mb-px shrink-0" width="24" height="24" viewBox="0 0 24 24" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor"><path d="M2 4h20v2H2zM2 11h20v2H2zM2 18h20v2H2z"></path></g></svg></button>
-                <div v-cloak id="docs-sidebar-toggle"></div>
-        
-                <!-- Logo -->
-                <div class="flex items-center justify-between h-full py-2 md:w-75">
-                    <div class="flex items-center px-2 md:px-6">
-                        <a id="docs-site-logo" href="../" class="flex items-center leading-snug text-xl">
-                            <span class="dark:text-white font-bold line-clamp-1 md:line-clamp-2">Dynamic Elementor ACF Repeater</span>
-                        </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">Docs</span>
-                    </div>
-        
-                    <span class="hidden h-8 border-r md:inline-block dark:border-dark-650"></span>
+            <!-- Logo -->
+            <div class="flex items-center justify-between h-full py-2 md:w-75">
+                <div class="flex items-center px-2 md:px-6">
+                    <a id="retype-branding-logo" href="https://calculabs.github.io/elementor-acf-repeater-docs/" class="flex items-center leading-snug text-xl">
+                        <span class="dark:text-white font-bold line-clamp-1 md:line-clamp-2">Dynamic Elementor ACF Repeater</span>
+                    </a><span id="retype-branding-label" class="inline-flex mt-1 px-2 py-1 ml-4 text-xs font-medium leading-none items-center rounded-md bg-branding-label-bg text-branding-label-text ring-1 ring-branding-label-border ring-inset md:inline-block">Docs</span>
                 </div>
-        
-                <div class="flex justify-between md:grow">
-                    <!-- Top Nav -->
-                    <nav class="hidden md:flex">
-                        <ul class="flex flex-col mb-4 md:pl-16 md:mb-0 md:flex-row md:items-center">
-                            <li class="mr-6">
-                                <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="../getting-started/">Getting Started</a>
-                            </li>
-                            <li class="mr-6">
-                                <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="../installation/">Installation</a>
-                            </li>
-                            <li class="mr-6">
-                                <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="../usage-guide/">Usage Guide</a>
-                            </li>
-                            <li class="mr-6">
-                                <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="../usage-guide-pro/">Usage Guide Pro</a>
-                            </li>
-                            <li class="mr-6">
-                                <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="../features/">Features</a>
-                            </li>
-                            <li class="mr-6">
-                                <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="../pro-features/">Pro Features</a>
-                            </li>
-                            <li class="mr-6">
-                                <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="../field-types/">Supported Field Types</a>
-                            </li>
-                            <li class="mr-6">
-                                <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="../changelog/">Changelog</a>
-                            </li>
-                            <li class="mr-6">
-                                <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://github.com/calculabs/elementor-acf-repeater-docs">GitHub</a>
-                            </li>
-        
-                        </ul>
-                    </nav>
-        
-                    <!-- Header Right Skeleton -->
-                    <div v-cloak class="flex justify-end grow skeleton">
-        
-                        <!-- Search input mock -->
-                        <div class="relative hidden w-40 lg:block lg:max-w-sm lg:ml-auto">
-                            <div class="absolute flex items-center justify-center h-full pl-3 dark:text-dark-300">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon-base" width="16" height="16" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation" style="margin-bottom: 1px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
-                            </div>
-                            <input class="w-full h-10 placeholder-gray-400 transition-colors duration-200 ease-in bg-gray-200 border border-transparent rounded md:text-sm hover:bg-white hover:border-gray-300 focus:outline-none focus:bg-white focus:border-gray-500 dark:bg-dark-600 dark:border-dark-600 dark:placeholder-dark-400" style="padding: 0.625rem 0.75rem 0.625rem 2rem" type="text" placeholder="Search docs...">
-                        </div>
-        
-                        <!-- Mobile search button -->
-                        <div class="flex items-center justify-center w-10 h-10 lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="shrink-0 icon-base" width="20" height="20" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
-                        </div>
-        
-                        <!-- Dark mode switch placeholder -->
-                        <div class="w-10 h-10 lg:ml-2"></div>
-        
-                        <!-- History button -->
-                        <div class="flex items-center justify-center w-10 h-10" style="margin-right: -0.625rem;">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="shrink-0 icon-base" width="22" height="22" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor" ><g ><path d="M12.01 6.01c-.55 0-1 .45-1 1V12a1 1 0 00.4.8l3 2.22a.985.985 0 001.39-.2.996.996 0 00-.21-1.4l-2.6-1.92V7.01c.02-.55-.43-1-.98-1z"></path><path d="M12.01 1.91c-5.33 0-9.69 4.16-10.05 9.4l-.29-.26a.997.997 0 10-1.34 1.48l1.97 1.79c.19.17.43.26.67.26s.48-.09.67-.26l1.97-1.79a.997.997 0 10-1.34-1.48l-.31.28c.34-4.14 3.82-7.41 8.05-7.41 4.46 0 8.08 3.63 8.08 8.09s-3.63 8.08-8.08 8.08c-2.18 0-4.22-.85-5.75-2.4a.996.996 0 10-1.42 1.4 10.02 10.02 0 007.17 2.99c5.56 0 10.08-4.52 10.08-10.08.01-5.56-4.52-10.09-10.08-10.09z"></path></g></g></svg>
-                        </div>
-                    </div>
-        
-                    <div v-cloak class="flex justify-end grow">
-                        <div id="docs-mobile-search-button"></div>
-                        <doc-search-desktop></doc-search-desktop>
-        
-                        <doc-theme-switch class="lg:ml-2"></doc-theme-switch>
-                        <doc-history></doc-history>
-                    </div>
+    
+                <span class="hidden h-8 border-r md:inline-block border-base-border"></span>
+            </div>
+    
+            <div class="flex justify-between md:grow">
+                <!-- Top Nav -->
+                <nav id="retype-header-nav" class="hidden md:flex">
+                    <ul class="flex flex-col mb-4 md:pl-16 md:mb-0 md:flex-row md:items-center">
+                        <li class="mr-6">
+                            <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="../getting-started/">Getting Started</a>
+                        </li>
+                        <li class="mr-6">
+                            <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="../features/">Free vs Pro</a>
+                        </li>
+                        <li class="mr-6">
+                            <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="../usage-guide-pro/">Pro Guides</a>
+                        </li>
+                        <li class="mr-6">
+                            <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="../troubleshooting/">Troubleshooting</a>
+                        </li>
+                        <li class="mr-6">
+                            <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="https://github.com/calculabs/elementor-acf-repeater">GitHub</a>
+                        </li>
+    
+                    </ul>
+                </nav>
+    
+                <div v-cloak class="flex justify-end grow">
+                    <div id="retype-mobile-search-button"></div>
+                    <doc-search-desktop></doc-search-desktop>
+    
+                    <doc-theme-switch class="lg:ml-2"></doc-theme-switch>
+                    <doc-history></doc-history>
                 </div>
             </div>
-        </header>
-    
-        <div class="container relative flex bg-white">
-            <!-- Sidebar Skeleton -->
-            <div v-cloak class="fixed flex flex-col shrink-0 duration-300 ease-in-out bg-white border-gray-200 sidebar top-20 w-75 border-r h-screen md:sticky transition-transform skeleton dark:bg-dark-800 dark:border-dark-650">
-            
-                <div class="flex items-center h-16 px-6">
-                    <input class="w-full h-8 px-3 py-2 transition-colors duration-200 ease-linear bg-white border border-gray-200 rounded shadow-none text-sm focus:outline-none focus:border-gray-600 dark:bg-dark-600 dark:border-dark-600" type="text" placeholder="Filter">
-                </div>
-            
-                <div class="pl-6 mt-1 mb-4">
-                    <div class="w-32 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
-                    <div class="w-48 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
-                    <div class="w-40 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
-                    <div class="w-32 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
-                    <div class="w-48 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
-                    <div class="w-40 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
-                </div>
-            
-                <div class="shrink-0 mt-auto bg-transparent dark:border-dark-650">
-                    <a class="flex items-center justify-center flex-nowrap h-16 text-gray-400 dark:text-dark-400 hover:text-gray-700 dark:hover:text-dark-300 transition-colors duration-150 ease-in docs-powered-by" target="_blank" href="https://retype.com/" rel="noopener">
+        </div>
+    </header>
+
+
+    <div id="retype-container" class="container relative flex bg-white">
+        <!-- Sidebar Skeleton -->
+        <div v-cloak class="fixed flex flex-col shrink-0 duration-300 ease-in-out bg-sidebar-left-bg border-sidebar-left-border sidebar top-20 w-75 border-r h-screen md:sticky transition-transform skeleton">
+        
+            <div class="flex items-center h-16 px-6">
+                <input id="retype-filter-input-mock" class="w-full h-10 pl-8 px-3 py-2 transition-colors duration-200 ease-linear bg-filter-bg border border-filter-border rounded-lg shadow-none md:text-sm hover:border-filter-border-hover focus:outline-hidden focus:border-filter-border-focus placeholder-filter-placeholder" type="text">
+            </div>
+        
+            <div class="pl-6 mt-1 mb-4">
+                <div class="w-32 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+                <div class="w-48 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+                <div class="w-40 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+                <div class="w-32 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+                <div class="w-48 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+                <div class="w-40 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+            </div>
+        
+            <div class="shrink-0 mt-auto bg-transparent dark:border-base-border">
+                <a class="flex items-center justify-center flex-nowrap h-16 text-gray-350 dark:text-dark-400 hover:text-gray-600 dark:hover:text-dark-300 transition-colors duration-150 ease-in docs-powered-by" target="_blank" href="https://retype.com/" rel="noopener">
+                    <span class="text-xs whitespace-nowrap">Powered by</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" fill="currentColor" width="96" height="20" overflow="visible"><path d="M0 0v20h13.59V0H0zm11.15 17.54H2.44V2.46h8.71v15.08zM15.8 20h2.44V4.67L15.8 2.22zM20.45 6.89V20h2.44V9.34z"/><g><path d="M40.16 8.44c0 1.49-.59 2.45-1.75 2.88l2.34 3.32h-2.53l-2.04-2.96h-1.43v2.96h-2.06V5.36h3.5c1.43 0 2.46.24 3.07.73s.9 1.27.9 2.35zm-2.48 1.1c.26-.23.38-.59.38-1.09 0-.5-.13-.84-.4-1.03s-.73-.28-1.39-.28h-1.54v2.75h1.5c.72 0 1.2-.12 1.45-.35zM51.56 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92h4.74v1.83h-6.79V5.36h6.64zM60.09 7.15v7.48h-2.06V7.15h-2.61V5.36h7.28v1.79h-2.61zM70.81 14.64h-2.06v-3.66l-3.19-5.61h2.23l1.99 3.45 1.99-3.45H74l-3.19 5.61v3.66zM83.99 6.19c.65.55.97 1.4.97 2.55s-.33 1.98-1 2.51-1.68.8-3.04.8h-1.23v2.59h-2.06V5.36h3.26c1.42 0 2.45.28 3.1.83zm-1.51 3.65c.25-.28.37-.69.37-1.22s-.16-.92-.48-1.14c-.32-.23-.82-.34-1.5-.34H79.7v3.12h1.38c.68 0 1.15-.14 1.4-.42zM95.85 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92H96v1.83h-6.79V5.36h6.64z"/></g></svg>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Sidebar component -->
+        <doc-sidebar v-cloak>
+            <template #sidebar-footer>
+                <div class="shrink-0 mt-auto border-t md:bg-transparent md:border-none dark:border-base-border">
+        
+                    <div class="py-3 px-6 md:hidden border-b dark:border-base-border">
+                        <nav>
+                            <ul class="flex flex-wrap justify-center items-center">
+                                <li class="mr-6">
+                                    <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="../getting-started/">Getting Started</a>
+                                </li>
+                                <li class="mr-6">
+                                    <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="../features/">Free vs Pro</a>
+                                </li>
+                                <li class="mr-6">
+                                    <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="../usage-guide-pro/">Pro Guides</a>
+                                </li>
+                                <li class="mr-6">
+                                    <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="../troubleshooting/">Troubleshooting</a>
+                                </li>
+                                <li class="mr-6">
+                                    <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="https://github.com/calculabs/elementor-acf-repeater">GitHub</a>
+                                </li>
+        
+                            </ul>
+                        </nav>
+                    </div>
+        
+                    <a class="flex items-center justify-center flex-nowrap h-16 text-gray-350 dark:text-dark-400 hover:text-gray-600 dark:hover:text-dark-300 transition-colors duration-150 ease-in docs-powered-by" target="_blank" href="https://retype.com/" rel="noopener">
                         <span class="text-xs whitespace-nowrap">Powered by</span>
                         <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" fill="currentColor" width="96" height="20" overflow="visible"><path d="M0 0v20h13.59V0H0zm11.15 17.54H2.44V2.46h8.71v15.08zM15.8 20h2.44V4.67L15.8 2.22zM20.45 6.89V20h2.44V9.34z"/><g><path d="M40.16 8.44c0 1.49-.59 2.45-1.75 2.88l2.34 3.32h-2.53l-2.04-2.96h-1.43v2.96h-2.06V5.36h3.5c1.43 0 2.46.24 3.07.73s.9 1.27.9 2.35zm-2.48 1.1c.26-.23.38-.59.38-1.09 0-.5-.13-.84-.4-1.03s-.73-.28-1.39-.28h-1.54v2.75h1.5c.72 0 1.2-.12 1.45-.35zM51.56 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92h4.74v1.83h-6.79V5.36h6.64zM60.09 7.15v7.48h-2.06V7.15h-2.61V5.36h7.28v1.79h-2.61zM70.81 14.64h-2.06v-3.66l-3.19-5.61h2.23l1.99 3.45 1.99-3.45H74l-3.19 5.61v3.66zM83.99 6.19c.65.55.97 1.4.97 2.55s-.33 1.98-1 2.51-1.68.8-3.04.8h-1.23v2.59h-2.06V5.36h3.26c1.42 0 2.45.28 3.1.83zm-1.51 3.65c.25-.28.37-.69.37-1.22s-.16-.92-.48-1.14c-.32-.23-.82-.34-1.5-.34H79.7v3.12h1.38c.68 0 1.15-.14 1.4-.42zM95.85 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92H96v1.83h-6.79V5.36h6.64z"/></g></svg>
                     </a>
                 </div>
+            </template>
+        </doc-sidebar>
+
+        <div class="grow min-w-0 bg-body-bg">
+            <!-- Render "toolbar" template here on api pages --><!-- Render page content -->
+<div class="flex">
+    <div id="retype-main" class="min-w-0 p-4 grow md:px-16">
+        <main class="relative pb-12 lg:pt-2">
+            <div class="relative retype-markdown" id="retype-content">
+                <!-- Rendered if sidebar right is enabled -->
+                <div id="retype-sidebar-right-toggle"></div>
+                <doc-page-actions></doc-page-actions>
+
+                <!-- Page content  -->
+<h1 id="pro-workflow-guide">Pro Workflow Guide</h1>
+<p>Start with the <a href="../usage-guide/">Top-level Repeater Guide</a> if you have not built a basic repeater-powered Loop Grid yet. Pro uses the same foundation and adds specialized workflows.</p>
+<h2 id="choose-the-row-source-first">Choose the row source first</h2>
+<p>The source determines which controls and template strategy you need.</p>
+<retype-table copy-text="| Goal | Use |
+| --- | --- |
+| Render rows from one top-level Repeater | Standard ACF row source |
+| Render child rows found inside a nested structure | [Nested Repeater](/nested-repeaters) |
+| Give each Flexible Content layout a different design | [ACF Flexible Content skin](/flexible-content) |
+| Render posts selected by Relationship or Post Object | [Relationship Query](/relationship-queries) |
+| Pull rows from a user, term, post, or options object | [Contexts](/contexts) |">
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Goal</th>
+<th>Use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Render rows from one top-level Repeater</td>
+<td>Standard ACF row source</td>
+</tr>
+<tr>
+<td>Render child rows found inside a nested structure</td>
+<td><a href="../nested-repeaters/">Nested Repeater</a></td>
+</tr>
+<tr>
+<td>Give each Flexible Content layout a different design</td>
+<td><a href="../flexible-content/">ACF Flexible Content skin</a></td>
+</tr>
+<tr>
+<td>Render posts selected by Relationship or Post Object</td>
+<td><a href="../relationship-queries/">Relationship Query</a></td>
+</tr>
+<tr>
+<td>Pull rows from a user, term, post, or options object</td>
+<td><a href="../contexts/">Contexts</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</retype-table>
+<h2 id="configure-the-loop-item-before-the-widget">Configure the Loop Item before the widget</h2>
+<p>Open the Loop Item document settings and choose <strong>ACF Row Schema for Loop</strong>. This gives the editor the correct row schema and prevents unrelated subfields from appearing in dynamic-tag selectors.</p>
+<p>For Flexible Content, create one Loop Item for each layout you intend to map. Each template should use the schema for its own layout.</p>
+<h2 id="configure-the-loop-widget">Configure the Loop widget</h2>
+<p>In the Loop Grid or Loop Carousel <strong>Query</strong> panel:</p>
+<ol>
+<li>Enable <strong>Use ACF Rows</strong>.</li>
+<li>Select <strong>ACF Row Source</strong>.</li>
+<li>Decide whether <strong>Query Current Post Only</strong> should limit the source to the current context.</li>
+<li>If the source is Flexible Content, choose the <strong>ACF Flexible Content</strong> skin and map the layouts.</li>
+<li>Add filters, relationship source settings, or context overrides only when the workflow requires them.</li>
+</ol>
+<h2 id="add-presentation-features-independently">Add presentation features independently</h2>
+<p>Lightbox and taxonomy filtering are optional layers. They do not change the underlying row schema:</p>
+<ul>
+<li><a href="../lightbox/">Lightbox</a> clones a rendered Loop Item into an overlay.</li>
+<li><a href="../taxonomy-filters/">Taxonomy Filters</a> limit visible rows by taxonomy.</li>
+<li><a href="../loop-carousel/">Loop Carousel</a> uses Elementor&#x27;s carousel rendering with repeater rows.</li>
+</ul>
+<h2 id="build-for-the-correct-context">Build for the correct context</h2>
+<p>Editor previews and frontend requests do not always resolve the same WordPress object automatically. Use <a href="../contexts/">Contexts</a> when the rows live on an Options Page, user, term, archive object, or explicitly selected post.</p>
+<h2 id="validate-before-launch">Validate before launch</h2>
+<p>Test at least:</p>
+<ul>
+<li>The Elementor Loop Item preview with a populated source object.</li>
+<li>The page in the Elementor editor and on the frontend.</li>
+<li>Empty rows and unmapped Flexible Content layouts.</li>
+<li>Desktop, tablet, and mobile behavior.</li>
+<li>Multiple widgets on the same page if used.</li>
+<li>Filter deep links, lightbox controls, and carousel navigation if enabled.</li>
+<li>A logged-out session, because stale editor authentication can hide REST or context problems.</li>
+</ul>
+<p>If behavior differs between the editor and frontend, use <a href="../troubleshooting/">Troubleshooting</a> before rebuilding the template.</p>
+
+                
+                <!-- Required only on API pages -->
+                <doc-toolbar-member-filter-no-results></doc-toolbar-member-filter-no-results>
             </div>
+            <footer id="retype-content-footer" class="clear-both">
             
-            <!-- Sidebar component -->
-            <doc-sidebar v-cloak>
-                <template #sidebar-footer>
-                    <div class="shrink-0 mt-auto border-t md:bg-transparent md:border-none dark:border-dark-650">
-            
-                        <div class="py-3 px-6 md:hidden border-b dark:border-dark-650">
-                            <nav>
-                                <ul class="flex flex-wrap justify-center items-center">
-                                    <li class="mr-6">
-                                        <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="../getting-started/">Getting Started</a>
-                                    </li>
-                                    <li class="mr-6">
-                                        <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="../installation/">Installation</a>
-                                    </li>
-                                    <li class="mr-6">
-                                        <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="../usage-guide/">Usage Guide</a>
-                                    </li>
-                                    <li class="mr-6">
-                                        <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="../usage-guide-pro/">Usage Guide Pro</a>
-                                    </li>
-                                    <li class="mr-6">
-                                        <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="../features/">Features</a>
-                                    </li>
-                                    <li class="mr-6">
-                                        <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="../pro-features/">Pro Features</a>
-                                    </li>
-                                    <li class="mr-6">
-                                        <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="../field-types/">Supported Field Types</a>
-                                    </li>
-                                    <li class="mr-6">
-                                        <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="../changelog/">Changelog</a>
-                                    </li>
-                                    <li class="mr-6">
-                                        <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://github.com/calculabs/elementor-acf-repeater-docs">GitHub</a>
-                                    </li>
-            
-                                </ul>
-                            </nav>
-                        </div>
-            
-                        <a class="flex items-center justify-center flex-nowrap h-16 text-gray-400 dark:text-dark-400 hover:text-gray-700 dark:hover:text-dark-300 transition-colors duration-150 ease-in docs-powered-by" target="_blank" href="https://retype.com/" rel="noopener">
-                            <span class="text-xs whitespace-nowrap">Powered by</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" fill="currentColor" width="96" height="20" overflow="visible"><path d="M0 0v20h13.59V0H0zm11.15 17.54H2.44V2.46h8.71v15.08zM15.8 20h2.44V4.67L15.8 2.22zM20.45 6.89V20h2.44V9.34z"/><g><path d="M40.16 8.44c0 1.49-.59 2.45-1.75 2.88l2.34 3.32h-2.53l-2.04-2.96h-1.43v2.96h-2.06V5.36h3.5c1.43 0 2.46.24 3.07.73s.9 1.27.9 2.35zm-2.48 1.1c.26-.23.38-.59.38-1.09 0-.5-.13-.84-.4-1.03s-.73-.28-1.39-.28h-1.54v2.75h1.5c.72 0 1.2-.12 1.45-.35zM51.56 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92h4.74v1.83h-6.79V5.36h6.64zM60.09 7.15v7.48h-2.06V7.15h-2.61V5.36h7.28v1.79h-2.61zM70.81 14.64h-2.06v-3.66l-3.19-5.61h2.23l1.99 3.45 1.99-3.45H74l-3.19 5.61v3.66zM83.99 6.19c.65.55.97 1.4.97 2.55s-.33 1.98-1 2.51-1.68.8-3.04.8h-1.23v2.59h-2.06V5.36h3.26c1.42 0 2.45.28 3.1.83zm-1.51 3.65c.25-.28.37-.69.37-1.22s-.16-.92-.48-1.14c-.32-.23-.82-.34-1.5-.34H79.7v3.12h1.38c.68 0 1.15-.14 1.4-.42zM95.85 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92H96v1.83h-6.79V5.36h6.64z"/></g></svg>
+                <nav id="retype-nextprev" class="print:hidden flex mt-14">
+                    <div class="w-1/2">
+                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../pro-features/">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+                            <span>
+                                <span class="block text-xs font-normal text-base-text-muted">Previous</span>
+                                <span class="block mt-1">Pro Features</span>
+                            </span>
                         </a>
                     </div>
-                </template>
-            </doc-sidebar>
-    
-            <div class="grow min-w-0 dark:bg-dark-850">
-                <!-- Render "toolbar" template here on api pages --><!-- Render page content -->
-                <div class="flex">
-                    <div class="min-w-0 p-4 grow md:px-16">
-                        <main class="relative pb-12 lg:pt-2">
-                            <div class="docs-markdown" id="docs-content">
-                                <!-- Rendered if sidebar right is enabled -->
-                                <div id="docs-sidebar-right-toggle"></div>
-                                <!-- Page content  -->
-<doc-anchor-target id="usage-guide-pro" class="break-words">
-    <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#usage-guide-pro">#</doc-anchor-trigger>
-        <span>Usage Guide Pro</span>
-    </h1>
-</doc-anchor-target>
-<p>This guide covers the additional features available in the Pro version of Dynamic Elementor ACF Repeater.</p>
-<p>Start your 3-day free trial of the Pro version to unlock all features. <a href="https://checkout.freemius.com/mode/dialog/plugin/16334/plan/27245/?trial=paid">Start Your Free Trial</a></p>
-<doc-anchor-target id="multiple-loop-grids-in-a-single-post">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#multiple-loop-grids-in-a-single-post">#</doc-anchor-trigger>
-        <span>Multiple Loop Grids in a Single Post</span>
-    </h2>
-</doc-anchor-target>
-<p>As of version 1.0.2, the Pro version exclusively supports using multiple Loop Grid widgets with ACF Repeater fields in the same post or template. This powerful feature is not available in the free version.</p>
-<doc-anchor-target id="features-and-benefits">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#features-and-benefits">#</doc-anchor-trigger>
-        <span>Features and Benefits</span>
-    </h3>
-</doc-anchor-target>
-<ul>
-<li>Create diverse layouts using different Loop Grid widgets on the same page</li>
-<li>Display various repeater fields from the same post in different formats</li>
-<li>Apply unique styling and filtering to each Loop Grid independently</li>
-<li>Combine multiple ACF Repeater displays in a single template</li>
-</ul>
-<doc-anchor-target id="implementation-steps">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#implementation-steps">#</doc-anchor-trigger>
-        <span>Implementation Steps</span>
-    </h3>
-</doc-anchor-target>
-<ol>
-<li>Create separate Loop Item templates for each repeater field you want to display</li>
-<li>Add multiple Loop Grid widgets to your template</li>
-<li>Configure each Loop Grid with:
-<ul>
-<li>Its own Loop Item template</li>
-<li>Unique repeater field selection</li>
-<li>Independent filtering options</li>
-<li>Custom styling</li>
-</ul>
-</li>
-</ol>
-<p><figure class="content-center">
-    <img src="/images/usage-pro/multiple-loop-grids.jpg" alt="Multiple Loop Grids Example">
-    <figcaption class="caption">Multiple Loop Grids Example</figcaption>
-</figure>
-</p>
-<doc-anchor-target id="use-cases">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#use-cases">#</doc-anchor-trigger>
-        <span>Use Cases</span>
-    </h3>
-</doc-anchor-target>
-<ul>
-<li>Display product gallery and product specifications in different grid layouts</li>
-<li>Show team member photos in one grid and skills in another</li>
-<li>Present project images and project details with different styling</li>
-</ul>
-<doc-anchor-target id="lightbox-and-swiper-configuration">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#lightbox-and-swiper-configuration">#</doc-anchor-trigger>
-        <span>Lightbox and Swiper Configuration</span>
-    </h2>
-</doc-anchor-target>
-<ol>
-<li>Find the &quot;Lightbox&quot; section in Loop Grid widget settings</li>
-<li>Enable the lightbox and swiper features
-<figure class="content-center">
-    <img src="../images/usage-pro/enable-lightbox.jpg" alt="Enable Lightbox" width="400">
-    <figcaption class="caption">Enable Lightbox</figcaption>
-</figure>
-</li>
-<li>Customize lightbox appearance:</li>
-</ol>
-<doc-anchor-target id="repeater-lightbox-style">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#repeater-lightbox-style">#</doc-anchor-trigger>
-        <span>Repeater Lightbox Style</span>
-    </h3>
-</doc-anchor-target>
-<ul>
-<li><strong>Content Width</strong>: Adjust the width of lightbox content (default: 80%)</li>
-<li><strong>Content Height</strong>: Set the height of lightbox content (default: 80%)</li>
-<li><strong>Maximum Content Width</strong>: Define maximum width in pixels (default: 1920px)</li>
-<li><strong>Lightbox Background</strong>: Choose background color for the lightbox overlay</li>
-<li><strong>Content Padding</strong>: Set padding for top, right, bottom, and left</li>
-<li><strong>Swiper Navigation Color</strong>: Customize the color of navigation arrows</li>
-<li><strong>Swiper Navigation Size</strong>: Adjust the size of navigation arrows</li>
-<li><strong>Lightbox Close Icon Color</strong>: Set the color of the close button</li>
-<li><strong>Lightbox Close Icon Size</strong>: Adjust the size of the close button</li>
-</ul>
-<p><figure class="content-center">
-    <img src="../images/usage-pro/style-lightbox.jpg" alt="Style Lightbox">
-    <figcaption class="caption">Style Lightbox</figcaption>
-</figure>
-</p>
-<doc-anchor-target id="element-visibility-control">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#element-visibility-control">#</doc-anchor-trigger>
-        <span>Element Visibility Control</span>
-    </h2>
-</doc-anchor-target>
-<p>Control how elements appear in different contexts:</p>
-<ol>
-<li>Select any dynamic repeater element in your Loop Item template</li>
-<li>Open the Content tab</li>
-<li>Find the &quot;Repeater Lightbox Visibility&quot; section</li>
-<li>Choose from:
-<ul>
-<li>Default: Visible everywhere</li>
-<li>Hide in Lightbox: Only visible in loop grid</li>
-<li>Show Only in Lightbox: Hidden in loop grid, visible in lightbox</li>
-</ul>
-</li>
-</ol>
-<div class="flex mb-6">
-    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
-    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
-        <div class="flex items-center ml-4 h-7">
-            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
-                <g fill="currentColor"><g>
-                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
-                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
-                    <path fill="none" d="M0 0h24v24H0z"></path>
-                </g></g>
-            </svg>
-        </div>
-        <div class="pr-5 ml-3 w-full">
-            <h5>Element Visibility Control</h5>
-<p>Useful if you want to display elements in one place but not another, for example a button in the grid which you don&#x27;t want to show in the lightbox.</p>
-        </div>
-    </div>
-</div>
-<p><figure class="content-center">
-    <img src="../images/usage-pro/repeater-lightbox-visibility.jpg" alt="Style Lightbox">
-    <figcaption class="caption">Style Lightbox</figcaption>
-</figure>
-</p>
-<doc-anchor-target id="advanced-filtering">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#advanced-filtering">#</doc-anchor-trigger>
-        <span>Advanced Filtering</span>
-    </h2>
-</doc-anchor-target>
-<p>Set up dynamic filtering for your Loop Grid:</p>
-<doc-anchor-target id="basic-setup">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#basic-setup">#</doc-anchor-trigger>
-        <span>Basic Setup</span>
-    </h3>
-</doc-anchor-target>
-<ol>
-<li>In Loop Grid settings, find the &quot;Filter&quot; section</li>
-<li>Enable filtering</li>
-<li>Select filter source:
-<ul>
-<li>ACF field values</li>
-<li>Custom taxonomies</li>
-<li>Post meta</li>
-</ul>
-</li>
-</ol>
-<doc-anchor-target id="custom-taxonomy-filtering">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#custom-taxonomy-filtering">#</doc-anchor-trigger>
-        <span>Custom Taxonomy Filtering</span>
-    </h3>
-</doc-anchor-target>
-<p>The Custom Taxonomy Filter lets you filter your Loop Grid items using WordPress taxonomies (like categories, tags, or custom taxonomies).</p>
-<div class="flex mb-6">
-    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
-    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
-        <div class="flex items-center ml-4 h-7">
-            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
-                <g fill="currentColor"><g>
-                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
-                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
-                    <path fill="none" d="M0 0h24v24H0z"></path>
-                </g></g>
-            </svg>
-        </div>
-        <div class="pr-5 ml-3 w-full">
-            <h5>Choosing Between Filter Types</h5>
-<p><strong>Parent Post Taxonomy Filter (Default):</strong></p>
-<ul>
-<li>Works across multiple posts</li>
-<li>Shows all taxonomy terms used by posts containing your repeater field</li>
-<li>Filters entire groups of repeater items together (all items from same post)</li>
-<li>Perfect for portfolio sites where each project (post) has multiple gallery items</li>
-</ul>
-<p><strong>Repeater Field Taxonomy Filter (Optional):</strong></p>
-<ul>
-<li>Works with individual repeater items</li>
-<li>Can be used with a single post</li>
-<li>Each repeater item can have its own taxonomy terms</li>
-<li>Better for catalogs where each item needs individual categorization</li>
-</ul>
-        </div>
-    </div>
-</div>
-<doc-anchor-target id="how-it-works">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#how-it-works">#</doc-anchor-trigger>
-        <span>How It Works</span>
-    </h3>
-</doc-anchor-target>
-<doc-anchor-target id="default-parent-post-taxonomy">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#default-parent-post-taxonomy">#</doc-anchor-trigger>
-        <span>Default: Parent Post Taxonomy</span>
-    </h4>
-</doc-anchor-target>
-<p>By default, the filter uses taxonomy terms from the parent posts containing your repeater field.</p>
-<p><strong>Process:</strong></p>
-<ol>
-<li>The filter collects all taxonomy terms from posts that have your repeater field</li>
-<li>When users select a term, it shows repeater items from posts with that term</li>
-<li>All repeater items from the same post are filtered together</li>
-</ol>
-<doc-anchor-target id="optional-repeater-field-taxonomy">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#optional-repeater-field-taxonomy">#</doc-anchor-trigger>
-        <span>Optional: Repeater Field Taxonomy</span>
-    </h4>
-</doc-anchor-target>
-<p>Enable &quot;Use Repeater Taxonomy Field&quot; to filter using taxonomy terms stored in your repeater field instead.</p>
-<p><strong>Process:</strong></p>
-<ol>
-<li>Choose a taxonomy (e.g., categories, tags)</li>
-<li>Select which repeater field contains your taxonomy terms</li>
-<li>Filter shows terms from the selected repeater field</li>
-<li>Items are filtered based on their individual taxonomy values</li>
-</ol>
-<doc-anchor-target id="display-options">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#display-options">#</doc-anchor-trigger>
-        <span>Display Options</span>
-    </h3>
-</doc-anchor-target>
-<p>Choose how users will interact with your filters:</p>
-<ol>
-<li><p><strong>Dropdown Menu</strong></p>
-<ul>
-<li>Clean, compact select menu</li>
-<li>Good for lots of terms</li>
-<li>Mobile-friendly
-<img src="/images/usage-pro/filter-dropdown.jpg" alt="Dropdown Filter Example" /></li>
-</ul>
-</li>
-<li><p><strong>Checkbox List</strong></p>
-<ul>
-<li>Select multiple terms</li>
-<li>All options visible</li>
-<li>Great for multiple selections
-<img src="/images/usage-pro/filter-checkbox.jpg" alt="Checkbox Filter Example" /></li>
-</ul>
-</li>
-<li><p><strong>Navigation Buttons</strong></p>
-<ul>
-<li>Button-style interface</li>
-<li>Easy to click</li>
-<li>Best for few terms
-<img src="/images/usage-pro/filter-navigation.jpg" alt="Navigation Filter Example" /></li>
-</ul>
-</li>
-</ol>
-<doc-anchor-target id="setup-steps">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#setup-steps">#</doc-anchor-trigger>
-        <span>Setup Steps</span>
-    </h3>
-</doc-anchor-target>
-<ol>
-<li><p>Enable the Filter:</p>
-<ul>
-<li>Go to Loop Grid settings</li>
-<li>Find the &quot;Repeater Filter&quot; section</li>
-<li>Enable &quot;Custom Taxonomy Filter&quot;</li>
-</ul>
-</li>
-<li><p>Configure Filter:</p>
-<ul>
-<li>Select which taxonomy to filter by (this will use parent post terms by default)</li>
-<li>Choose your display style (dropdown/checkbox/navigation)</li>
-<li>To use repeater field terms instead: Enable &quot;Use Repeater Taxonomy Field&quot; and select your repeater&#x27;s taxonomy field</li>
-</ul>
-</li>
-<li><p>Customize Display:</p>
-<ul>
-<li>Show/hide &quot;All&quot; option</li>
-<li>Customize &quot;All&quot; text</li>
-<li>Set filter alignment</li>
-<li>Choose horizontal/vertical layout</li>
-<li>Adjust spacing and margins</li>
-</ul>
-</li>
-<li><p>Style Your Filter:</p>
-<ul>
-<li>Set colors and typography</li>
-<li>Customize padding and margins</li>
-<li>Style active/hover states</li>
-<li>Adjust border and radius</li>
-</ul>
-</li>
-</ol>
-<doc-anchor-target id="common-applications-and-examples">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#common-applications-and-examples">#</doc-anchor-trigger>
-        <span>Common Applications and Examples</span>
-    </h3>
-</doc-anchor-target>
-<doc-anchor-target id="using-default-parent-post-taxonomy">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#using-default-parent-post-taxonomy">#</doc-anchor-trigger>
-        <span>Using Default Parent Post Taxonomy</span>
-    </h4>
-</doc-anchor-target>
-<p>Perfect when you have multiple posts and want to filter groups of repeater items:</p>
-<ol>
-<li><p><strong>Portfolio Websites</strong></p>
-<ul>
-<li><strong>Example:</strong> A photography website with multiple project posts</li>
-<li>Each project post is tagged (Wedding, Corporate, Events)</li>
-<li>Each project contains multiple photos in a repeater</li>
-<li>Filtering by &quot;Wedding&quot; shows all photos from wedding projects</li>
-<li>All photos from the same project are filtered together</li>
-</ul>
-</li>
-<li><p><strong>Real Estate Listings</strong></p>
-<ul>
-<li><strong>Example:</strong> A property listing website</li>
-<li>Properties (posts) tagged by location and type</li>
-<li>Each property has multiple images in a repeater</li>
-<li>Filter entire property galleries by &quot;Beachfront&quot; or &quot;City Center&quot;</li>
-<li>All images from the same property show/hide together</li>
-</ul>
-</li>
-</ol>
-<doc-anchor-target id="using-repeater-field-taxonomy">
-    <h4>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#using-repeater-field-taxonomy">#</doc-anchor-trigger>
-        <span>Using Repeater Field Taxonomy</span>
-    </h4>
-</doc-anchor-target>
-<p>Enable this when individual repeater items need their own taxonomy terms:</p>
-<ol>
-<li><p><strong>Product Catalogs</strong></p>
-<ul>
-<li><strong>Example:</strong> A fashion store catalog</li>
-<li>One post contains the entire season&#x27;s collection</li>
-<li>Each product in repeater has its own categories</li>
-<li>Filter individual items by &quot;Men&#x27;s&quot;, &quot;Women&#x27;s&quot;, &quot;Accessories&quot;</li>
-<li>Products can be filtered independently</li>
-</ul>
-</li>
-<li><p><strong>Document Libraries</strong></p>
-<ul>
-<li><strong>Example:</strong> A resource center</li>
-<li>One post holds all company documents</li>
-<li>Each document in repeater has topic tags</li>
-<li>Filter by department or document type</li>
-<li>Documents filter based on their own classifications</li>
-</ul>
-</li>
-</ol>
-<doc-anchor-target id="acf-relationship-query">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#acf-relationship-query">#</doc-anchor-trigger>
-        <span>ACF Relationship Query</span>
-    </h2>
-</doc-anchor-target>
-<p>The ACF Relationship Query feature allows you to display related content from across your site within your Loop Grid. This powerful feature helps you create dynamic content relationships and display them in your Elementor templates.</p>
-<doc-anchor-target id="prerequisites">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#prerequisites">#</doc-anchor-trigger>
-        <span>Prerequisites</span>
-    </h3>
-</doc-anchor-target>
-<ul>
-<li>ACF Relationship field configured in your field group</li>
-<li>Pro version of Dynamic Elementor ACF Repeater</li>
-<li>Loop Grid widget with ACF Repeater enabled</li>
-</ul>
-<doc-anchor-target id="setting-up-relationship-queries">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#setting-up-relationship-queries">#</doc-anchor-trigger>
-        <span>Setting Up Relationship Queries</span>
-    </h3>
-</doc-anchor-target>
-<ol>
-<li>Open your Loop Grid widget settings</li>
-<li>Find the &quot;ACF Relationship&quot; section</li>
-<li>Enable &quot;Use ACF Relationship&quot;</li>
-<li>Select your relationship field from the dropdown</li>
-</ol>
-<p><figure class="content-center">
-    <img src="/images/usage-pro/relationship-query.jpg" alt="ACF Relationship Settings">
-    <figcaption class="caption">ACF Relationship Settings</figcaption>
-</figure>
-</p>
-<doc-anchor-target id="how-it-works-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#how-it-works-1">#</doc-anchor-trigger>
-        <span>How It Works</span>
-    </h3>
-</doc-anchor-target>
-<p>When you enable relationship queries:</p>
-<ul>
-<li>The Loop Grid automatically queries all related posts</li>
-<li>Displays content based on your relationship field selections</li>
-<li>Works with any post type (posts, pages, custom post types)</li>
-<li>Shows all related posts without pagination</li>
-<li>Maintains relationships configured in ACF</li>
-</ul>
-<div class="flex mb-6">
-    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
-    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
-        <div class="flex items-center ml-4 h-7">
-            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
-                <g fill="currentColor"><g>
-                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
-                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
-                    <path fill="none" d="M0 0h24v24H0z"></path>
-                </g></g>
-            </svg>
-        </div>
-        <div class="pr-5 ml-3 w-full">
-            <h5>Relationship Queries</h5>
-<p>Your Loop Grid will now display related posts instead of regular repeater items. This is perfect for showing associated content like related products, team members, or linked resources.</p>
-        </div>
-    </div>
-</div>
-<doc-anchor-target id="common-use-cases">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#common-use-cases">#</doc-anchor-trigger>
-        <span>Common Use Cases</span>
-    </h3>
-</doc-anchor-target>
-<ol>
-<li><p><strong>Related Content</strong></p>
-<ul>
-<li>Display related posts or articles</li>
-<li>Show associated products</li>
-<li>List team members by department</li>
-</ul>
-</li>
-<li><p><strong>Content Relationships</strong></p>
-<ul>
-<li>Link projects to team members</li>
-<li>Connect services to case studies</li>
-<li>Associate events with venues</li>
-</ul>
-</li>
-<li><p><strong>Dynamic Collections</strong></p>
-<ul>
-<li>Create featured content sections</li>
-<li>Build cross-referenced galleries</li>
-<li>Display linked resources</li>
-</ul>
-</li>
-</ol>
-<doc-anchor-target id="tips-for-relationship-queries">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#tips-for-relationship-queries">#</doc-anchor-trigger>
-        <span>Tips for Relationship Queries</span>
-    </h3>
-</doc-anchor-target>
-<ul>
-<li>Use ACF&#x27;s interface to manage content relationships</li>
-<li>Combine with visibility controls for flexible displays</li>
-<li>Mix with filtering for advanced content organization</li>
-<li>Leverage dynamic tags to show related post data</li>
-</ul>
-<doc-anchor-target id="pro-field-types-support">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#pro-field-types-support">#</doc-anchor-trigger>
-        <span>Pro Field Types Support</span>
-    </h2>
-</doc-anchor-target>
-<p>The pro version adds support for these additional ACF field types:</p>
-<doc-anchor-target id="file-fields">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#file-fields">#</doc-anchor-trigger>
-        <span>File Fields</span>
-    </h3>
-</doc-anchor-target>
-<ul>
-<li>Add document downloads to your loops</li>
-<li>Display file type icons</li>
-<li>Show file size and download count</li>
-<li>Preview documents inline</li>
-</ul>
-<doc-anchor-target id="gallery-fields">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#gallery-fields">#</doc-anchor-trigger>
-        <span>Gallery Fields</span>
-    </h3>
-</doc-anchor-target>
-<ul>
-<li>Display multiple images in a grid or slider</li>
-<li>Enable lightbox for gallery items</li>
-<li>Configure gallery layouts and spacing</li>
-<li>Add hover effects and animations</li>
-</ul>
-<doc-anchor-target id="relationship-fields">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#relationship-fields">#</doc-anchor-trigger>
-        <span>Relationship Fields</span>
-    </h3>
-</doc-anchor-target>
-<ul>
-<li>Display related content from other posts</li>
-<li>Link to connected entries</li>
-<li>Show relationship field data in your loops</li>
-<li>Create complex content relationships</li>
-</ul>
-<doc-anchor-target id="pro-tips">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#pro-tips">#</doc-anchor-trigger>
-        <span>Pro Tips</span>
-    </h2>
-</doc-anchor-target>
-<ul>
-<li>Use visibility control to create different experiences in grid vs lightbox</li>
-<li>Combine slider with lightbox for image galleries</li>
-<li>Set up multiple filters for complex content organization</li>
-<li>Utilize relationship fields for connected content displays</li>
-</ul>
+            
+                    <div class="w-1/2">
+                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../contexts/">
+                            <span>
+                                <span class="block text-xs font-normal text-right text-base-text-muted">Next</span>
+                                <span class="block mt-1">Repeater Contexts</span>
+                            </span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+                        </a>
+                    </div>
+                </nav>
+            </footer>
+        </main>
 
-                                
-                                <!-- Required only on API pages -->
-                                <doc-toolbar-member-filter-no-results></doc-toolbar-member-filter-no-results>
-                            </div>
-                            <footer class="clear-both">
-                            
-                                <nav class="flex mt-14">
-                                    <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../usage-guide/">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
-                                            <span>
-                                                <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
-                                                <span class="block mt-1">Usage Guide</span>
-                                            </span>
-                                        </a>
-                                    </div>
-                            
-                                    <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../features/">
-                                            <span>
-                                                <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
-                                                <span class="block mt-1">Features</span>
-                                            </span>
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
-                                        </a>
-                                    </div>
-                                </nav>
-                            </footer>
-                        </main>
-                
-                        <div class="border-t dark:border-dark-650 pt-6 mb-8">
-                            <footer class="flex flex-wrap items-center justify-between">
-                                <div>
-                                    <ul class="flex flex-wrap items-center text-sm">
-                                    </ul>
-                                </div>
-                                <div class="docs-copyright py-2 text-gray-500 dark:text-dark-350 text-sm leading-relaxed"><p>© Copyright 2025. All rights reserved.</p></div>
-                            </footer>
-                        </div>
-                    </div>
-                
-                    <!-- Rendered if sidebar right is enabled -->
-                    <!-- Sidebar right skeleton-->
-                    <div v-cloak class="fixed top-0 bottom-0 right-0 translate-x-full bg-white border-gray-200 lg:sticky lg:border-l lg:shrink-0 lg:pt-6 lg:transform-none sm:w-1/2 lg:w-64 lg:z-0 md:w-104 sidebar-right skeleton dark:bg-dark-850 dark:border-dark-650">
-                        <div class="pl-5">
-                            <div class="w-32 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
-                            <div class="w-48 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
-                            <div class="w-40 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
-                        </div>
-                    </div>
-                
-                    <!-- User should be able to hide sidebar right -->
-                    <doc-sidebar-right v-cloak></doc-sidebar-right>
+        <div id="retype-page-footer" class="print:border-none border-t border-base-border pt-6 mb-8">
+            <footer class="flex flex-wrap items-center justify-between print:justify-center">
+                <div id="retype-footer-links" class="print:hidden">
+                    <ul class="flex flex-wrap items-center text-sm">
+                    </ul>
                 </div>
-
-            </div>
+                <div id="retype-copyright" class="print:justify-center py-2 text-footer-text font-footer-link text-sm leading-relaxed"><p>© Copyright 2026. All rights reserved.</p></div>
+            </footer>
         </div>
-    
-        <doc-search-mobile></doc-search-mobile>
-        <doc-back-to-top></doc-back-to-top>
     </div>
 
+    <!-- Rendered if sidebar right is enabled -->
+    <!-- Sidebar right skeleton-->
+    <div v-cloak class="fixed top-0 bottom-0 right-0 translate-x-full bg-sidebar-right-bg border-sidebar-right-border lg:sticky lg:border-l lg:shrink-0 lg:pt-6 lg:translate-x-0 sm:w-1/2 lg:w-64 lg:z-0 md:w-104 sidebar-right skeleton">
+        <div class="pl-5">
+            <div class="w-32 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+            <div class="w-48 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+            <div class="w-40 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+        </div>
+    </div>
 
-    <div id="docs-overlay-target"></div>
+    <!-- User should be able to hide sidebar right -->
+    <doc-sidebar-right v-cloak></doc-sidebar-right>
+</div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "Usage Guide Pro", level: 1, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+        </div>
+    </div>
+
+    <doc-search-mobile></doc-search-mobile>
+    <doc-back-to-top></doc-back-to-top>
+</div>
+
+
+    <div id="retype-overlay-target"></div>
+
+        <script data-cfasync="false">window.__DOCS__ = { "title": "Pro Workflow Guide", level: 1, icon: "file", hasPrism: false, hasInstagram: false, hasMermaid: false, hasMath: false, tocDepth: 23, "md": "/usage-guide-pro.md" }</script>
 </body>
 </html>

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: /sitemap.xml.gz
+Sitemap: https://calculabs.github.io/elementor-acf-repeater-docs/sitemap.xml

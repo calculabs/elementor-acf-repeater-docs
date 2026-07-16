@@ -11,30 +11,30 @@
     <meta name="generator" content="Retype 4.6.0">
 
     <!-- Primary Meta Tags -->
-    <title>Free and Pro Features | Dynamic Elementor ACF Repeater Docs</title>
-    <meta name="title" content="Free and Pro Features | Dynamic Elementor ACF Repeater Docs">
-    <meta name="description" content="This matrix describes the current 2.0 behavior. A check means the feature is implemented by the named edition—not merely that the underlying SCF/ACF field type exists.">
+    <title>Repeater Contexts | Dynamic Elementor ACF Repeater Docs</title>
+    <meta name="title" content="Repeater Contexts | Dynamic Elementor ACF Repeater Docs">
+    <meta name="description" content="The Repeater context identifies the SCF/ACF object that owns the selected row source. It is separate from the Loop Item template and from Elementor's visual preview source.">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://calculabs.github.io/elementor-acf-repeater-docs/features/">
+    <link rel="canonical" href="https://calculabs.github.io/elementor-acf-repeater-docs/contexts/">
     <link rel="sitemap" type="application/xml" title="Sitemap" href="https://calculabs.github.io/elementor-acf-repeater-docs/sitemap.xml">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://calculabs.github.io/elementor-acf-repeater-docs/features/">
-    <meta property="og:title" content="Free and Pro Features | Dynamic Elementor ACF Repeater Docs">
-    <meta property="og:description" content="This matrix describes the current 2.0 behavior. A check means the feature is implemented by the named edition—not merely that the underlying SCF/ACF field type exists.">
+    <meta property="og:url" content="https://calculabs.github.io/elementor-acf-repeater-docs/contexts/">
+    <meta property="og:title" content="Repeater Contexts | Dynamic Elementor ACF Repeater Docs">
+    <meta property="og:description" content="The Repeater context identifies the SCF/ACF object that owns the selected row source. It is separate from the Loop Item template and from Elementor's visual preview source.">
     <meta property="og:site_name" content="Dynamic Elementor ACF Repeater">
     <meta property="og:locale" content="en_US">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://calculabs.github.io/elementor-acf-repeater-docs/features/">
-    <meta name="twitter:title" content="Free and Pro Features | Dynamic Elementor ACF Repeater Docs">
-    <meta name="twitter:description" content="This matrix describes the current 2.0 behavior. A check means the feature is implemented by the named edition—not merely that the underlying SCF/ACF field type exists.">
+    <meta name="twitter:url" content="https://calculabs.github.io/elementor-acf-repeater-docs/contexts/">
+    <meta name="twitter:title" content="Repeater Contexts | Dynamic Elementor ACF Repeater Docs">
+    <meta name="twitter:description" content="The Repeater context identifies the SCF/ACF object that owns the selected row source. It is separate from the Loop Item template and from Elementor's visual preview source.">
 
     <!-- Alternate Markdown -->
-    <link rel="alternate" type="text/markdown" href="https://calculabs.github.io/elementor-acf-repeater-docs/features.md">
+    <link rel="alternate" type="text/markdown" href="https://calculabs.github.io/elementor-acf-repeater-docs/contexts.md">
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
@@ -173,286 +173,125 @@
                 <doc-page-actions></doc-page-actions>
 
                 <!-- Page content  -->
-<h1 id="free-and-pro-features">Free and Pro Features</h1>
-<p>This matrix describes the current 2.0 behavior. A check means the feature is implemented by the named edition—not merely that the underlying SCF/ACF field type exists.</p>
-<h2 id="row-sources-and-widgets">Row sources and widgets</h2>
-<retype-table copy-text="| Feature | Free | Pro |
-| --- | :---: | :---: |
-| Top-level Repeater as a Loop Grid row source | ✓ | ✓ |
-| Current post or queried-object rows | ✓ | ✓ |
-| ACF/SCF Options Page rows | ✓ | ✓ |
-| Aggregate rows from a Loop widget source query | ✓ | ✓ |
-| Multiple repeater-powered Loop widgets on one page |  | ✓ |
-| Loop Carousel |  | ✓ |
-| Nested Repeater paths |  | ✓ |
-| Repeater nested through Group or Flexible Content |  | ✓ |
-| Flexible Content layout-to-template mapping |  | ✓ |
-| Per-layout row schema and editor preview |  | ✓ |
-| Relationship/Post Object query source |  | ✓ |">
+<h1 id="repeater-contexts">Repeater Contexts</h1>
+<p>The Repeater context identifies the SCF/ACF object that owns the selected row source. It is separate from the Loop Item template and from Elementor&#x27;s visual preview source.</p>
+<p>Find <strong>Repeater Context</strong> in the Loop Grid or Loop Carousel <strong>Query</strong> panel after enabling the ACF row source.</p>
+<h2 id="available-contexts">Available contexts</h2>
+<retype-table copy-text="| Setting | Edition | Resolves to |
+| --- | --- | --- |
+| Automatic | Free and Pro | Queried term or author, Elementor preview post, current post, or the normal queried object |
+| Current Post | Free and Pro | `get_the_ID()` |
+| Queried Object | Free and Pro | The current queried post, author, or taxonomy term |
+| ACF Options Page | Free and Pro | The SCF/ACF `options` object |
+| Current User | Pro | The logged-in user as `user_ID` |
+| Explicit ACF Object ID | Pro | A specific post, user, term, or options object |">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
 <tr>
-<th>Feature</th>
-<th style="text-align: center;">Free</th>
-<th style="text-align: center;">Pro</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Top-level Repeater as a Loop Grid row source</td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✓</td>
-</tr>
-<tr>
-<td>Current post or queried-object rows</td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✓</td>
-</tr>
-<tr>
-<td>ACF/SCF Options Page rows</td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✓</td>
-</tr>
-<tr>
-<td>Aggregate rows from a Loop widget source query</td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✓</td>
-</tr>
-<tr>
-<td>Multiple repeater-powered Loop widgets on one page</td>
-<td style="text-align: center;"> </td>
-<td style="text-align: center;">✓</td>
-</tr>
-<tr>
-<td>Loop Carousel</td>
-<td style="text-align: center;"> </td>
-<td style="text-align: center;">✓</td>
-</tr>
-<tr>
-<td>Nested Repeater paths</td>
-<td style="text-align: center;"> </td>
-<td style="text-align: center;">✓</td>
-</tr>
-<tr>
-<td>Repeater nested through Group or Flexible Content</td>
-<td style="text-align: center;"> </td>
-<td style="text-align: center;">✓</td>
-</tr>
-<tr>
-<td>Flexible Content layout-to-template mapping</td>
-<td style="text-align: center;"> </td>
-<td style="text-align: center;">✓</td>
-</tr>
-<tr>
-<td>Per-layout row schema and editor preview</td>
-<td style="text-align: center;"> </td>
-<td style="text-align: center;">✓</td>
-</tr>
-<tr>
-<td>Relationship/Post Object query source</td>
-<td style="text-align: center;"> </td>
-<td style="text-align: center;">✓</td>
-</tr>
-</tbody>
-</table>
-</div>
-</retype-table>
-<p>Free supports multiple Loop Item templates, but only one repeater-powered Loop Grid on a rendered page. Pro removes that page-level limitation and keeps each widget&#x27;s context independent.</p>
-<h2 id="dynamic-data">Dynamic data</h2>
-<retype-table copy-text="| Feature | Free | Pro |
-| --- | :---: | :---: |
-| Repeater Text tag for Text and Textarea subfields | ✓ | ✓ |
-| Repeater Image tag | ✓ | ✓ |
-| Original source-post title tag | ✓ | ✓ |
-| Extended text-compatible field types |  | ✓ |
-| File and Gallery tags |  | ✓ |
-| URL, Color, and Icon tags |  | ✓ |
-| Link Title and Link Target tags |  | ✓ |">
-<div class="table-wrapper scrollbar overflow-hidden">
-<table class="comfortable">
-<thead>
-<tr>
-<th>Feature</th>
-<th style="text-align: center;">Free</th>
-<th style="text-align: center;">Pro</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Repeater Text tag for Text and Textarea subfields</td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✓</td>
-</tr>
-<tr>
-<td>Repeater Image tag</td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✓</td>
-</tr>
-<tr>
-<td>Original source-post title tag</td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✓</td>
-</tr>
-<tr>
-<td>Extended text-compatible field types</td>
-<td style="text-align: center;"> </td>
-<td style="text-align: center;">✓</td>
-</tr>
-<tr>
-<td>File and Gallery tags</td>
-<td style="text-align: center;"> </td>
-<td style="text-align: center;">✓</td>
-</tr>
-<tr>
-<td>URL, Color, and Icon tags</td>
-<td style="text-align: center;"> </td>
-<td style="text-align: center;">✓</td>
-</tr>
-<tr>
-<td>Link Title and Link Target tags</td>
-<td style="text-align: center;"> </td>
-<td style="text-align: center;">✓</td>
-</tr>
-</tbody>
-</table>
-</div>
-</retype-table>
-<p>The Pro URL tag can convert supported subfields—including Relationship, Post Object, Taxonomy, Link, Image, and File values—into a URL suitable for Elementor link controls. This is different from the <a href="../relationship-queries/">Relationship Query</a>, and there is no separate “ACF Repeater Relationship” dynamic tag.</p>
-<p>See <a href="../field-types/">Dynamic Tags and Field Types</a> for the exact compatibility matrix.</p>
-<h2 id="presentation-and-interaction">Presentation and interaction</h2>
-<retype-table copy-text="| Feature | Free | Pro |
-| --- | :---: | :---: |
-| User-designed Elementor Loop Item markup | ✓ | ✓ |
-| Lightbox that clones the selected Loop Item |  | ✓ |
-| Optional previous/next lightbox navigation |  | ✓ |
-| Lightbox-only or grid-only element visibility |  | ✓ |
-| Lightbox width, height, overlay, padding, and control styles |  | ✓ |
-| Taxonomy filter: dropdown, checkbox, or navigation |  | ✓ |
-| Filter deep links and custom URL parameter |  | ✓ |
-| Repeater-aware Elementor display condition |  | ✓ |
-| Repeater values as Elementor Form choices |  | ✓ |">
-<div class="table-wrapper scrollbar overflow-hidden">
-<table class="comfortable">
-<thead>
-<tr>
-<th>Feature</th>
-<th style="text-align: center;">Free</th>
-<th style="text-align: center;">Pro</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>User-designed Elementor Loop Item markup</td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✓</td>
-</tr>
-<tr>
-<td>Lightbox that clones the selected Loop Item</td>
-<td style="text-align: center;"> </td>
-<td style="text-align: center;">✓</td>
-</tr>
-<tr>
-<td>Optional previous/next lightbox navigation</td>
-<td style="text-align: center;"> </td>
-<td style="text-align: center;">✓</td>
-</tr>
-<tr>
-<td>Lightbox-only or grid-only element visibility</td>
-<td style="text-align: center;"> </td>
-<td style="text-align: center;">✓</td>
-</tr>
-<tr>
-<td>Lightbox width, height, overlay, padding, and control styles</td>
-<td style="text-align: center;"> </td>
-<td style="text-align: center;">✓</td>
-</tr>
-<tr>
-<td>Taxonomy filter: dropdown, checkbox, or navigation</td>
-<td style="text-align: center;"> </td>
-<td style="text-align: center;">✓</td>
-</tr>
-<tr>
-<td>Filter deep links and custom URL parameter</td>
-<td style="text-align: center;"> </td>
-<td style="text-align: center;">✓</td>
-</tr>
-<tr>
-<td>Repeater-aware Elementor display condition</td>
-<td style="text-align: center;"> </td>
-<td style="text-align: center;">✓</td>
-</tr>
-<tr>
-<td>Repeater values as Elementor Form choices</td>
-<td style="text-align: center;"> </td>
-<td style="text-align: center;">✓</td>
-</tr>
-</tbody>
-</table>
-</div>
-</retype-table>
-<p>The plugin does not inject a visual card, badge, or open button into each Loop Item. Lightbox opening is attached to the rendered item, while normal interactive links and controls inside the item remain usable.</p>
-<h2 id="context-choices">Context choices</h2>
-<retype-table copy-text="| Context | Free | Pro |
-| --- | :---: | :---: |
-| Automatic | ✓ | ✓ |
-| Current Post | ✓ | ✓ |
-| Queried Object | ✓ | ✓ |
-| ACF Options | ✓ | ✓ |
-| Current User |  | ✓ |
-| Explicit ACF Object ID |  | ✓ |">
-<div class="table-wrapper scrollbar overflow-hidden">
-<table class="comfortable">
-<thead>
-<tr>
-<th>Context</th>
-<th style="text-align: center;">Free</th>
-<th style="text-align: center;">Pro</th>
+<th>Setting</th>
+<th>Edition</th>
+<th>Resolves to</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Automatic</td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✓</td>
+<td>Free and Pro</td>
+<td>Queried term or author, Elementor preview post, current post, or the normal queried object</td>
 </tr>
 <tr>
 <td>Current Post</td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✓</td>
+<td>Free and Pro</td>
+<td><code translate="no" v-pre>get_the_ID()</code></td>
 </tr>
 <tr>
 <td>Queried Object</td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✓</td>
+<td>Free and Pro</td>
+<td>The current queried post, author, or taxonomy term</td>
 </tr>
 <tr>
-<td>ACF Options</td>
-<td style="text-align: center;">✓</td>
-<td style="text-align: center;">✓</td>
+<td>ACF Options Page</td>
+<td>Free and Pro</td>
+<td>The SCF/ACF <code translate="no" v-pre>options</code> object</td>
 </tr>
 <tr>
 <td>Current User</td>
-<td style="text-align: center;"> </td>
-<td style="text-align: center;">✓</td>
+<td>Pro</td>
+<td>The logged-in user as <code translate="no" v-pre>user_ID</code></td>
 </tr>
 <tr>
 <td>Explicit ACF Object ID</td>
-<td style="text-align: center;"> </td>
-<td style="text-align: center;">✓</td>
+<td>Pro</td>
+<td>A specific post, user, term, or options object</td>
 </tr>
 </tbody>
 </table>
 </div>
 </retype-table>
-<p>Explicit object IDs can target posts, users, taxonomies, or options using the syntax accepted by SCF/ACF. Learn how resolution works in <a href="../contexts/">Contexts</a>.</p>
-<h2 id="compatibility-notes">Compatibility notes</h2>
+<h2 id="automatic-resolution">Automatic resolution</h2>
+<p>Automatic is the safe default. It resolves in this order:</p>
+<ol>
+<li>A queried taxonomy term or author.</li>
+<li>Elementor&#x27;s current preview post.</li>
+<li>The current WordPress post.</li>
+<li>Another compatible queried object, when available.</li>
+</ol>
+<p>When Automatic resolves a normal source object but the selected Repeater has no rows, the row provider preserves the plugin&#x27;s historical <strong>Options Page fallback</strong>. Choosing a context explicitly does not silently switch to Options.</p>
+<h2 id="explicit-object-ids">Explicit object IDs</h2>
+<p>Pro accepts the SCF/ACF-compatible forms below:</p>
+<retype-table copy-text="| Object | Example |
+| --- | --- |
+| Post | `123` |
+| User | `user_12` |
+| Taxonomy term | `category_34` or `product_cat_34` |
+| Options Page | `options` |">
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Object</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Post</td>
+<td><code translate="no" v-pre>123</code></td>
+</tr>
+<tr>
+<td>User</td>
+<td><code translate="no" v-pre>user_12</code></td>
+</tr>
+<tr>
+<td>Taxonomy term</td>
+<td><code translate="no" v-pre>category_34</code> or <code translate="no" v-pre>product_cat_34</code></td>
+</tr>
+<tr>
+<td>Options Page</td>
+<td><code translate="no" v-pre>options</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+</retype-table>
+<p>The taxonomy prefix must be the actual taxonomy slug. The object must exist or the context remains unresolved.</p>
+<h2 id="common-uses">Common uses</h2>
+<h3 id="theme-builder-single-template">Theme Builder single template</h3>
+<p>Use <strong>Automatic</strong> or <strong>Current Post</strong>. Set Elementor&#x27;s preview source to a populated post so the editor can display rows.</p>
+<h3 id="taxonomy-archive">Taxonomy archive</h3>
+<p>Store the Repeater on the taxonomy term and use <strong>Automatic</strong> or <strong>Queried Object</strong>. The plugin passes <code translate="no" v-pre>taxonomy_termID</code> to SCF/ACF.</p>
+<h3 id="author-archive-or-user-profile">Author archive or user profile</h3>
+<p>Use <strong>Queried Object</strong> on an author archive, <strong>Current User</strong> for the logged-in account, or an explicit <code translate="no" v-pre>user_#</code> value for a fixed profile.</p>
+<h3 id="global-site-content">Global site content</h3>
+<p>Use <strong>ACF Options Page</strong> when rows live in global SCF/ACF options rather than on a post.</p>
+<h2 id="context-and-aggregate-queries">Context and aggregate queries</h2>
+<p><strong>Query Current Post Only</strong> controls whether the Loop widget reads one resolved owner or collects rows from Elementor&#x27;s source-post query.</p>
 <ul>
-<li>Classic Elementor Loop Grid and Loop Carousel widgets are supported.</li>
-<li>Elementor Atomic Elements are not currently supported.</li>
-<li>Existing top-level Repeater configurations continue to work in 2.0.</li>
-<li>Pro features require the paid build and an active license where Freemius requires one.</li>
+<li>Enabled: read only from the resolved context.</li>
+<li>Disabled: allow the widget source query to contribute multiple posts and their rows.</li>
 </ul>
+<p>If you are debugging the wrong rows, confirm both settings. A correct context can still appear broad when aggregate querying is enabled.</p>
 
                 
                 <!-- Required only on API pages -->
@@ -462,20 +301,20 @@
             
                 <nav id="retype-nextprev" class="print:hidden flex mt-14">
                     <div class="w-1/2">
-                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../installation/">
+                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../usage-guide-pro/">
                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                             <span>
                                 <span class="block text-xs font-normal text-base-text-muted">Previous</span>
-                                <span class="block mt-1">Installation and Requirements</span>
+                                <span class="block mt-1">Pro Workflow Guide</span>
                             </span>
                         </a>
                     </div>
             
                     <div class="w-1/2">
-                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../field-types/">
+                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../nested-repeaters/">
                             <span>
                                 <span class="block text-xs font-normal text-right text-base-text-muted">Next</span>
-                                <span class="block mt-1">Dynamic Tags and Field Types</span>
+                                <span class="block mt-1">Nested Repeaters</span>
                             </span>
                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                         </a>
@@ -519,6 +358,6 @@
 
     <div id="retype-overlay-target"></div>
 
-        <script data-cfasync="false">window.__DOCS__ = { "title": "Free and Pro Features", level: 1, icon: "file", hasPrism: false, hasInstagram: false, hasMermaid: false, hasMath: false, tocDepth: 23, "md": "/features.md" }</script>
+        <script data-cfasync="false">window.__DOCS__ = { "title": "Repeater Contexts", level: 1, icon: "file", hasPrism: false, hasInstagram: false, hasMermaid: false, hasMath: false, tocDepth: 23, "md": "/contexts.md" }</script>
 </body>
 </html>
