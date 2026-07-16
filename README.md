@@ -11,7 +11,7 @@ Build Elementor Loop Grids and Loop Carousels from rows stored in Secure Custom 
 
 The plugin turns each selected row into an Elementor loop item. You design the template; the plugin supplies the row context and dynamic data. It does not impose a card design or generate extra content inside your template.
 
-**Current version: 2.0.0**
+**Current version: 2.0.1**
 
 ## What 2.0 adds
 

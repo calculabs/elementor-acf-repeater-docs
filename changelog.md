@@ -7,6 +7,13 @@ icon: clock
 
 This documentation tracks released plugin behavior. Versions are listed without invented release dates.
 
+## 2.0.1
+
+### Compatibility
+
+- Restored the established field-provider behavior: Secure Custom Fields and Advanced Custom Fields Pro are both supported through their shared runtime API.
+- Kept Elementor as the only hard WordPress.org dependency because the dependency header cannot express alternative providers.
+
 ## 2.0.0
 
 ### Relationship queries **Pro**
