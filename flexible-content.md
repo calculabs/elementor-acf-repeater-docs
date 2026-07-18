@@ -5,7 +5,7 @@ icon: stack
 
 # Flexible Content Templates
 
-> **Pro feature:** Requires Dynamic Elementor ACF Repeater Pro.
+> **Pro feature:** Requires Dynamic ACF Repeater for Elementor Pro.
 
 The **ACF Flexible Content** skin renders Flexible Content rows with different Elementor Loop Items. You define the layouts in SCF/ACF and design every mapped template in Elementor.
 

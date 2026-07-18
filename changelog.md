@@ -7,6 +7,27 @@ icon: clock
 
 This documentation tracks released plugin behavior. Versions are listed without invented release dates.
 
+## 2.2.0
+
+### Product name
+
+- Renamed the customer-facing product to **Dynamic ACF Repeater for Elementor**, following Elementor's trademark guidance.
+- Preserved the installed folder, main plugin file, WordPress.org slug, text domain, Freemius identity, saved settings, and internal identifiers so existing sites update in place.
+
+### Deep Relationship and Post Object queries **Pro**
+
+- Added stable field-key paths through Groups, Flexible Content layouts, nested Repeaters, and mixed structural paths.
+- Flattened posts selected across nested rows, removed duplicates, and preserved the first configured occurrence and field order.
+- Added the same Relationship query controls to Loop Carousel.
+
+## 2.1.0
+
+### Elementor native taxonomy filtering **Pro**
+
+- Added an opt-in bridge between repeater taxonomy subfields and Elementor Pro's native Taxonomy Filter widget.
+- Preserved Elementor's native filter markup, styles, URL state, multi-select behavior, pagination, and Load More controls.
+- Kept the existing built-in custom filter and all saved settings unchanged when native filtering is not enabled.
+
 ## 2.0.1
 
 ### Compatibility

@@ -5,7 +5,7 @@ icon: checklist
 
 # Repeater Form Options
 
-> **Pro feature:** Requires Dynamic Elementor ACF Repeater Pro.
+> **Pro feature:** Requires Dynamic ACF Repeater for Elementor Pro.
 
 Pro adds **ACF Repeater Select** to the Elementor Pro Form widget. It turns non-empty values from one Repeater subfield into field choices.
 

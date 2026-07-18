@@ -5,7 +5,7 @@ icon: arrow-both
 
 # Loop Carousel
 
-> **Pro feature:** Requires Dynamic Elementor ACF Repeater Pro.
+> **Pro feature:** Requires Dynamic ACF Repeater for Elementor Pro.
 
 Pro can provide SCF/ACF rows to Elementor's classic Loop Carousel in addition to Loop Grid.
 

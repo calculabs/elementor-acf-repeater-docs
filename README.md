@@ -5,25 +5,27 @@ order: 1000
 
 ![](/images/home/banner-1544x500.png)
 
-# Dynamic Elementor ACF Repeater
+# Dynamic ACF Repeater for Elementor
 
 Build Elementor Loop Grids and Loop Carousels from rows stored in Secure Custom Fields (SCF) or Advanced Custom Fields Pro (ACF Pro).
 
 The plugin turns each selected row into an Elementor loop item. You design the template; the plugin supplies the row context and dynamic data. It does not impose a card design or generate extra content inside your template.
 
-**Current version: 2.0.1**
+**Current version: 2.2.0**
 
-## What 2.0 adds
+## What 2.2 adds
 
-Version 2.0 expands the row source beyond a single top-level Repeater:
+Version 2.2 extends relationship queries through complete structural field paths, building on the nested row sources and Flexible Content templates introduced in 2.0:
 
 - Traverse Repeaters nested through Repeater, Flexible Content, and Group fields.
 - Map each Flexible Content layout to its own Loop Item template.
 - Choose a fallback template or skip unmapped layouts.
 - Preview the selected row schema while designing a Loop Item.
+- Resolve Relationship and Post Object fields through Groups, Flexible Content, nested Repeaters, and mixed paths while preserving the configured post order.
+- Connect repeater taxonomy rows to Elementor Pro's native Taxonomy Filter, pagination, and Load More interface.
 - Keep existing top-level Repeater configurations working as before.
 
-See [Nested Repeaters](/nested-repeaters) and [Flexible Content](/flexible-content) for the complete workflows.
+See [Nested Repeaters](/nested-repeaters), [Flexible Content](/flexible-content), [Relationship Queries](/relationship-queries), and [Taxonomy Filters](/taxonomy-filters) for the complete workflows.
 
 ## Free and Pro at a glance
 
@@ -53,7 +55,7 @@ The detailed, code-aligned comparison is in [Features](/features).
 
 ## Compatibility boundary
 
-Dynamic Elementor ACF Repeater extends Elementor's classic **Loop Grid** and **Loop Carousel** widgets. Elementor Atomic Elements are not currently supported. See [Compatibility](/compatibility) for tested versions and packaging details.
+Dynamic ACF Repeater for Elementor extends Elementor's classic **Loop Grid** and **Loop Carousel** widgets. Elementor Atomic Elements are not currently supported. See [Compatibility](/compatibility) for tested versions and packaging details.
 
 ## Get the plugin
 

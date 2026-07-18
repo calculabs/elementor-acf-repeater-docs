@@ -7,7 +7,7 @@ icon: versions
 
 ## Supported stack
 
-Dynamic Elementor ACF Repeater 2.0 declares these minimums:
+Dynamic ACF Repeater for Elementor 2.2 declares these minimums:
 
 - WordPress 6.0+
 - PHP 7.4+
@@ -15,7 +15,7 @@ Dynamic Elementor ACF Repeater 2.0 declares these minimums:
 - Elementor Pro 3.8+
 - Secure Custom Fields (SCF) or Advanced Custom Fields Pro (ACF Pro)
 
-The 2.0 release declares WordPress compatibility through 7.0 and was tested against Elementor 4.1.5, Elementor Pro 4.1.3, ACF Pro 6.3.12, and Secure Custom Fields 6.9.1. Newer releases should be tested on staging before a production update.
+The 2.2 release declares WordPress compatibility through 7.0 and was tested against Elementor 4.1.5, Elementor Pro 4.1.3, ACF Pro 6.3.12, and Secure Custom Fields 6.9.1. Newer releases should be tested on staging before a production update.
 
 ## Elementor widgets
 
@@ -40,7 +40,7 @@ The product name retains “ACF Repeater” for continuity even when Secure Cust
 
 ## Free and Pro packaging
 
-The paid Freemius build includes the base plugin plus Pro-only code. It should identify as **Dynamic Elementor ACF Repeater PRO** on the Plugins screen. The WordPress.org build must not expose phantom Pro identity or paid-only code.
+The paid Freemius build includes the base plugin plus Pro-only code. It should identify as **Dynamic ACF Repeater for Elementor PRO** on the Plugins screen. The WordPress.org build must not expose phantom Pro identity or paid-only code.
 
 Do not rename the installed plugin directory or main PHP file. WordPress and Freemius use that identity for updates and licensing.
 

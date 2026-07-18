@@ -7,7 +7,7 @@ icon: download
 
 ## Requirements
 
-| Component | Minimum | Tested with the 2.0 release |
+| Component | Minimum | Tested with the 2.2 release |
 | --- | --- | --- |
 | WordPress | 6.0 | 7.0 |
 | PHP | 7.4 | Current supported PHP releases |
@@ -23,7 +23,7 @@ Elementor Pro is required because the integration targets Elementor's Loop Grid 
 ## Install the Free version
 
 1. In WordPress, open **Plugins → Add New Plugin**.
-2. Search for **Dynamic Elementor ACF Repeater**.
+2. Search for **Dynamic ACF Repeater for Elementor**.
 3. Install and activate it.
 4. Confirm that Elementor Pro and SCF or ACF Pro are also active.
 
@@ -36,7 +36,7 @@ You can also download the release from the [WordPress Plugin Directory](https://
 3. Upload the ZIP, install it, and activate it.
 4. Complete the Freemius license prompt or use **Change License** on the Plugins screen.
 
-The Pro package replaces the Free package; do not keep two separately named copies active. On the Plugins screen, the paid build should identify itself as **Dynamic Elementor ACF Repeater PRO** and expose the Freemius license actions.
+The Pro package replaces the Free package; do not keep two separately named copies active. On the Plugins screen, the paid build should identify itself as **Dynamic ACF Repeater for Elementor PRO** and expose the Freemius license actions.
 
 ## Verify the installation
 

@@ -2,7 +2,7 @@ input: .
 output: .retype
 url: https://calculabs.github.io/elementor-acf-repeater-docs/
 branding:
-  title: Dynamic Elementor ACF Repeater
+  title: Dynamic ACF Repeater for Elementor
   label: Docs
 links:
   - text: Getting Started
@@ -18,7 +18,7 @@ links:
 footer:
   copyright: "&copy; Copyright {{ year }}. All rights reserved."
 meta:
-  title: " | Dynamic Elementor ACF Repeater Docs"
+  title: " | Dynamic ACF Repeater for Elementor Docs"
 search:
   mode: full
   preload: true

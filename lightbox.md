@@ -5,7 +5,7 @@ icon: image
 
 # Repeater Lightbox
 
-> **Pro feature:** Requires Dynamic Elementor ACF Repeater Pro.
+> **Pro feature:** Requires Dynamic ACF Repeater for Elementor Pro.
 
 The Repeater Lightbox opens a clone of the selected Loop Item in an overlay. The content is exactly the Elementor Loop Item you designed, subject only to lightbox visibility settings.
 
