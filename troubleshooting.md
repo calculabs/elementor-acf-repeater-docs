@@ -8,10 +8,10 @@ Confirm that:
 
 - Elementor and Elementor Pro are active.
 - Secure Custom Fields or ACF Pro is active.
-- Dynamic Elementor ACF Repeater is active.
+- Dynamic ACF Repeater for Elementor is active.
 - You are editing a classic Loop Grid, Loop Carousel, or Loop Item—not an Atomic Element.
 
-In Pro, the Plugins screen should identify **Dynamic Elementor ACF Repeater PRO** and show Freemius license actions.
+In Pro, the Plugins screen should identify **Dynamic ACF Repeater for Elementor PRO** and show Freemius license actions.
 
 ## The Loop Item preview is blank
 

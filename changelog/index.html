@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
     <meta name="turbo-root" content="/elementor-acf-repeater-docs">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.837542387344">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.837665798007">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
 
     <!-- Primary Meta Tags -->
-    <title>Changelog | Dynamic Elementor ACF Repeater Docs</title>
-    <meta name="title" content="Changelog | Dynamic Elementor ACF Repeater Docs">
+    <title>Changelog | Dynamic ACF Repeater for Elementor Docs</title>
+    <meta name="title" content="Changelog | Dynamic ACF Repeater for Elementor Docs">
     <meta name="description" content="This documentation tracks released plugin behavior. Versions are listed without invented release dates.">
 
     <!-- Canonical -->
@@ -22,15 +22,15 @@
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://calculabs.github.io/elementor-acf-repeater-docs/changelog/">
-    <meta property="og:title" content="Changelog | Dynamic Elementor ACF Repeater Docs">
+    <meta property="og:title" content="Changelog | Dynamic ACF Repeater for Elementor Docs">
     <meta property="og:description" content="This documentation tracks released plugin behavior. Versions are listed without invented release dates.">
-    <meta property="og:site_name" content="Dynamic Elementor ACF Repeater">
+    <meta property="og:site_name" content="Dynamic ACF Repeater for Elementor">
     <meta property="og:locale" content="en_US">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://calculabs.github.io/elementor-acf-repeater-docs/changelog/">
-    <meta name="twitter:title" content="Changelog | Dynamic Elementor ACF Repeater Docs">
+    <meta name="twitter:title" content="Changelog | Dynamic ACF Repeater for Elementor Docs">
     <meta name="twitter:description" content="This documentation tracks released plugin behavior. Versions are listed without invented release dates.">
 
     <!-- Alternate Markdown -->
@@ -38,12 +38,12 @@
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
-    <link href="../resources/css/retype.css?v=4.6.0.837542387344" rel="stylesheet">
+    <link href="../resources/css/retype.css?v=4.6.0.837665798007" rel="stylesheet">
 
-    <script data-cfasync="false" src="../resources/js/config.js?v=4.6.0.837542387344" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/config.js?v=4.6.0.837665798007" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../resources/js/search.js?v=4.6.0.837542387344" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=4.6.0.837542387344" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/search.js?v=4.6.0.837665798007" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=4.6.0.837665798007" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -59,7 +59,7 @@
             <div class="flex items-center justify-between h-full py-2 md:w-75">
                 <div class="flex items-center px-2 md:px-6">
                     <a id="retype-branding-logo" href="https://calculabs.github.io/elementor-acf-repeater-docs/" class="flex items-center leading-snug text-xl">
-                        <span class="dark:text-white font-bold line-clamp-1 md:line-clamp-2">Dynamic Elementor ACF Repeater</span>
+                        <span class="dark:text-white font-bold line-clamp-1 md:line-clamp-2">Dynamic ACF Repeater for Elementor</span>
                     </a><span id="retype-branding-label" class="inline-flex mt-1 px-2 py-1 ml-4 text-xs font-medium leading-none items-center rounded-md bg-branding-label-bg text-branding-label-text ring-1 ring-branding-label-border ring-inset md:inline-block">Docs</span>
                 </div>
     
@@ -175,6 +175,25 @@
                 <!-- Page content  -->
 <h1 id="changelog">Changelog</h1>
 <p>This documentation tracks released plugin behavior. Versions are listed without invented release dates.</p>
+<h2 id="220">2.2.0</h2>
+<h3 id="product-name">Product name</h3>
+<ul>
+<li>Renamed the customer-facing product to <strong>Dynamic ACF Repeater for Elementor</strong>, following Elementor&#x27;s trademark guidance.</li>
+<li>Preserved the installed folder, main plugin file, WordPress.org slug, text domain, Freemius identity, saved settings, and internal identifiers so existing sites update in place.</li>
+</ul>
+<h3 id="deep-relationship-and-post-object-queries-pro">Deep Relationship and Post Object queries <strong>Pro</strong></h3>
+<ul>
+<li>Added stable field-key paths through Groups, Flexible Content layouts, nested Repeaters, and mixed structural paths.</li>
+<li>Flattened posts selected across nested rows, removed duplicates, and preserved the first configured occurrence and field order.</li>
+<li>Added the same Relationship query controls to Loop Carousel.</li>
+</ul>
+<h2 id="210">2.1.0</h2>
+<h3 id="elementor-native-taxonomy-filtering-pro">Elementor native taxonomy filtering <strong>Pro</strong></h3>
+<ul>
+<li>Added an opt-in bridge between repeater taxonomy subfields and Elementor Pro&#x27;s native Taxonomy Filter widget.</li>
+<li>Preserved Elementor&#x27;s native filter markup, styles, URL state, multi-select behavior, pagination, and Load More controls.</li>
+<li>Kept the existing built-in custom filter and all saved settings unchanged when native filtering is not enabled.</li>
+</ul>
 <h2 id="201">2.0.1</h2>
 <h3 id="compatibility">Compatibility</h3>
 <ul>

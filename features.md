@@ -1,6 +1,6 @@
 # Free and Pro Features
 
-This matrix describes the current 2.0 behavior. A check means the feature is implemented by the named edition—not merely that the underlying SCF/ACF field type exists.
+This matrix describes the current 2.2 behavior. A check means the feature is implemented by the named edition—not merely that the underlying SCF/ACF field type exists.
 
 ## Row sources and widgets
 
@@ -17,6 +17,7 @@ This matrix describes the current 2.0 behavior. A check means the feature is imp
 | Flexible Content layout-to-template mapping |  | ✓ |
 | Per-layout row schema and editor preview |  | ✓ |
 | Relationship/Post Object query source |  | ✓ |
+| Deep Relationship/Post Object paths through structural fields |  | ✓ |
 
 Free supports multiple Loop Item templates, but only one repeater-powered Loop Grid on a rendered page. Pro removes that page-level limitation and keeps each widget's context independent.
 
@@ -46,6 +47,7 @@ See [Dynamic Tags and Field Types](/field-types) for the exact compatibility mat
 | Lightbox-only or grid-only element visibility |  | ✓ |
 | Lightbox width, height, overlay, padding, and control styles |  | ✓ |
 | Taxonomy filter: dropdown, checkbox, or navigation |  | ✓ |
+| Elementor Pro native Taxonomy Filter integration |  | ✓ |
 | Filter deep links and custom URL parameter |  | ✓ |
 | Repeater-aware Elementor display condition |  | ✓ |
 | Repeater values as Elementor Form choices |  | ✓ |
@@ -69,5 +71,5 @@ Explicit object IDs can target posts, users, taxonomies, or options using the sy
 
 - Classic Elementor Loop Grid and Loop Carousel widgets are supported.
 - Elementor Atomic Elements are not currently supported.
-- Existing top-level Repeater configurations continue to work in 2.0.
+- Existing top-level Repeater configurations continue to work in 2.2.
 - Pro features require the paid build and an active license where Freemius requires one.

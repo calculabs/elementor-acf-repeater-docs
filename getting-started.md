@@ -6,7 +6,7 @@ This quick start creates one Elementor Loop Grid from a top-level SCF/ACF Repeat
 
 Install and activate:
 
-- Dynamic Elementor ACF Repeater Free or Pro
+- Dynamic ACF Repeater for Elementor Free or Pro
 - Elementor and Elementor Pro
 - Secure Custom Fields (SCF) or Advanced Custom Fields Pro (ACF Pro)
 

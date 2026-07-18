@@ -1,6 +1,6 @@
 # Nested Repeaters
 
-> **Pro feature:** Requires Dynamic Elementor ACF Repeater Pro.
+> **Pro feature:** Requires Dynamic ACF Repeater for Elementor Pro.
 
 Version 2.0 can use a Repeater reached through other structural fields. The path may pass through a Repeater, Group, or Flexible Content field before reaching the Repeater whose rows you want to render.
 

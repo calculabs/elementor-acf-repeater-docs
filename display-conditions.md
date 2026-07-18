@@ -1,6 +1,6 @@
 # Repeater Display Conditions
 
-> **Pro feature:** Requires Dynamic Elementor ACF Repeater Pro.
+> **Pro feature:** Requires Dynamic ACF Repeater for Elementor Pro.
 
 Pro registers **ACF Repeater Field** as an Elementor display condition. It evaluates a subfield from the current virtual row, allowing one element in a Loop Item to show or hide based on that row's value.
 
