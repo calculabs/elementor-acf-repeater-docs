@@ -28,13 +28,13 @@ Create an Elementor **Loop Item** template. Before adding dynamic content, open 
 - Free: choose **ACF Repeater Field for Loop**.
 - Pro: choose **ACF Row Schema for Loop**.
 
-![Select the Repeater for the Loop Item](/images/usage/select-repeater-field-for-loop.jpg){ width=500 }
+![Select the Repeater for the Loop Item](/images/usage/select-repeater-field-for-loop.jpg)
 
 This selection tells the editor which subfields belong to the current row. It powers the field selectors shown by the plugin's dynamic tags.
 
 Set Elementor's preview source to a post that contains rows. The preview source affects the editor only; it does not lock the published template to that post.
 
-![Configure the Loop Item preview](/images/usage/configure-preview-settings-for-loop-item.jpg){ width=500 }
+![Configure the Loop Item preview](/images/usage/configure-preview-settings-for-loop-item.jpg)
 
 ## 3. Design with Repeater dynamic tags
 
@@ -64,7 +64,7 @@ Open **Query** and enable the plugin's row source:
 - Free: **Use ACF Repeater** → **ACF Repeater Field**.
 - Pro: **Use ACF Rows** → **ACF Row Source**.
 
-![Use an ACF Repeater query](/images/usage/use-acf-repeater-query.jpg){ width=500 }
+![Use an ACF Repeater query](/images/usage/use-acf-repeater-query.jpg)
 
 ### Query Current Post Only
 
@@ -76,9 +76,7 @@ The source object can also be controlled explicitly. See [Contexts](/contexts).
 
 ## 5. Preview and publish
 
-Set Elementor's widget preview so the editor has a meaningful page context, then preview the frontend.
-
-![Set the Loop Grid preview](/images/usage/set-grid-preview.jpg){ width=500 }
+Use the same populated preview page or post you selected while designing the Loop Item, then preview the frontend.
 
 Each Repeater row should render as one instance of the selected Loop Item.
 
