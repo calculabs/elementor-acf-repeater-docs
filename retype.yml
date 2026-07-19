@@ -11,6 +11,8 @@ links:
     link: /features
   - text: Pro Guides
     link: /usage-guide-pro
+  - text: Context Inspector
+    link: /context-inspector
   - text: Troubleshooting
     link: /troubleshooting
   - text: GitHub

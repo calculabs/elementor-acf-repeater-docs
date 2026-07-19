@@ -92,6 +92,10 @@ const staleClaims = [
   ['WordPress 5.8', 'stale WordPress minimum'],
   ['ACF Repeater Relationship dynamic tag', 'nonexistent dynamic tag claim'],
   ['without pagination', 'incorrect Relationship pagination claim'],
+  ['Current version: 2.2.0', 'stale current documentation version'],
+  ['current 2.2 behavior', 'stale feature matrix version'],
+  ['Tested with the 2.2 release', 'stale installation matrix version'],
+  ['2.2 declares these minimums', 'stale compatibility version'],
 ];
 
 for (const file of markdownFiles) {

@@ -7,6 +7,8 @@ icon: issue-opened
 
 Start with the smallest reproducible path: one populated source object, one Loop Item, and one Loop Grid. Confirm that works before re-enabling filters, lightbox, cache optimization, or aggregate queries.
 
+In version 2.4+, edit the Loop Grid or Loop Carousel and open **Content → Troubleshooting**. Enable **Context Inspector** temporarily to verify the provider, resolved object, row source, row count, and active pipeline. The report is editor-only and contains metadata rather than row values. See [Context Inspector](/context-inspector).
+
 ## Plugin controls do not appear
 
 Confirm that:
@@ -60,7 +62,7 @@ If a field was deleted and recreated, reselect it. SCF/ACF assigns a new field k
 ## Relationship results are empty or incomplete
 
 - Confirm the selected field is Relationship or Post Object.
-- For a nested field, it must be directly inside a top-level Repeater.
+- For a nested field, confirm the complete Group, Flexible Content, or Repeater path is selected. Pro supports deep mixed structural paths.
 - Verify the field belongs to the resolved source context.
 - Check Elementor's `posts_per_page`; Relationship Query preserves that limit.
 - Confirm the selected posts still exist and have a status visible to the current visitor.
@@ -70,6 +72,17 @@ If a field was deleted and recreated, reselect it. SCF/ACF assigns a new field k
 Confirm the selected taxonomy and whether matching should use the Repeater Taxonomy subfield or the owning post's terms. The filter does not match arbitrary Repeater text or meta.
 
 For multiple filters, assign a unique **Filter Parameter Name** to each widget and remove stale filter parameters from the URL while testing.
+
+## Row search, sorting, or ranges return unexpected rows
+
+- Confirm **Enable Row Controls** is on and the intended scalar fields are selected.
+- Search terms are tokenized; every typed token must occur somewhere across the selected searchable fields.
+- Number/date ranges exclude rows with missing or invalid comparable values. A minimum greater than the maximum intentionally returns no rows.
+- Sorting keeps missing values last and preserves original row order for equal values.
+- Taxonomy filtering, row search, ranges, and sorting run before one final pagination step.
+- With multiple widgets, keep each URL parameter prefix distinct; the widget ID is appended automatically.
+
+See [Row Search and Sorting](/row-search-sorting).
 
 ## Filter update returns 403 Forbidden
 

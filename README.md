@@ -11,21 +11,21 @@ Build Elementor Loop Grids and Loop Carousels from rows stored in Secure Custom 
 
 The plugin turns each selected row into an Elementor loop item. You design the template; the plugin supplies the row context and dynamic data. It does not impose a card design or generate extra content inside your template.
 
-**Current version: 2.2.0**
+**Current version: 2.4.0**
 
-## What 2.2 adds
+## What 2.3 and 2.4 add
 
-Version 2.2 extends relationship queries through complete structural field paths, building on the nested row sources and Flexible Content templates introduced in 2.0:
+Version 2.3 added opt-in row discovery controls. Version 2.4 adds an editor-only Context Inspector that explains the active row pipeline without changing the Loop Item or frontend:
 
-- Traverse Repeaters nested through Repeater, Flexible Content, and Group fields.
-- Map each Flexible Content layout to its own Loop Item template.
-- Choose a fallback template or skip unmapped layouts.
-- Preview the selected row schema while designing a Loop Item.
-- Resolve Relationship and Post Object fields through Groups, Flexible Content, nested Repeaters, and mixed paths while preserving the configured post order.
-- Connect repeater taxonomy rows to Elementor Pro's native Taxonomy Filter, pagination, and Load More interface.
-- Keep existing top-level Repeater configurations working as before.
+- Search selected scalar row fields before pagination. **Pro**
+- Sort by configured text, number, or date fields with stable missing-value behavior. **Pro**
+- Filter number/date ranges and Flexible Content layouts. **Pro**
+- Keep optional URL state isolated per Loop Grid or Loop Carousel. **Pro**
+- Inspect the field provider, resolved object, row source, row count, and representative-row metadata inside Elementor. **Free and Pro**
+- Inspect stable paths, layout mappings, Relationship counts, row-query state, filters, pagination, and refresh security. **Pro**
+- Keep every new feature disabled by default and add no inspector markup to the canvas or frontend.
 
-See [Nested Repeaters](/nested-repeaters), [Flexible Content](/flexible-content), [Relationship Queries](/relationship-queries), and [Taxonomy Filters](/taxonomy-filters) for the complete workflows.
+See [Row Search and Sorting](/row-search-sorting) and [Context Inspector](/context-inspector) for the new workflows. [Nested Repeaters](/nested-repeaters), [Flexible Content](/flexible-content), [Relationship Queries](/relationship-queries), and [Taxonomy Filters](/taxonomy-filters) remain fully supported.
 
 ## Free and Pro at a glance
 
@@ -34,12 +34,15 @@ See [Nested Repeaters](/nested-repeaters), [Flexible Content](/flexible-content)
 | Top-level Repeater rows in a Loop Grid | ✓ | ✓ |
 | Repeater text, textarea, image, and source-post title tags | ✓ | ✓ |
 | Current post, queried object, and Options Page contexts | ✓ | ✓ |
+| Editor-only Context Inspector summary | ✓ | ✓ |
 | Multiple repeater-powered loop widgets on one page |  | ✓ |
 | Loop Carousel support |  | ✓ |
 | Nested Repeater row sources |  | ✓ |
 | Flexible Content layout-to-template mapping |  | ✓ |
 | Relationship and Post Object query sources |  | ✓ |
 | Taxonomy filters |  | ✓ |
+| Row search, sorting, number/date ranges, and layout filtering |  | ✓ |
+| Expanded Context Inspector pipeline details |  | ✓ |
 | Lightbox with optional previous/next navigation |  | ✓ |
 | Extended dynamic tags and field types |  | ✓ |
 | Repeater-aware display conditions and Form field options |  | ✓ |

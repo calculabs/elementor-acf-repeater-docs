@@ -47,6 +47,20 @@ Filter repeater rows by either the owning post's taxonomy or a Taxonomy subfield
 
 [Read the Taxonomy Filter guide →](/taxonomy-filters)
 
+### Row search and sorting
+
+Add only the public controls a catalog needs: search across selected scalar row fields, stable text/number/date sorting, number/date ranges, and a Flexible Content layout selector. All operations run on the complete matched row set before Elementor paginates it.
+
+[Read the Row Search and Sorting guide →](/row-search-sorting)
+
+## Editor diagnostics
+
+### Context Inspector
+
+Enable the inspector temporarily in a Loop Grid or Loop Carousel's **Troubleshooting** section to see the provider, object context, row source, count, stable paths, mappings, Relationship resolution, row-query state, pagination, and refresh-security status. It stays in Elementor's sidebar and never adds markup to the Loop Item or frontend.
+
+[Read the Context Inspector guide →](/context-inspector)
+
 ## Extended dynamic data
 
 Pro adds File, Gallery, URL, Color, Icon, Link Title, and Link Target tags, and expands the field types accepted by the Text tag.

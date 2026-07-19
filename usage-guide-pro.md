@@ -18,6 +18,8 @@ The source determines which controls and template strategy you need.
 | Give each Flexible Content layout a different design | [ACF Flexible Content skin](/flexible-content) |
 | Render posts selected by Relationship or Post Object | [Relationship Query](/relationship-queries) |
 | Pull rows from a user, term, post, or options object | [Contexts](/contexts) |
+| Add public row search, sorting, ranges, or layout filtering | [Row Search and Sorting](/row-search-sorting) |
+| Inspect the resolved widget pipeline inside Elementor | [Context Inspector](/context-inspector) |
 
 ## Configure the Loop Item before the widget
 
@@ -34,6 +36,8 @@ In the Loop Grid or Loop Carousel **Query** panel:
 3. Decide whether **Query Current Post Only** should limit the source to the current context.
 4. If the source is Flexible Content, choose the **ACF Flexible Content** skin and map the layouts.
 5. Add filters, relationship source settings, or context overrides only when the workflow requires them.
+
+If you need search, sorting, number/date ranges, or a Flexible Content layout selector, configure them in **Content → Row Search & Sorting**. The feature is off until **Enable Row Controls** is enabled.
 
 ## Add presentation features independently
 
@@ -58,5 +62,7 @@ Test at least:
 - Multiple widgets on the same page if used.
 - Filter deep links, lightbox controls, and carousel navigation if enabled.
 - A logged-out session, because stale editor authentication can hide REST or context problems.
+
+During setup, the optional [Context Inspector](/context-inspector) can verify the source and context without exposing row values or adding frontend output. Turn it off again when you no longer need the sidebar report.
 
 If behavior differs between the editor and frontend, use [Troubleshooting](/troubleshooting) before rebuilding the template.

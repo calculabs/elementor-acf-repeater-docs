@@ -7,14 +7,14 @@ icon: download
 
 ## Requirements
 
-| Component | Minimum | Tested with the 2.2 release |
+| Component | Minimum | Tested with the 2.4 release |
 | --- | --- | --- |
-| WordPress | 6.0 | 7.0 |
+| WordPress | 6.0 | 7.0.2 |
 | PHP | 7.4 | Current supported PHP releases |
 | Elementor | 3.8 | 4.1.5 |
 | Elementor Pro | 3.8 | 4.1.3 |
 | Secure Custom Fields | Supported | 6.9.1 |
-| Advanced Custom Fields Pro | Supported alternative | 6.3.12 |
+| Advanced Custom Fields Pro | Supported alternative | Provider compatibility retained; 6.3.12 established in 2.2 |
 
 You need **either Secure Custom Fields (SCF) or Advanced Custom Fields Pro (ACF Pro)**. A Repeater-capable field plugin is required because WordPress core and the free edition of ACF do not provide the Repeater field used by this plugin.
 
@@ -48,6 +48,8 @@ Then edit a Loop Grid and open **Query**:
 - Pro shows **Use ACF Rows**, plus the applicable Pro controls.
 
 If those controls do not appear, confirm all required plugins are active and review [Troubleshooting](/troubleshooting).
+
+On a configured Loop Grid or Loop Carousel, version 2.4 also adds a collapsed **Troubleshooting** section. Its **Context Inspector** is off by default and is described in the [Context Inspector guide](/context-inspector).
 
 ## Updating
 

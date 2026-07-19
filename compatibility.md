@@ -7,7 +7,7 @@ icon: versions
 
 ## Supported stack
 
-Dynamic ACF Repeater for Elementor 2.2 declares these minimums:
+Dynamic ACF Repeater for Elementor 2.4 declares these minimums:
 
 - WordPress 6.0+
 - PHP 7.4+
@@ -15,7 +15,7 @@ Dynamic ACF Repeater for Elementor 2.2 declares these minimums:
 - Elementor Pro 3.8+
 - Secure Custom Fields (SCF) or Advanced Custom Fields Pro (ACF Pro)
 
-The 2.2 release declares WordPress compatibility through 7.0 and was tested against Elementor 4.1.5, Elementor Pro 4.1.3, ACF Pro 6.3.12, and Secure Custom Fields 6.9.1. Newer releases should be tested on staging before a production update.
+The 2.4 release declares WordPress compatibility through 7.0. Current LocalWP release validation used WordPress 7.0.2, Elementor 4.1.5, Elementor Pro 4.1.3, and Secure Custom Fields 6.9.1. The compatible Advanced Custom Fields Pro provider path remains supported; the documented ACF Pro 6.3.12 compatibility was established in the earlier 2.2 validation. Test newer stacks on staging before a production update.
 
 ## Elementor widgets
 
