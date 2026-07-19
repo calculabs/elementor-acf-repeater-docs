@@ -2,6 +2,40 @@
 
 This documentation tracks released plugin behavior. Versions are listed without invented release dates.
 
+## 2.4.0
+
+### Editor-only Context Inspector
+
+- Added an opt-in **Troubleshooting** panel to Elementor Loop Grid and Loop Carousel.
+- Added provider, resolved object, row source, row-count, and representative-row metadata to Free and Pro.
+- Added Pro-only stable paths, Flexible Content mappings, Relationship/Post Object resolution, row-query state, filter state, pagination, and signed-refresh status.
+- Kept the inspector disabled by default and out of the preview canvas and frontend.
+
+### Security and validation
+
+- Required an authenticated nonce plus permission to edit the active Elementor document.
+- Accepted only a strict widget-settings allowlist and excluded row values, field values, signed render tokens, credentials, and nonces from responses.
+- Added PHPUnit, PHP 7.4 compatibility, PHPStan, package-boundary, and real Loop Grid/Loop Carousel browser coverage.
+
+## 2.3.0
+
+### Row search and sorting **Pro**
+
+- Added opt-in search across selected scalar Repeater and Flexible Content row fields.
+- Added stable text, number, and date sort choices with configurable public labels and default directions.
+- Added number/date minimum and maximum filters plus Flexible Content layout filtering.
+- Added optional, widget-isolated URL state for multiple Loop Grids and Loop Carousels.
+- Applied taxonomy filtering, search, ranges, and sorting before one final pagination step.
+- Kept all controls disabled by default and existing Loop Item markup unchanged.
+
+## 2.2.1
+
+### Elementor editor compatibility **Pro**
+
+- Fixed an HTTP 500 while Elementor generated global Loop Grid and Loop Carousel control configuration.
+- Stopped reading widget instance settings while Elementor was still constructing the control schema.
+- Kept legacy Relationship/Post Object selectors editable without migrating saved settings.
+
 ## 2.2.0
 
 ### Product name

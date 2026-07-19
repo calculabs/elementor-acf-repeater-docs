@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
     <meta name="turbo-root" content="/elementor-acf-repeater-docs">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.837665798007">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.837739816878">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -38,12 +38,12 @@
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
-    <link href="../resources/css/retype.css?v=4.6.0.837665798007" rel="stylesheet">
+    <link href="../resources/css/retype.css?v=4.6.0.837739816878" rel="stylesheet">
 
-    <script data-cfasync="false" src="../resources/js/config.js?v=4.6.0.837665798007" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/config.js?v=4.6.0.837739816878" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../resources/js/search.js?v=4.6.0.837665798007" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=4.6.0.837665798007" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/search.js?v=4.6.0.837739816878" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=4.6.0.837739816878" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -78,6 +78,9 @@
                         </li>
                         <li class="mr-6">
                             <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="../usage-guide-pro/">Pro Guides</a>
+                        </li>
+                        <li class="mr-6">
+                            <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="../context-inspector/">Context Inspector</a>
                         </li>
                         <li class="mr-6">
                             <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="../troubleshooting/">Troubleshooting</a>
@@ -144,6 +147,9 @@
                                     <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="../usage-guide-pro/">Pro Guides</a>
                                 </li>
                                 <li class="mr-6">
+                                    <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="../context-inspector/">Context Inspector</a>
+                                </li>
+                                <li class="mr-6">
                                     <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="../troubleshooting/">Troubleshooting</a>
                                 </li>
                                 <li class="mr-6">
@@ -175,6 +181,7 @@
                 <!-- Page content  -->
 <h1 id="troubleshooting">Troubleshooting</h1>
 <p>Start with the smallest reproducible path: one populated source object, one Loop Item, and one Loop Grid. Confirm that works before re-enabling filters, lightbox, cache optimization, or aggregate queries.</p>
+<p>In version 2.4+, edit the Loop Grid or Loop Carousel and open <strong>Content → Troubleshooting</strong>. Enable <strong>Context Inspector</strong> temporarily to verify the provider, resolved object, row source, row count, and active pipeline. The report is editor-only and contains metadata rather than row values. See <a href="../context-inspector/">Context Inspector</a>.</p>
 <h2 id="plugin-controls-do-not-appear">Plugin controls do not appear</h2>
 <p>Confirm that:</p>
 <ul>
@@ -220,7 +227,7 @@
 <h2 id="relationship-results-are-empty-or-incomplete">Relationship results are empty or incomplete</h2>
 <ul>
 <li>Confirm the selected field is Relationship or Post Object.</li>
-<li>For a nested field, it must be directly inside a top-level Repeater.</li>
+<li>For a nested field, confirm the complete Group, Flexible Content, or Repeater path is selected. Pro supports deep mixed structural paths.</li>
 <li>Verify the field belongs to the resolved source context.</li>
 <li>Check Elementor&#x27;s <code translate="no" v-pre>posts_per_page</code>; Relationship Query preserves that limit.</li>
 <li>Confirm the selected posts still exist and have a status visible to the current visitor.</li>
@@ -228,6 +235,16 @@
 <h2 id="a-taxonomy-filter-does-not-match-the-expected-rows">A taxonomy filter does not match the expected rows</h2>
 <p>Confirm the selected taxonomy and whether matching should use the Repeater Taxonomy subfield or the owning post&#x27;s terms. The filter does not match arbitrary Repeater text or meta.</p>
 <p>For multiple filters, assign a unique <strong>Filter Parameter Name</strong> to each widget and remove stale filter parameters from the URL while testing.</p>
+<h2 id="row-search-sorting-or-ranges-return-unexpected-rows">Row search, sorting, or ranges return unexpected rows</h2>
+<ul>
+<li>Confirm <strong>Enable Row Controls</strong> is on and the intended scalar fields are selected.</li>
+<li>Search terms are tokenized; every typed token must occur somewhere across the selected searchable fields.</li>
+<li>Number/date ranges exclude rows with missing or invalid comparable values. A minimum greater than the maximum intentionally returns no rows.</li>
+<li>Sorting keeps missing values last and preserves original row order for equal values.</li>
+<li>Taxonomy filtering, row search, ranges, and sorting run before one final pagination step.</li>
+<li>With multiple widgets, keep each URL parameter prefix distinct; the widget ID is appended automatically.</li>
+</ul>
+<p>See <a href="../row-search-sorting/">Row Search and Sorting</a>.</p>
 <h2 id="filter-update-returns-403-forbidden">Filter update returns 403 Forbidden</h2>
 <p>Current filter requests require a signed, widget-bound render context. A 403 usually means the page or request was generated by an older plugin version, cached markup contains a stale signature, or a custom request omitted the current context.</p>
 <ol>
@@ -275,11 +292,11 @@
             
                 <nav id="retype-nextprev" class="print:hidden flex mt-14">
                     <div class="w-1/2">
-                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../compatibility/">
+                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../context-inspector/">
                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                             <span>
                                 <span class="block text-xs font-normal text-base-text-muted">Previous</span>
-                                <span class="block mt-1">Compatibility</span>
+                                <span class="block mt-1">Context Inspector</span>
                             </span>
                         </a>
                     </div>

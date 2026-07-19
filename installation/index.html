@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
     <meta name="turbo-root" content="/elementor-acf-repeater-docs">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.837665798007">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.837739816878">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -38,12 +38,12 @@
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
-    <link href="../resources/css/retype.css?v=4.6.0.837665798007" rel="stylesheet">
+    <link href="../resources/css/retype.css?v=4.6.0.837739816878" rel="stylesheet">
 
-    <script data-cfasync="false" src="../resources/js/config.js?v=4.6.0.837665798007" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/config.js?v=4.6.0.837739816878" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../resources/js/search.js?v=4.6.0.837665798007" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=4.6.0.837665798007" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/search.js?v=4.6.0.837739816878" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=4.6.0.837739816878" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -78,6 +78,9 @@
                         </li>
                         <li class="mr-6">
                             <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="../usage-guide-pro/">Pro Guides</a>
+                        </li>
+                        <li class="mr-6">
+                            <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="../context-inspector/">Context Inspector</a>
                         </li>
                         <li class="mr-6">
                             <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="../troubleshooting/">Troubleshooting</a>
@@ -144,6 +147,9 @@
                                     <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="../usage-guide-pro/">Pro Guides</a>
                                 </li>
                                 <li class="mr-6">
+                                    <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="../context-inspector/">Context Inspector</a>
+                                </li>
+                                <li class="mr-6">
                                     <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="../troubleshooting/">Troubleshooting</a>
                                 </li>
                                 <li class="mr-6">
@@ -175,28 +181,28 @@
                 <!-- Page content  -->
 <h1 id="installation-and-requirements">Installation and Requirements</h1>
 <h2 id="requirements">Requirements</h2>
-<retype-table copy-text="| Component | Minimum | Tested with the 2.2 release |
+<retype-table copy-text="| Component | Minimum | Tested with the 2.4 release |
 | --- | --- | --- |
-| WordPress | 6.0 | 7.0 |
+| WordPress | 6.0 | 7.0.2 |
 | PHP | 7.4 | Current supported PHP releases |
 | Elementor | 3.8 | 4.1.5 |
 | Elementor Pro | 3.8 | 4.1.3 |
 | Secure Custom Fields | Supported | 6.9.1 |
-| Advanced Custom Fields Pro | Supported alternative | 6.3.12 |">
+| Advanced Custom Fields Pro | Supported alternative | Provider compatibility retained; 6.3.12 established in 2.2 |">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
 <tr>
 <th>Component</th>
 <th>Minimum</th>
-<th>Tested with the 2.2 release</th>
+<th>Tested with the 2.4 release</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>WordPress</td>
 <td>6.0</td>
-<td>7.0</td>
+<td>7.0.2</td>
 </tr>
 <tr>
 <td>PHP</td>
@@ -221,7 +227,7 @@
 <tr>
 <td>Advanced Custom Fields Pro</td>
 <td>Supported alternative</td>
-<td>6.3.12</td>
+<td>Provider compatibility retained; 6.3.12 established in 2.2</td>
 </tr>
 </tbody>
 </table>
@@ -253,6 +259,7 @@
 <li>Pro shows <strong>Use ACF Rows</strong>, plus the applicable Pro controls.</li>
 </ul>
 <p>If those controls do not appear, confirm all required plugins are active and review <a href="../troubleshooting/">Troubleshooting</a>.</p>
+<p>On a configured Loop Grid or Loop Carousel, version 2.4 also adds a collapsed <strong>Troubleshooting</strong> section. Its <strong>Context Inspector</strong> is off by default and is described in the <a href="../context-inspector/">Context Inspector guide</a>.</p>
 <h2 id="updating">Updating</h2>
 <p>Free updates come from WordPress.org. Licensed Pro sites receive updates through Freemius.</p>
 <p>After an update, a stale Elementor editor can continue serving old JavaScript or generated CSS. If controls or previews behave like an older version, reload the editor without cache and use Elementor&#x27;s <strong>Clear Files &amp; Data</strong> tool. See <a href="../troubleshooting/#stale-editor-assets-or-styles">Troubleshooting</a>.</p>

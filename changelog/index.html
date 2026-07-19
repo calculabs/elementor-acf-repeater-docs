@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
     <meta name="turbo-root" content="/elementor-acf-repeater-docs">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.837665798007">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.837739816878">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -38,12 +38,12 @@
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
-    <link href="../resources/css/retype.css?v=4.6.0.837665798007" rel="stylesheet">
+    <link href="../resources/css/retype.css?v=4.6.0.837739816878" rel="stylesheet">
 
-    <script data-cfasync="false" src="../resources/js/config.js?v=4.6.0.837665798007" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/config.js?v=4.6.0.837739816878" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../resources/js/search.js?v=4.6.0.837665798007" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=4.6.0.837665798007" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/search.js?v=4.6.0.837739816878" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=4.6.0.837739816878" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -78,6 +78,9 @@
                         </li>
                         <li class="mr-6">
                             <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="../usage-guide-pro/">Pro Guides</a>
+                        </li>
+                        <li class="mr-6">
+                            <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="../context-inspector/">Context Inspector</a>
                         </li>
                         <li class="mr-6">
                             <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="../troubleshooting/">Troubleshooting</a>
@@ -144,6 +147,9 @@
                                     <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="../usage-guide-pro/">Pro Guides</a>
                                 </li>
                                 <li class="mr-6">
+                                    <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="../context-inspector/">Context Inspector</a>
+                                </li>
+                                <li class="mr-6">
                                     <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text hover:text-header-text-hover" href="../troubleshooting/">Troubleshooting</a>
                                 </li>
                                 <li class="mr-6">
@@ -175,6 +181,37 @@
                 <!-- Page content  -->
 <h1 id="changelog">Changelog</h1>
 <p>This documentation tracks released plugin behavior. Versions are listed without invented release dates.</p>
+<h2 id="240">2.4.0</h2>
+<h3 id="editor-only-context-inspector">Editor-only Context Inspector</h3>
+<ul>
+<li>Added an opt-in <strong>Troubleshooting</strong> panel to Elementor Loop Grid and Loop Carousel.</li>
+<li>Added provider, resolved object, row source, row-count, and representative-row metadata to Free and Pro.</li>
+<li>Added Pro-only stable paths, Flexible Content mappings, Relationship/Post Object resolution, row-query state, filter state, pagination, and signed-refresh status.</li>
+<li>Kept the inspector disabled by default and out of the preview canvas and frontend.</li>
+</ul>
+<h3 id="security-and-validation">Security and validation</h3>
+<ul>
+<li>Required an authenticated nonce plus permission to edit the active Elementor document.</li>
+<li>Accepted only a strict widget-settings allowlist and excluded row values, field values, signed render tokens, credentials, and nonces from responses.</li>
+<li>Added PHPUnit, PHP 7.4 compatibility, PHPStan, package-boundary, and real Loop Grid/Loop Carousel browser coverage.</li>
+</ul>
+<h2 id="230">2.3.0</h2>
+<h3 id="row-search-and-sorting-pro">Row search and sorting <strong>Pro</strong></h3>
+<ul>
+<li>Added opt-in search across selected scalar Repeater and Flexible Content row fields.</li>
+<li>Added stable text, number, and date sort choices with configurable public labels and default directions.</li>
+<li>Added number/date minimum and maximum filters plus Flexible Content layout filtering.</li>
+<li>Added optional, widget-isolated URL state for multiple Loop Grids and Loop Carousels.</li>
+<li>Applied taxonomy filtering, search, ranges, and sorting before one final pagination step.</li>
+<li>Kept all controls disabled by default and existing Loop Item markup unchanged.</li>
+</ul>
+<h2 id="221">2.2.1</h2>
+<h3 id="elementor-editor-compatibility-pro">Elementor editor compatibility <strong>Pro</strong></h3>
+<ul>
+<li>Fixed an HTTP 500 while Elementor generated global Loop Grid and Loop Carousel control configuration.</li>
+<li>Stopped reading widget instance settings while Elementor was still constructing the control schema.</li>
+<li>Kept legacy Relationship/Post Object selectors editable without migrating saved settings.</li>
+</ul>
 <h2 id="220">2.2.0</h2>
 <h3 id="product-name">Product name</h3>
 <ul>
