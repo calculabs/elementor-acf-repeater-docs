@@ -11,7 +11,9 @@ Build Elementor Loop Grids and Loop Carousels from rows stored in Secure Custom 
 
 The plugin turns each selected row into an Elementor loop item. You design the template; the plugin supplies the row context and dynamic data. It does not impose a card design or generate extra content inside your template.
 
-**Current version: 2.4.0**
+Dynamic ACF Repeater for Elementor is an independent third-party plugin by WP Luna. It is not affiliated with or endorsed by Elementor.
+
+**Current version: 2.4.5**
 
 ## What 2.3 and 2.4 add
 
@@ -58,12 +60,12 @@ The detailed, code-aligned comparison is in [Features](/features).
 
 ## Compatibility boundary
 
-Dynamic ACF Repeater for Elementor extends Elementor's classic **Loop Grid** and **Loop Carousel** widgets. Elementor Atomic Elements are not currently supported. See [Compatibility](/compatibility) for tested versions and packaging details.
+Dynamic ACF Repeater for Elementor integrates with Elementor Pro's existing classic **Loop Grid** and **Loop Carousel** widgets. Elementor Atomic Elements are not currently supported. See [Compatibility](/compatibility) for tested versions and packaging details.
 
 ## Get the plugin
 
 - [Download the Free plugin from WordPress.org](https://wordpress.org/plugins/dynamic-elementor-acf-repeater/)
-- [Start a 3-day Pro trial](https://checkout.freemius.com/mode/dialog/plugin/16334/plan/27245/?trial=paid)
+- [Start a 7-day Pro trial](https://checkout.freemius.com/mode/dialog/plugin/16334/plan/27245/?trial=paid)
 - [Report a bug or request a feature](https://github.com/calculabs/elementor-acf-repeater/issues)
 
 Need help with an existing setup? Start with [Troubleshooting](/troubleshooting).

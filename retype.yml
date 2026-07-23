@@ -18,7 +18,7 @@ links:
   - text: GitHub
     link: https://github.com/calculabs/elementor-acf-repeater
 footer:
-  copyright: "&copy; Copyright {{ year }}. All rights reserved."
+  copyright: "&copy; Copyright {{ year }} WP Luna. Dynamic ACF Repeater for Elementor is an independent third-party plugin by WP Luna. It is not affiliated with or endorsed by Elementor."
 meta:
   title: " | Dynamic ACF Repeater for Elementor Docs"
 search:

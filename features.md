@@ -64,7 +64,7 @@ See [Dynamic Tags and Field Types](/field-types) for the exact compatibility mat
 | Lightbox-only or grid-only element visibility |  | ✓ |
 | Lightbox width, height, overlay, padding, and control styles |  | ✓ |
 | Taxonomy filter: dropdown, checkbox, or navigation |  | ✓ |
-| Elementor Pro native Taxonomy Filter integration |  | ✓ |
+| Elementor Pro Taxonomy Filter integration |  | ✓ |
 | Filter deep links and custom URL parameter |  | ✓ |
 | Search across selected scalar row fields |  | ✓ |
 | Stable text, number, and date sorting |  | ✓ |

@@ -7,16 +7,16 @@ icon: filter
 
 > **Pro feature:** Requires Dynamic ACF Repeater for Elementor Pro.
 
-Taxonomy filtering can use the plugin's built-in controls or, as an opt-in alternative, Elementor Pro's native Taxonomy Filter widget. Both modes filter taxonomy values associated with repeater rows; they do not filter arbitrary text, numbers, or post-meta values.
+Taxonomy filtering can use the plugin's built-in controls or, as an opt-in alternative, Elementor Pro's Taxonomy Filter widget. Both modes filter taxonomy values associated with repeater rows; they do not filter arbitrary text, numbers, or post-meta values.
 
 ## Choose a filter interface
 
 | Interface | Use it when |
 | --- | --- |
 | Built-in custom filter | You want the plugin's dropdown, checkbox, or clickable-navigation controls and styling options. |
-| Elementor native filter | You want Elementor's own Taxonomy Filter markup, styles, URL state, multi-select behavior, pagination, and Load More integration. |
+| Elementor Pro Taxonomy Filter | You want Elementor Pro's Taxonomy Filter markup, styles, URL state, multi-select behavior, pagination, and Load More integration. |
 
-The native adapter is disabled by default. Enabling it for a grid suppresses the built-in filter on that grid so the two interfaces cannot compete. Turning it off restores the saved built-in configuration.
+The adapter is disabled by default. Enabling it for a grid suppresses the built-in filter on that grid so the two interfaces cannot compete. Turning it off restores the saved built-in configuration.
 
 ## Filter sources
 
@@ -36,9 +36,9 @@ In the Loop Grid **Repeater Filter** section:
 3. Select the row taxonomy field when applicable.
 4. Choose a **Filter Type**.
 
-## Enable Elementor's native filter
+## Enable Elementor Pro's Taxonomy Filter
 
-1. In the Loop Grid **Repeater Filter** section, enable **Native Filter Support**.
+1. In the Loop Grid **Repeater Filter** section, enable **Elementor Pro Taxonomy Filter**.
 2. Choose the taxonomy and the Repeater Taxonomy Field that stores its terms.
 3. Add Elementor Pro's **Taxonomy Filter** widget to the page.
 4. Connect that widget to the same Loop Grid and choose the same taxonomy.
