@@ -33,7 +33,7 @@ Pro also reports applicable details for:
 - Flexible Content layout-to-template mappings and unmapped-row behavior,
 - Relationship/Post Object field paths and resolved post counts,
 - configured row search, sorting, ranges, layout filter, and URL state,
-- Elementor-native and plugin taxonomy-filter state,
+- Elementor Pro Taxonomy Filter and plugin taxonomy-filter state,
 - pagination mode and rows per page,
 - signed, expiring, widget-bound public refresh security.
 

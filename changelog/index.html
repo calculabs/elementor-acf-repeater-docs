@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
     <meta name="turbo-root" content="/elementor-acf-repeater-docs">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.837812778603">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.838157159349">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -38,12 +38,12 @@
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
-    <link href="../resources/css/retype.css?v=4.6.0.837812778603" rel="stylesheet">
+    <link href="../resources/css/retype.css?v=4.6.0.838157159349" rel="stylesheet">
 
-    <script data-cfasync="false" src="../resources/js/config.js?v=4.6.0.837812778603" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/config.js?v=4.6.0.838157159349" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../resources/js/search.js?v=4.6.0.837812778603" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=4.6.0.837812778603" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/search.js?v=4.6.0.838157159349" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=4.6.0.838157159349" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -181,6 +181,35 @@
                 <!-- Page content  -->
 <h1 id="changelog">Changelog</h1>
 <p>This documentation tracks released plugin behavior. Versions are listed without invented release dates.</p>
+<h2 id="245">2.4.5</h2>
+<ul>
+<li>Fixed Automatic context using a Loop Item&#x27;s saved Preview Post on normal frontend requests instead of the actual queried post.</li>
+<li>Limited saved Elementor Preview Post resolution to Elementor edit and preview modes.</li>
+<li>Kept Loop Item editor previews on their selected sample post while frontend widgets use the viewed post&#x27;s own rows.</li>
+</ul>
+<h2 id="244">2.4.4</h2>
+<ul>
+<li>Fixed Repeater dynamic tags rendering empty values when the selected Preview Post existed only in the current editor user&#x27;s Elementor autosave.</li>
+<li>Resolved the active Loop Item through Elementor&#x27;s autosave-aware document API while preserving the published-document fallback.</li>
+<li>Kept the override limited to authenticated Elementor AJAX requests for this plugin&#x27;s Repeater tags.</li>
+</ul>
+<h2 id="243">2.4.3</h2>
+<ul>
+<li>Fixed Repeater dynamic tags rendering empty values when Elementor&#x27;s editor-side tag request used the Loop Item template instead of its selected preview post.</li>
+<li>Persisted explicit ACF row-schema changes before reloading the editor preview.</li>
+<li>Invalidated stale Repeater dynamic-tag preview cache entries without altering unrelated dynamic-tag settings.</li>
+</ul>
+<h2 id="242">2.4.2</h2>
+<ul>
+<li>Fixed trailing Repeater Loop Grids rendering empty dynamic values when Elementor normalized a negative virtual row ID to an existing positive Theme Document ID.</li>
+<li>Preserved each virtual row and the surrounding WordPress query through Elementor&#x27;s Loop Item preview lifecycle.</li>
+<li>Added no saved-setting renames, removals, or migrations.</li>
+</ul>
+<h2 id="241">2.4.1</h2>
+<ul>
+<li>Updated the paid Pro trial from 3 days to 7 days to match the current Freemius checkout configuration.</li>
+<li>Kept the payment-method requirement and existing plan, license, and entitlement behavior unchanged.</li>
+</ul>
 <h2 id="240">2.4.0</h2>
 <h3 id="editor-only-context-inspector">Editor-only Context Inspector</h3>
 <ul>
@@ -225,11 +254,11 @@
 <li>Added the same Relationship query controls to Loop Carousel.</li>
 </ul>
 <h2 id="210">2.1.0</h2>
-<h3 id="elementor-native-taxonomy-filtering-pro">Elementor native taxonomy filtering <strong>Pro</strong></h3>
+<h3 id="elementor-pro-taxonomy-filter-integration-pro">Elementor Pro Taxonomy Filter integration <strong>Pro</strong></h3>
 <ul>
-<li>Added an opt-in bridge between repeater taxonomy subfields and Elementor Pro&#x27;s native Taxonomy Filter widget.</li>
-<li>Preserved Elementor&#x27;s native filter markup, styles, URL state, multi-select behavior, pagination, and Load More controls.</li>
-<li>Kept the existing built-in custom filter and all saved settings unchanged when native filtering is not enabled.</li>
+<li>Added an opt-in bridge between repeater taxonomy subfields and Elementor Pro&#x27;s Taxonomy Filter widget.</li>
+<li>Preserved Elementor Pro&#x27;s Taxonomy Filter markup, styles, URL state, multi-select behavior, pagination, and Load More controls.</li>
+<li>Kept the existing built-in custom filter and all saved settings unchanged when the Elementor Pro integration is not enabled.</li>
 </ul>
 <h2 id="201">2.0.1</h2>
 <h3 id="compatibility">Compatibility</h3>
@@ -402,7 +431,7 @@
                     <ul class="flex flex-wrap items-center text-sm">
                     </ul>
                 </div>
-                <div id="retype-copyright" class="print:justify-center py-2 text-footer-text font-footer-link text-sm leading-relaxed"><p>© Copyright 2026. All rights reserved.</p></div>
+                <div id="retype-copyright" class="print:justify-center py-2 text-footer-text font-footer-link text-sm leading-relaxed"><p>© Copyright 2026 WP Luna. Dynamic ACF Repeater for Elementor is an independent third-party plugin by WP Luna. It is not affiliated with or endorsed by Elementor.</p></div>
             </footer>
         </div>
     </div>

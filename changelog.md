@@ -2,6 +2,35 @@
 
 This documentation tracks released plugin behavior. Versions are listed without invented release dates.
 
+## 2.4.5
+
+- Fixed Automatic context using a Loop Item's saved Preview Post on normal frontend requests instead of the actual queried post.
+- Limited saved Elementor Preview Post resolution to Elementor edit and preview modes.
+- Kept Loop Item editor previews on their selected sample post while frontend widgets use the viewed post's own rows.
+
+## 2.4.4
+
+- Fixed Repeater dynamic tags rendering empty values when the selected Preview Post existed only in the current editor user's Elementor autosave.
+- Resolved the active Loop Item through Elementor's autosave-aware document API while preserving the published-document fallback.
+- Kept the override limited to authenticated Elementor AJAX requests for this plugin's Repeater tags.
+
+## 2.4.3
+
+- Fixed Repeater dynamic tags rendering empty values when Elementor's editor-side tag request used the Loop Item template instead of its selected preview post.
+- Persisted explicit ACF row-schema changes before reloading the editor preview.
+- Invalidated stale Repeater dynamic-tag preview cache entries without altering unrelated dynamic-tag settings.
+
+## 2.4.2
+
+- Fixed trailing Repeater Loop Grids rendering empty dynamic values when Elementor normalized a negative virtual row ID to an existing positive Theme Document ID.
+- Preserved each virtual row and the surrounding WordPress query through Elementor's Loop Item preview lifecycle.
+- Added no saved-setting renames, removals, or migrations.
+
+## 2.4.1
+
+- Updated the paid Pro trial from 3 days to 7 days to match the current Freemius checkout configuration.
+- Kept the payment-method requirement and existing plan, license, and entitlement behavior unchanged.
+
 ## 2.4.0
 
 ### Editor-only Context Inspector
@@ -51,11 +80,11 @@ This documentation tracks released plugin behavior. Versions are listed without 
 
 ## 2.1.0
 
-### Elementor native taxonomy filtering **Pro**
+### Elementor Pro Taxonomy Filter integration **Pro**
 
-- Added an opt-in bridge between repeater taxonomy subfields and Elementor Pro's native Taxonomy Filter widget.
-- Preserved Elementor's native filter markup, styles, URL state, multi-select behavior, pagination, and Load More controls.
-- Kept the existing built-in custom filter and all saved settings unchanged when native filtering is not enabled.
+- Added an opt-in bridge between repeater taxonomy subfields and Elementor Pro's Taxonomy Filter widget.
+- Preserved Elementor Pro's Taxonomy Filter markup, styles, URL state, multi-select behavior, pagination, and Load More controls.
+- Kept the existing built-in custom filter and all saved settings unchanged when the Elementor Pro integration is not enabled.
 
 ## 2.0.1
 
